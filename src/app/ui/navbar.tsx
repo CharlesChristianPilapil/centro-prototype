@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { navlink } from "@/constants/constants";
+import { navlink } from "@/constants/home";
 import Link from "next/link";
 
 const Navbar = () => {

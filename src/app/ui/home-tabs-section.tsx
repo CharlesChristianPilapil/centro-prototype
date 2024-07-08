@@ -1,6 +1,6 @@
 import React from "react";
 import HomeTab from "./home-tabs";
-import { service_tabs } from "@/constants/constants";
+import { service_tabs } from "@/constants/home";
 
 const HomeTabsSection = () => {
   return (

@@ -3,10 +3,12 @@ import HomeTabsSection from "./ui/home-tabs-section";
 
 export default function Home() {
   return (
-    <main className="bg-base">
+    <>
       <Header />
+      <main className="bg-base">
       <HomeTabsSection />
       <div className="container"> side x side </div>
-    </main>
+      </main>
+    </>
   );
-}
+};

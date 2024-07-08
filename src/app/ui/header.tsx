@@ -1,4 +1,4 @@
-import { header } from "@/constants/constants";
+import { header } from "@/constants/home";
 import Link from "next/link";
 import Image from "next/image";
 import Overlay from "./overlay";
