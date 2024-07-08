@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="bg-base">
-      <HomeTabsSection />
-      <div className="container"> side x side </div>
+      <main className="bg-base ">
+        <HomeTabsSection />
+        <div className="container"> side x side </div>
       </main>
     </>
   );
-};
+}
