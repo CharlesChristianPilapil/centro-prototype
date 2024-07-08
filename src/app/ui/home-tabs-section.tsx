@@ -9,7 +9,7 @@ import { staggerChild } from "@/constants/motion";
 const HomeTabsSection = () => {
   return (
     <motion.div
-      className="grid gap-[20px] container -mt-16 mb-20 sm:grid-cols-2 lg:grid-cols-4 relative overflow-x-hidden"
+      className="grid gap-[20px] container -mt-16 mb-20 sm:grid-cols-2 lg:grid-cols-4 relative"
       variants={staggerChild({ staggerChildren: 0.2 })}
       initial="hidden"
       whileInView="visible"
