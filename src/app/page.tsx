@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className='bg-base '>
+      <main>
         <HomeTabsSection />
         <FeaturesWrapper />
       </main>

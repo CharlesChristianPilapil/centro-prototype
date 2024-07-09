@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 header {
-  background-image: url("../../public/images/header-bg.svg");
+  background-image: url('../../public/images/header-bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.newsletter {
+  background-image: url('../../public/images/newsletter-bg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
