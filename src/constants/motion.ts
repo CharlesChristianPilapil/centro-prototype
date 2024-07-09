@@ -18,7 +18,7 @@ export const singleElement = ({ x, y, delay }: Props) => {
       x: 0,
       y: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         delay: delay,
       },
     },
@@ -43,3 +43,5 @@ export const staggerItem = ({ x, y }: Props) => {
     visible: { opacity: 1, x: 0, y: 0 },
   };
 };
+
+console.log('Sample');
