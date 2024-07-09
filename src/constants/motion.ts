@@ -43,3 +43,5 @@ export const staggerItem = ({ x, y }: Props) => {
     visible: { opacity: 1, x: 0, y: 0 },
   };
 };
+
+console.log('Sample');
