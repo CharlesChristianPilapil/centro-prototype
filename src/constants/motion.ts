@@ -18,7 +18,7 @@ export const singleElement = ({ x, y, delay }: Props) => {
       x: 0,
       y: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         delay: delay,
       },
     },

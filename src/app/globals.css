@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 header {
-  background-image: url("../../public/header-bg.svg");
+  background-image: url("../../public/images/header-bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
