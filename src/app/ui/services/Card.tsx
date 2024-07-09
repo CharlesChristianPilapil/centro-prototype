@@ -7,7 +7,12 @@ export const Card: React.FC<any> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col h-[${height}] w-[${width}] p-[30px] rounded-[${radius}] shadow-xl ${style}`}
+      className={`flex flex-col p-[30px] shadow-xl ${style}`}
+      style={{
+        height: height,
+        width: width,
+        borderRadius: radius,
+      }}
     >
       {children}
     </div>

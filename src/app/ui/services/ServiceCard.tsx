@@ -10,15 +10,16 @@ const ServiceCard: React.FC<ICard> = ({ icon, title, description }) => {
         <div className='h-[70px] w-[70px] rounded-full bg-[#0E4370] flex items-center justify-center'>
           {icon}
         </div>
-        <p className='mt-[10px] font-bold'>{title}</p>
+        <p className='min-h-[48px] mt-[10px] font-bold'>{title}</p>
         <p className='mt-[10px]'>{truncateString(description, 133)}</p>
         <Link
           href='/services/[serviceId]'
           as={`/services/${encodeURIComponent(
             title.toLowerCase().replace(/ /g, '-')
           )}`}
+          className='self-center'
         >
-          <button className='self-center h-[40px] w-[120px] mt-[20px] rounded-lg bg-[#0093FF] text-white  text-sm'>
+          <button className='h-[40px] w-[120px] mt-[20px] rounded-lg bg-[#0093FF] text-white  text-sm'>
             Learn More
           </button>
         </Link>
