@@ -13,44 +13,44 @@ export const PeopleIcon = ({ height, width }: IIcon) => {
         <path
           d='M51 31.875C53.4745 31.8731 55.9154 32.4484 58.1287 33.555C60.342 34.6617 62.2668 36.2693 63.75 38.25'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M4.25 38.25C5.73324 36.2693 7.65797 34.6617 9.87127 33.555C12.0846 32.4484 14.5255 31.8731 17 31.875'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M34 48.875C39.868 48.875 44.625 44.118 44.625 38.25C44.625 32.382 39.868 27.625 34 27.625C28.132 27.625 23.375 32.382 23.375 38.25C23.375 44.118 28.132 48.875 34 48.875Z'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M19.125 57.375C20.6505 54.7863 22.8251 52.6406 25.4339 51.1499C28.0426 49.6591 30.9953 48.875 34 48.875C37.0047 48.875 39.9574 49.6591 42.5661 51.1499C45.1749 52.6406 47.3495 54.7863 48.875 57.375'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M42.7656 21.25C43.163 19.7109 43.9841 18.314 45.1355 17.2181C46.2869 16.1222 47.7226 15.371 49.2794 15.0501C50.8363 14.7291 52.452 14.8511 53.9429 15.4023C55.4339 15.9535 56.7405 16.9117 57.7142 18.1681C58.688 19.4246 59.2899 20.9289 59.4516 22.5103C59.6133 24.0916 59.3284 25.6866 58.6291 27.1142C57.9298 28.5417 56.8443 29.7446 55.4957 30.5861C54.1471 31.4277 52.5896 31.8742 51 31.875'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M16.9996 31.875C15.41 31.8742 13.8525 31.4277 12.5039 30.5861C11.1554 29.7446 10.0698 28.5417 9.37053 27.1142C8.67125 25.6866 8.3863 24.0916 8.54801 22.5103C8.70973 20.9289 9.31164 19.4246 10.2854 18.1681C11.2591 16.9117 12.5657 15.9535 14.0567 15.4023C15.5477 14.8511 17.1633 14.7291 18.7202 15.0501C20.2771 15.371 21.7127 16.1222 22.8642 17.2181C24.0156 18.314 24.8366 19.7109 25.234 21.25'
           stroke='white'
-          stroke-width='2'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </svg>
     </>
