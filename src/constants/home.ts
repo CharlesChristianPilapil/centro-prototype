@@ -5,23 +5,23 @@ export const navlink = [
   },
   {
     name: 'ABOUT US',
-    href: 'about',
+    href: '/about',
   },
   {
     name: 'OUR SERVICES',
-    href: 'services',
+    href: '/services',
   },
   {
     name: 'TRANSFORM YOUR CITY',
-    href: 'transform',
+    href: '/transform',
   },
   {
     name: 'DISCOVER US',
-    href: 'discover',
+    href: '/discover',
   },
   {
     name: 'CENTRO ACCREDITATION',
-    href: 'accreditation',
+    href: '/accreditation',
   },
 ];
 
