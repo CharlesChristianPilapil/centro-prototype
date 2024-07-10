@@ -5,6 +5,14 @@ import { PeopleIcon } from '@/images/PeopleIcon';
 import { HandCoinsIcon } from '@/images/HandCoinsIcon';
 import { Header } from '../ui/services/Header';
 import { DatabaseIcon } from '@/images/DatabaseIcon';
+import { RealTimeIcon } from '@/images/RealTimeIcon';
+import { SettingIcon } from '@/images/SettingIcon';
+import { AttentionTriangleIcon } from '@/images/AttentionTriangleIcon';
+import { ReportingIcon } from '@/images/ReportingIcon';
+import { ChatIcon } from '@/images/ChatIcon';
+import { CloudComputingIcon } from '@/images/CloudComputingIcon';
+import { FinancialIcon } from '@/images/FinancialIcon';
+import { ApplicationProcessIcon } from '@/images/ApplicationProcessIcon';
 
 export const data = [
   {
@@ -16,19 +24,19 @@ export const data = [
     features: [
       {
         id: 'real-time-progress-tracking',
-        icon: <DatabaseIcon />,
+        icon: <RealTimeIcon />,
         title: 'Real-Time Progress Tracking',
         description: `Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time. This means you can see exactly where your project stands at any given moment, from the first brick laid to the final touches.`,
       },
       {
         id: 'resource-allocation',
-        icon: <DatabaseIcon />,
+        icon: <SettingIcon />,
         title: 'Resource Allocation',
         description: `Efficient resource allocation is vital for project success. With Centro, you can allocate labor, materials, and equipment precisely where and when they are needed, minimizing waste and delays.`,
       },
       {
         id: 'risk-identification',
-        icon: <DatabaseIcon />,
+        icon: <AttentionTriangleIcon />,
         title: 'Risk Identification',
         description: `Our platform helps you identify potential risks early, so you can take proactive measures to mitigate them. Whether it's a weather delay or a supplier issue, Centro keeps you informed.`,
       },
@@ -49,7 +57,7 @@ export const data = [
       },
       {
         id: 'customized-reporting',
-        icon: <DatabaseIcon />,
+        icon: <ReportingIcon />,
         title: 'Customized Reporting',
         description: `Create customized reports that matter to you. Whether you need a daily progress report, a budget analysis, or a risk assessment, Centro's data analytics tools can generate it, saving you time and effort.`,
       },
@@ -64,13 +72,13 @@ export const data = [
     features: [
       {
         id: 'seamless-communication',
-        icon: <DatabaseIcon />,
+        icon: <ChatIcon />,
         title: 'Seamless Communication',
         description: `Collaboration is key to project success. Centro fosters seamless communication between LGUs, stakeholders, experts, and contractors. Discuss project details, share updates, and make decisions collaboratively within the platform.`,
       },
       {
         id: 'centralize-platform',
-        icon: <DatabaseIcon />,
+        icon: <CloudComputingIcon />,
         title: 'Centralized Platform',
         description: `All project-related information is centralized, making it easy for everyone involved to access the latest data, plans, and documents. No more sifting through emails or searching for lost files.`,
       },
@@ -85,13 +93,13 @@ export const data = [
     features: [
       {
         id: 'access-to-Ffinancial-resources',
-        icon: <DatabaseIcon />,
+        icon: <FinancialIcon />,
         title: 'Access to Financial Resources',
         description: `We understand that funding is a critical aspect of project development. Through strategic partnerships with financial institutions, Centro offers LGUs and contractors access to various funding opportunities tailored to infrastructure projects.`,
       },
       {
         id: 'streamlined-application-process',
-        icon: <DatabaseIcon />,
+        icon: <ApplicationProcessIcon />,
         title: 'Streamlined Application Process',
         description: `We simplify the application process, making it easier for you to secure the financial support you need. Centro streamlines the paperwork and facilitates communication with financial partners.`,
       },
