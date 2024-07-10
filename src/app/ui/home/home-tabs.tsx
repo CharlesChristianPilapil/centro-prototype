@@ -29,7 +29,6 @@ const HomeTab = ({ image, title, description }: Tab) => {
         variants={singleElement({ x: 10, y: 0 })}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: true }}
         className='lg:hidden'
       >
         <div className='grid gap-4 p-4 bg-base rounded-2xl shadow-lg'>
