@@ -114,7 +114,7 @@ export const footer = {
       href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
     },
   ],
-  description: `Born from frustration and a quest for excellence, CENTRO is a visionary venture, entirely Filipino-owned, born as a capstone project and nurtured to prominence. This transformation from academic roots to a well-funded startup in the industry underscores our journey. At the helm is our leadership team, seasoned with over a century of collective experience, and cultivated at the prestigious Asian Institute of Management. There, not only did they secure their 'Masters of Innovation and Business', but they also garnered acclaim for their academic prowess. CENTRO stands today as a testament to their dedication, offering bespoke solutions that set new benchmarks in business excellence.`,
+  description: `CENTRO, a visionary Filipino-owned venture, emerged from academic roots to become a prominent, well-funded startup. Led by a seasoned leadership team with over a century of collective experience from the Asian Institute of Management, where they earned their 'Masters of Innovation and Business', CENTRO offers bespoke solutions that redefine business excellence.`,
   copyrights: [
     `Copyright © 2023 `,
     `Philcentro Technologies, Inc. `,
