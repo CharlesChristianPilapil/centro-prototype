@@ -87,33 +87,61 @@ export const newsletter = {
 };
 
 export const footer = {
+  icons: [
+    {
+      icon: 'facebook.svg',
+      name: 'facebook icon',
+      href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+    },
+    {
+      icon: 'twitter.svg',
+      name: 'twitter icon',
+      href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+    },
+    {
+      icon: 'linkedin.svg',
+      name: 'linkedin icon',
+      href: `https://ph.linkedin.com/company/philcentro-technologies-inc`,
+    },
+    {
+      icon: 'instagram.svg',
+      name: 'instagram icon',
+      href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+    },
+    {
+      icon: 'youtube.svg',
+      name: 'youtube icon',
+      href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+    },
+  ],
   description: `Born from frustration and a quest for excellence, CENTRO is a visionary venture, entirely Filipino-owned, born as a capstone project and nurtured to prominence. This transformation from academic roots to a well-funded startup in the industry underscores our journey. At the helm is our leadership team, seasoned with over a century of collective experience, and cultivated at the prestigious Asian Institute of Management. There, not only did they secure their 'Masters of Innovation and Business', but they also garnered acclaim for their academic prowess. CENTRO stands today as a testament to their dedication, offering bespoke solutions that set new benchmarks in business excellence.`,
-  copyrights: {
-    copyAt: `Copyright © 2023 `,
-    company: `Philcentro Technologies, Inc. `,
-    rights: `All Rights Reserved.`,
-  },
+  copyrights: [
+    `Copyright © 2023 `,
+    `Philcentro Technologies, Inc. `,
+    `All Rights Reserved.`,
+  ],
   navlink: [
     {
       name: 'HOME',
       href: '/',
     },
     {
-      name: 'HOME',
+      name: 'PRIVACY POLICY',
       href: '/',
     },
     {
-      name: 'HOME',
+      name: 'ABOUT',
       href: '/',
     },
     {
-      name: 'HOME',
+      name: 'CONTACT US',
       href: '/',
     },
     {
-      name: 'HOME',
+      name: 'OUR TEAM',
       href: '/',
     },
   ],
-  powered: `Powered by <strong> CENTRO <strong/>`,
+  powered: `Powered by`,
+  centro: `CENTRO`,
 };
