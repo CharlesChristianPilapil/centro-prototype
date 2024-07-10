@@ -1,6 +1,6 @@
 'use client';
 
-import { FeatureCard } from '@/app/ui/services/FeatureCard';
+import { CardFlip } from '@/app/ui/services/CardFlip';
 import { Header } from '@/app/ui/services/Header';
 import { usePathname } from 'next/navigation';
 import { data } from '../page';
@@ -20,7 +20,7 @@ const page = () => {
         </p>
         <div className='grid grid-cols-2 gap-10 mb-[50px]'>
           {featureData.features.map((data) => (
-            <FeatureCard
+            <CardFlip
               key={data.id}
               id={data.id}
               icon={data.icon}
