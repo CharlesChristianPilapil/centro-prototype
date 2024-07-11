@@ -87,14 +87,20 @@
 }
 
 header {
-  background-image: url("../../public//images/header-bg.svg");
+  background-image: url('../../public//images/header-bg.svg');
   background-size: cover;
   background-position: center;
 }
 
 .newsletter {
-  background-image: url("../../public/images/newsletter-bg.svg");
+  background-image: url('../../public/images/newsletter-bg.svg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
