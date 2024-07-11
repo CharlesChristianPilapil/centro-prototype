@@ -1,6 +1,8 @@
 'use client';
 
+import { singleElement } from '@/constants/motion';
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 interface Props {
@@ -23,13 +25,16 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
         }
       )}
     >
-      <div
+      <motion.div
         className={clsx(
           'sm:h-[300px] lg:h-full xl:col-span-4 2xl:col-span-7 overflow-y-hidden bg-black',
           {
             'lg:order-2': !isEven,
           }
         )}
+        variants={singleElement({ x: 0, y: -20, delay: 0.3 })}
+        initial='hidden'
+        whileInView='visible'
       >
         <Image
           src={image}
@@ -38,9 +43,14 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
           alt={title}
           className='w-full lg:h-full object-cover bg-pink-50'
         />
-      </div>
+      </motion.div>
       <article className='px-4 py-8 grid place-items-center xl:col-span-4 2xl:col-span-5'>
-        <div className='grid gap-8'>
+        <motion.div
+          className='grid gap-8'
+          variants={singleElement({ x: 0, y: 15, delay: 0.3 })}
+          initial='hidden'
+          whileInView='visible'
+        >
           <h1
             className={clsx(
               'text-[1.5rem] leading-[2.25rem] text-base font-semibold',
@@ -58,7 +68,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
           >
             {description}
           </p>
-        </div>
+        </motion.div>
       </article>
     </div>
   );

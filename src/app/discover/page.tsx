@@ -1,18 +1,16 @@
-import { BarChartStacked } from "../ui/charts/stacked";
-import { PieChartComponent } from "../ui/charts/pie-chart";
-import { BarChartMultiple } from "../ui/charts/multiple";
-import { BarChartCustomLabel } from "../ui/charts/custom-label";
+import Filter from '../ui/discover/filter';
+import Map from '../ui/discover/map';
+import DataSection from '../ui/discover/data-section';
+import Charts from '../ui/discover/Charts';
 
 const page = () => {
   return (
-    <div className="container">
-      <PieChartComponent />
-      <BarChartStacked />
-      <BarChartMultiple />
-      <div className="max-w-[500px]">
-        <BarChartCustomLabel />
-      </div>
-    </div>
+    <main className='container mt-[96px]'>
+      <Filter />
+      <DataSection />
+      <Map />
+      <Charts />
+    </main>
   );
 };
 
