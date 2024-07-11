@@ -4,19 +4,19 @@ import Wrapper from './wrapper';
 const DataSection = () => {
   const data = [
     {
-      count: `25,544`,
+      count: `250`,
       status: `NOT YET STARTED`,
     },
     {
-      count: `1,114`,
+      count: `400`,
       status: `ON-GOING`,
     },
     {
-      count: `3,723`,
+      count: `275`,
       status: `COMPLETE`,
     },
     {
-      count: `30,381`,
+      count: `925`,
       status: `TOTAL`,
     },
   ];
