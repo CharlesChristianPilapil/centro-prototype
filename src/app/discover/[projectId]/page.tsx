@@ -38,7 +38,7 @@ const Page = () => {
               </p>
             </div>
           </div>
-          <div className='w-[45%] h-[30%]'>
+          <div className='w-[55%] h-[55%]'>
             <PieChartDonutComponent />
           </div>
         </div>
