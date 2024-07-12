@@ -14,7 +14,7 @@ import { CloudComputingIcon } from '@/images/CloudComputingIcon';
 import { FinancialIcon } from '@/images/FinancialIcon';
 import { ApplicationProcessIcon } from '@/images/ApplicationProcessIcon';
 
-export const data = [
+const data = [
   {
     id: 'taylor-fit-project-and-program-monitoring-system',
     icon: <MonitorIcon height='50' width='50' />,

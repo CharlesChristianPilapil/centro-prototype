@@ -5,7 +5,7 @@ import Charts from '../ui/discover/Charts';
 import { ProjectCard } from '../ui/discover/ProjectCard';
 import { CardLayout } from '../ui/discover/CardLayout';
 import Link from 'next/link';
-import { data } from '@/mock-data/data';
+import { projectData as data } from '@/mock-data/data';
 
 const Page = () => {
   return (
@@ -27,7 +27,7 @@ const Page = () => {
             </p>
           </div>
           <div className='p-6 max-h-[500px] overflow-y-auto'>
-            {data.map((data) => {
+            {data.map((data: any) => {
               return (
                 <Link
                   href={`/discover/${data.contractId}`}

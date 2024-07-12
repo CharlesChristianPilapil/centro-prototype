@@ -5,7 +5,7 @@ import { ProjectDetailCard } from '@/app/ui/discover/ProjectDetailCard';
 import { usePathname } from 'next/navigation';
 import { PieChartDonutComponent } from '@/app/ui/charts/pie-chart-donut';
 import Link from 'next/link';
-import { data } from '@/mock-data/data';
+import { projectData as data } from '@/mock-data/data';
 
 const Page = () => {
   const pathname = usePathname();

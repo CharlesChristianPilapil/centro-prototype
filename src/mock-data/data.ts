@@ -1,4 +1,4 @@
-export const data = [
+export const projectData = [
   {
     contractId: '1',
     dateStarted: 'June 7, 2024',
