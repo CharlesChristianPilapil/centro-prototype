@@ -5,7 +5,7 @@ import { Header } from '@/app/ui/services/Header';
 import { usePathname } from 'next/navigation';
 import { data } from '../page';
 
-const page = () => {
+const Page = () => {
   const pathname = usePathname();
   const serviceId = pathname.split('/services/')[1];
   const featureData = data.filter((data) => serviceId === data.id)[0];
@@ -34,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
