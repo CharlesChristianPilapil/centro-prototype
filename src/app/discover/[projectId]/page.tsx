@@ -2,10 +2,10 @@
 
 import { CardLayout } from '@/app/ui/discover/CardLayout';
 import { ProjectDetailCard } from '@/app/ui/discover/ProjectDetailCard';
-import { data } from '../page';
 import { usePathname } from 'next/navigation';
 import { PieChartDonutComponent } from '@/app/ui/charts/pie-chart-donut';
 import Link from 'next/link';
+import { data } from '@/mock-data/data';
 
 const Page = () => {
   const pathname = usePathname();
