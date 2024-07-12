@@ -1,5 +1,5 @@
 import { ICard } from '@/util/interface';
-import cardFlip from '@/style/CardFlip.module.css';
+import cardFlip from '@/style/cardFlip.module.css';
 
 export const CardFlip = ({ id, icon, title, description }: ICard) => {
   return (
