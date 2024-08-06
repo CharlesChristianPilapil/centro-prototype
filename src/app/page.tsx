@@ -4,13 +4,10 @@ import Carousel from '@/components/ui/carousel';
 import FeaturesWrapper from './ui/home/features-wrapper';
 import Header from './ui/home/header';
 import HomeTabsSection from './ui/home/home-tabs-section';
+import Section from './ui/home/section';
 const data = [
     {
-        testimony: `Functional tool with lots of flexible solutions for your
-                  business. I can’t recommend it enough. It has helped my
-                  business tremendously! Functional tool with lots of flexible
-                  solutions for your business. I can’t recommend it enough. It
-                  has helped my business tremendously!`,
+        testimony: `This software has transformed the way we manage our projects. Its intuitive interface and robust features have streamlined our workflows and significantly boosted team productivity. We’ve seen a dramatic improvement in project turnaround times and client satisfaction since we implemented it.`,
         author: {
             name: 'Olivia Wilson',
             role: 'CEO and Founder at Borcelle',
@@ -42,7 +39,12 @@ export default function Home() {
             <main>
                 <HomeTabsSection />
                 <FeaturesWrapper />
-                <Carousel data={data} />
+                <Section>
+                    <p className='text-4xl text-sky-900 font-bold text-center mb-[50px]'>
+                        See What Users Said About Us
+                    </p>
+                    <Carousel data={data} contentClassName={'min-h-[550px]'} />
+                </Section>
             </main>
         </>
     );
