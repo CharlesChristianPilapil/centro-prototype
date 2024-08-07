@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { navlink } from "@/constants/home";
 import Link from "next/link";
+import Icon from "@/components/Icon";
 
 const Navbar = () => {
   return (
     <nav className="bg-darkblue py-4 text-base">
-      <div className="container flex items-center justify-between">
+      {/* <div className="container flex items-center justify-between">
         <Link href="/">
           <Image
             src="/images/centro.svg"
@@ -29,6 +30,12 @@ const Navbar = () => {
           width={28}
           className="cursor-pointer xl:hidden"
         />
+      </div> */}
+      <div className="container flex items-center justify-between">
+        <button>
+            <Icon name="centro-logo" />
+            <h1> CENTRO </h1>
+        </button>
       </div>
     </nav>
   );
