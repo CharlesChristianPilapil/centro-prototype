@@ -1,6 +1,6 @@
 'use client';
 
-import Carousel from '@/components/ui/carousel';
+import Carousel from '@/components/Carousel';
 import FeaturesWrapper from '@/components/home/features-wrapper';
 import Header from '@/components/home/header';
 import HomeTabsSection from '@/components/home/home-tabs-section';

@@ -4,6 +4,7 @@ import { singleElement } from '@/constants/motion';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Overlay from '../Overlay';
 
 interface Props {
   image: string;
@@ -20,7 +21,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
         {'bg-transparent': !isEven, 'bg-darkblue': isEven,})}
     >
       <motion.div
-        className={clsx('sm:h-[300px] lg:h-full xl:col-span-4 2xl:col-span-7 overflow-y-hidden bg-black', {'lg:order-2': !isEven,})}
+        className={clsx('relative sm:h-[300px] lg:h-full xl:col-span-4 2xl:col-span-7 overflow-y-hidden bg-black', {'lg:order-2': !isEven,})}
         variants={singleElement({ x: 0, y: -20, delay: 0.3, type: 'tween' })}
         initial='hidden'
         whileInView='visible'
@@ -32,6 +33,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
           alt={title}
           className='w-full lg:h-full object-cover bg-pink-50'
         />
+        <Overlay className='bg-black/20'/>
       </motion.div>
       <article className='px-4 py-8 grid place-items-center xl:col-span-4 2xl:col-span-5'>
         <motion.div

@@ -5,7 +5,7 @@ import FooterNav from '../home/footer-nav';
 
 const Footer = () => {
   return (
-    <footer className='bg-darkblue py-24 relative'>
+    <footer className='bg-baseblue py-24 relative'>
       <div className='grid place-items-center space-y-4 container text-base text-center'>
         <div className='flex justify-between gap-2 max-w-[360px]'>
           {footer.icons.map((e) => (

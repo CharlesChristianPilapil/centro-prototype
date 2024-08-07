@@ -1,5 +1,5 @@
 import { IHeader } from '@/util/interface';
-import Overlay from '../ui/overlay';
+import Overlay from '../Overlay';
 
 export const Header: React.FC<IHeader> = ({ title, description }) => {
   return (

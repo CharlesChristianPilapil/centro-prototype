@@ -1,10 +1,10 @@
 "use client";
 
 import { header } from "@/constants/home";
-import Overlay from "../ui/overlay";
+import Overlay from "../Overlay";
 import { motion } from "framer-motion";
 import { staggerChild, staggerItem } from "@/constants/motion";
-import ArrowLink from "../ui/arrow-link";
+import ArrowLink from "../ArrrowLink";
 
 const Header = () => {
   return (

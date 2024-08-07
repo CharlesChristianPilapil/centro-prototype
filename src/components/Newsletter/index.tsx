@@ -1,5 +1,5 @@
 import { newsletter } from '@/constants/home';
-import Overlay from './overlay';
+import Overlay from '../Overlay';
 
 const Newsletter = () => {
   return (
