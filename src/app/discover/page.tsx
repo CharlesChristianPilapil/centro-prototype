@@ -31,7 +31,7 @@ const Page = () => {
               return (
                 <Link
                   href={`/discover/${data.contractId}`}
-                  key={data.dateStarted}
+                  key={data.dateStarted+data.contractId}
                 >
                   <ProjectCard
                     dateStarted={data.dateStarted}

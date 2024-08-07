@@ -22,7 +22,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
     >
       <motion.div
         className={clsx('relative sm:h-[300px] lg:h-full xl:col-span-4 2xl:col-span-7 overflow-y-hidden bg-black', {'lg:order-2': !isEven,})}
-        variants={singleElement({ x: 0, y: -20, delay: 0.3, type: 'tween' })}
+        variants={singleElement({ x: 0, y: 0, delay: 0.3, type: 'tween', duration: .5 })}
         initial='hidden'
         whileInView='visible'
       >

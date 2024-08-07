@@ -21,7 +21,7 @@ const Button = ({
     onClick
 }: ButtonInterface) => {
     return (
-        <button className={clsx(
+        <button className={clsx('transition-all duration-300',
             { 'rounded-full': isRounded, 'rounded-[8px]': !isRounded },
             { 'bg-transparent': variant === 'transparent' },
             className

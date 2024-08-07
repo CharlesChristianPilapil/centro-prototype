@@ -85,27 +85,27 @@ export const newsletter = {
 export const footer = {
     icons: [
         {
-            icon: 'facebook.svg',
+            icon: 'facebook',
             name: 'facebook icon',
             href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
         },
         {
-            icon: 'twitter.svg',
+            icon: 'twitter',
             name: 'twitter icon',
             href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
         },
         {
-            icon: 'linkedin.svg',
+            icon: 'linkedin',
             name: 'linkedin icon',
             href: `https://ph.linkedin.com/company/philcentro-technologies-inc`,
         },
         {
-            icon: 'instagram.svg',
+            icon: 'instagram',
             name: 'instagram icon',
             href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
         },
         {
-            icon: 'youtube.svg',
+            icon: 'youtube',
             name: 'youtube icon',
             href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
         },

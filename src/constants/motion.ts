@@ -5,9 +5,10 @@ interface Props {
   delayChildren?: number;
   staggerChildren?: number;
   type?: 'spring' | 'tween' | 'inertia' | 'keyframes' | 'just';
+  duration?: number;
 }
 
-export const singleElement = ({ x, y, delay, type = 'spring' }: Props) => {
+export const singleElement = ({ x, y, delay, type = 'spring', duration = 0.3 }: Props) => {
   return {
     hidden: {
       x,
@@ -19,8 +20,9 @@ export const singleElement = ({ x, y, delay, type = 'spring' }: Props) => {
       x: 0,
       y: 0,
       transition: {
-        type: type,
-        delay: delay,
+        type,
+        delay,
+        duration
       },
     },
   };
