@@ -1,7 +1,7 @@
 import { footer } from '@/constants/home';
 import Image from 'next/image';
 import Link from 'next/link';
-import FooterNav from './home/footer-nav';
+import FooterNav from '../home/footer-nav';
 
 const Footer = () => {
   return (

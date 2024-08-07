@@ -3,6 +3,7 @@ import React, { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { staggerItem } from "@/constants/motion";
+import Icon from "../Icon";
 
 interface ArrowLinkProps {
   href: string;
@@ -19,13 +20,7 @@ const ArrowLink = ({ href, children }: ArrowLinkProps) => {
       variants={staggerItem({ x: -20, y: 20 })}
     >
       <p> {children} </p>
-      <Image
-        src="/right.svg"
-        alt="arrow right"
-        height={24}
-        width={24}
-        className="group-hover:translate-x-2 transition-all duration-200"
-      />
+      <Icon name="right-arrow" />
     </MotionLink>
   );
 };

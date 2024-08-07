@@ -1,9 +1,9 @@
 'use client';
 
-import { CardLayout } from '@/app/ui/discover/CardLayout';
-import { ProjectDetailCard } from '@/app/ui/discover/ProjectDetailCard';
+import { CardLayout } from '@/components/discover/CardLayout';
+import { ProjectDetailCard } from '@/components/discover/ProjectDetailCard';
 import { usePathname } from 'next/navigation';
-import { PieChartDonutComponent } from '@/app/ui/charts/pie-chart-donut';
+import { PieChartDonutComponent } from '@/components/charts/pie-chart-donut';
 import Link from 'next/link';
 import { projectData as data } from '@/mock-data/data';
 

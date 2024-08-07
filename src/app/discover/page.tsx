@@ -1,9 +1,9 @@
-import Filter from '../ui/discover/filter';
-import Map from '../ui/discover/map';
-import DataSection from '../ui/discover/data-section';
-import Charts from '../ui/discover/Charts';
-import { ProjectCard } from '../ui/discover/ProjectCard';
-import { CardLayout } from '../ui/discover/CardLayout';
+import Filter from '../../components/discover/filter';
+import Map from '../../components/discover/map';
+import DataSection from '../../components/discover/data-section';
+import Charts from '../../components/discover/Charts';
+import { ProjectCard } from '../../components/discover/ProjectCard';
+import { CardLayout } from '../../components/discover/CardLayout';
 import Link from 'next/link';
 import { projectData as data } from '@/mock-data/data';
 

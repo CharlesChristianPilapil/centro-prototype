@@ -1,14 +1,14 @@
 "use client";
 
 import { header } from "@/constants/home";
-import Overlay from "../overlay";
+import Overlay from "../ui/overlay";
 import { motion } from "framer-motion";
 import { staggerChild, staggerItem } from "@/constants/motion";
-import ArrowLink from "../arrow-link";
+import ArrowLink from "../ui/arrow-link";
 
 const Header = () => {
   return (
-    <header className="py-28 relative sm:h-[650px] grid items-center">
+    <header className="py-28 relative sm:h-[650px] grid items-center bg-[url('/images/home/header-bg.svg')] bg-cover bg-center">
       <Overlay />
       <motion.div
         className="container flex flex-col gap-6 text-base relative overflow-hidden"

@@ -1,7 +1,7 @@
 'use client';
 
-import { CardFlip } from '@/app/ui/services/CardFlip';
-import { Header } from '@/app/ui/services/Header';
+import { CardFlip } from '@/components/services/CardFlip';
+import { Header } from '@/components/services/Header';
 import { usePathname } from 'next/navigation';
 import { DatabaseIcon } from '@/images/DatabaseIcon';
 import { RealTimeIcon } from '@/images/RealTimeIcon';

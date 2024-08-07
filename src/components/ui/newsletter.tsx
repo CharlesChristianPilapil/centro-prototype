@@ -3,7 +3,7 @@ import Overlay from './overlay';
 
 const Newsletter = () => {
   return (
-    <div className='py-32 relative newsletter'>
+    <div className="py-32 relative bg-[url('/images/home/newsletter-bg.svg')] bg-cover bg-center bg-fixed">
       <div className='flex flex-col items-center text-center relative gap-2 z-20 container'>
         <strong className='font-bold text-base'> {newsletter.title} </strong>
         <h1 className='text-[40px] text-lightblue'> {newsletter.head} </h1>

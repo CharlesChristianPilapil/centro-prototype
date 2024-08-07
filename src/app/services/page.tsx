@@ -1,9 +1,9 @@
-import ServiceCard from '../ui/services/ServiceCard';
+import ServiceCard from '../../components/services/ServiceCard';
 import { MonitorIcon } from '@/images/MonitorIcon';
 import { FileTextIcon } from '@/images/FileTextIcon';
 import { PeopleIcon } from '@/images/PeopleIcon';
 import { HandCoinsIcon } from '@/images/HandCoinsIcon';
-import { Header } from '../ui/services/Header';
+import { Header } from '../../components/services/Header';
 import { DatabaseIcon } from '@/images/DatabaseIcon';
 import { RealTimeIcon } from '@/images/RealTimeIcon';
 import { AttentionTriangleIcon } from '@/images/AttentionTriangleIcon';
