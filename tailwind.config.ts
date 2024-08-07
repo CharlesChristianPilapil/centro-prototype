@@ -25,6 +25,7 @@ const config = {
         base: "#ECEDF2",
         lightblue: "#669ACC",
         darkblue: "#013B6D",
+        baseblue: '#0C5ACB',
         gray: "#BDBDBD",
         darkgray: "#676767",
         border: "hsl(var(--border))",
@@ -80,6 +81,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        mohave: ['Mohave', 'sans-serif']
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

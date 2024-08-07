@@ -118,7 +118,7 @@ const page = () => {
                 <p className='my-[50px] font-bold text-3xl'>
                     OUR INITIAL SERVICES
                 </p>
-                <div className='grid grid-cols-2 gap-10 mb-[50px]'>
+                <div className='grid md:grid-cols-2 gap-10 mb-[50px]'>
                     {data.map((data) => (
                         <ServiceCard
                             key={data.id}

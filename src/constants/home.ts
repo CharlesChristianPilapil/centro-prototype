@@ -12,16 +12,8 @@ export const navlink = [
         href: '/services',
     },
     {
-        name: 'TRANSFORM YOUR CITY',
-        href: '/transform',
-    },
-    {
         name: 'DISCOVER',
         href: '/discover',
-    },
-    {
-        name: 'CENTRO ACCREDITATION',
-        href: '/accreditation',
     },
     {
         name: 'SEARCH YOUR CITY',
@@ -130,20 +122,20 @@ export const footer = {
             href: '/',
         },
         {
-            name: 'PRIVACY POLICY',
-            href: '/',
+            name: 'ABOUT US',
+            href: '/about',
         },
         {
-            name: 'ABOUT',
-            href: '/',
+            name: 'OUR SERVICES',
+            href: '/services',
         },
         {
-            name: 'CONTACT US',
-            href: '/',
+            name: 'DISCOVER',
+            href: '/discover',
         },
         {
-            name: 'OUR TEAM',
-            href: '/',
+            name: 'SEARCH YOUR CITY',
+            href: '/search-your-city',
         },
     ],
     powered: `Powered by`,
