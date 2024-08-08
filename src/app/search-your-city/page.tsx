@@ -11,7 +11,6 @@ const Page = () => {
     const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
             event.preventDefault();
-            console.log('Search value:', searchValue);
         }
     };
 

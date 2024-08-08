@@ -28,7 +28,7 @@ const Page = () => {
                         {data.map((data: any) => {
                             return (
                                 <Link
-                                    href={`/discover/${data.contractId}`}
+                                    href={`/discover/project-details?id=${data.contractId}`}
                                     key={data.dateStarted}
                                 >
                                     <ProjectCard
