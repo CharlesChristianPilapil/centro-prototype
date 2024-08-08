@@ -1,11 +1,12 @@
 'use client';
 
-import Overlay from '@/components/Overlay';
 import SearchIcon from '@/images/SearchIcon';
 import { useState, KeyboardEvent } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
     const [searchValue, setSearchValue] = useState(''); // State to store the input value
+    const router = useRouter();
 
     const handleKeyPress = (event: KeyboardEvent<HTMLInputElement>) => {
         if (event.key === 'Enter') {
@@ -41,7 +42,11 @@ const Page = () => {
                             className='w-full h-full px-6 py-2 text-gray-700 placeholder-gray-400 border-2 border-r-0 border-blue-500 rounded-l-lg focus:outline-none'
                         />
                         <button
-                            onClick={() => console.log(searchValue)}
+                            onClick={() =>
+                                router.push(
+                                    `http://localhost:3000/search-your-city/project-list`
+                                )
+                            }
                             className='h-full px-3 text-gray-400 bg-white border-2 border-solid border-blue-500 rounded-r-lg focus:outline-none'
                         >
                             <SearchIcon />
