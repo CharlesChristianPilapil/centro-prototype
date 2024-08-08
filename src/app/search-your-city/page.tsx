@@ -1,6 +1,6 @@
 'use client';
 
-import Overlay from '@/components/ui/overlay';
+import Overlay from '@/components/Overlay';
 import SearchIcon from '@/images/SearchIcon';
 import { useState, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
