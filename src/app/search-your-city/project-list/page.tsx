@@ -5,6 +5,7 @@ import DropDown from '@/components/Button/DropDown';
 import { CardLayout } from '@/components/discover/CardLayout';
 import SecondaryTable from '@/components/discover/SecondaryTable';
 import Section from '@/components/home/section';
+import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
 import { useState } from 'react';
 
@@ -18,7 +19,7 @@ const Page = () => {
                         Region, Municipality, Barangay (Year)
                     </p>
                     <Button
-                        className='font-medium'
+                        className='font-medium border border-red-600 text-red-600 rounded-full w-[154px] h-[68px]'
                         label='Back'
                         variant='danger'
                         onClick={() => {}}
@@ -28,7 +29,7 @@ const Page = () => {
                     <div className='flex justify-between items-center'>
                         <p className='font-bold text-xl'>Project Title</p>
                         <Button
-                            className='w-[172px] font-medium'
+                            className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px]'
                             label='View Details'
                             variant='default'
                             onClick={() => {}}
@@ -117,10 +118,12 @@ const Page = () => {
                 )}
 
                 {isOpen && (
-                    <div className='min-w-[360px] max-h-[60vh] p-[30px] bg-blue-700 text-white rounded-lg overflow-auto'>
-                        <div className='flex justify-between'>
+                    <div className='min-w-[360px] max-h-[80vh] p-[30px] bg-blue-700 text-white rounded-lg overflow-auto'>
+                        <div className='flex justify-between mb-[18px]'>
                             <p className='text-2xl'>Filter</p>
-                            <SearchIconWhite />
+                            <Button onClick={() => setIsOpen(false)}>
+                                <CancelIcon />
+                            </Button>
                         </div>
                         <DropDown
                             options={[
