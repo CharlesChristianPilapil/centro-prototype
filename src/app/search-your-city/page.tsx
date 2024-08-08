@@ -44,7 +44,10 @@ const Page = () => {
                         <button
                             onClick={() =>
                                 router.push(
-                                    `http://localhost:3000/search-your-city/project-list`
+                                    `${
+                                        process.env.NEXT_PUBLIC_URL +
+                                        '/search-your-city/project-list'
+                                    }`
                                 )
                             }
                             className='h-full px-3 text-gray-400 bg-white border-2 border-solid border-blue-500 rounded-r-lg focus:outline-none'
