@@ -17,6 +17,7 @@ import { FileTextIcon } from '@/images/FileTextIcon';
 import { PeopleIcon } from '@/images/PeopleIcon';
 import { HandCoinsIcon } from '@/images/HandCoinsIcon';
 import { useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 const data = [
     {
@@ -112,8 +113,8 @@ const data = [
 ];
 
 const Page = () => {
-    const pathname = usePathname();
-    const serviceId = pathname.split('/services/')[1];
+    const serviceId = useSearchParams().get('id');
+    console.log('id >> ' + serviceId);
     const [featureData, setFeatureData] = useState<any>();
     useEffect(() => {
         const selectedService = data.find((item) => item.id === serviceId);
