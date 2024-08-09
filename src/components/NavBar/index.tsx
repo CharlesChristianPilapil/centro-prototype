@@ -12,6 +12,7 @@ import useWindowWidth from '@/hooks/WindowWidth';
 
 const Navbar = () => {
     const pathName = usePathname();
+
     const [aside, setAside] = useState<boolean>(false);
     const windowWidth = useWindowWidth();
 
@@ -25,8 +26,8 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='bg-baseblue py-4 text-base sticky top-0 z-50'>
-                {/* <div className="container flex items-center justify-between">
+            <nav className="bg-darkblue py-4 text-base sticky top-0 z-50 drop-shadow-md shadow-md">
+            {/* <div className="container flex items-center justify-between">
                 <Link href="/">
                 <Image
                 src="/images/centro.svg"
@@ -67,16 +68,17 @@ const Navbar = () => {
                                 </li>
                             ))}
                     </ul>
-                    <div className='flex items-center gap-5'>
-                        <div className='hidden md:grid grid-cols-2 gap-5'>
-                            <Button
-                                className='py-[10px] px-[36px] hover:text-red-300'
-                                label='Login'
-                                onClick={() => console.log('Login clicked...')}
-                            />
-                            <Button
-                                className='py-[10px] px-[20px] w-fit border border-yellow-400 hover:bg-yellow-400 hover:text-darkblue'
-                                label='Join Now'
+                    <div className="flex items-center gap-5">
+                        <div className="hidden md:grid grid-cols-2 gap-5">
+                            <Button 
+                                className="border border-base hover:bg-base/20 py-[10px] px-[36px]"
+                                label="Login" 
+                                isRounded
+                                onClick={() => console.log('Login clicked...')} 
+                                />
+                            <Button 
+                                className="py-[10px] px-[20px] w-fit border bg-white text-darkblue hover:bg-white/80"
+                                label="Join Now" 
                                 isRounded
                                 onClick={() => console.log('Login clicked...')}
                             />

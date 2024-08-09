@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Button from "../Button";
 
 
 // 352px
@@ -35,12 +36,13 @@ const NewsletterInput = () => {
                     placeholder='Email Address'
                     className='bg-transparent outline-none pl-2 border-b border-b-white text-baseblue w-full'
                 />
-                <button
-                    className='bg-baseblue text-base border-baseblue hover:bg-transparent hover:text-darkblue
-                    py-2 px-4 rounded-[50px] border-[1px] w-fit transition-all duration-200'
+                <Button
+                    isRounded
+                    variant="default"
+                    className='py-2 px-4'
                 >
                     Connect
-                </button>
+                </Button>
             </div>
         </>
     )

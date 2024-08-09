@@ -24,6 +24,7 @@ const Button = ({
         <button className={clsx('transition-all duration-300',
             { 'rounded-full': isRounded, 'rounded-[8px]': !isRounded },
             { 'bg-transparent': variant === 'transparent' },
+            { 'bg-darkblue hover:bg-darkblue/80 text-base': variant === 'default'},
             className
         )}
         onClick={onClick}
