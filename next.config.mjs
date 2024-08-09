@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    images: {
-        domains: ['images.pexels.com'],
+    output: 'export',
+    images: { unoptimized: true },
+    experimental: {
+        missingSuspenseWithCSRBailout: false,
     },
 };
 

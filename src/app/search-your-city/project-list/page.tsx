@@ -7,10 +7,12 @@ import SecondaryTable from '@/components/discover/SecondaryTable';
 import Section from '@/components/home/section';
 import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
     return (
         <Section>
             <div className='relative space-y-14 pt-14'>
@@ -22,7 +24,14 @@ const Page = () => {
                         className='font-medium border border-red-600 text-red-600 rounded-full w-[154px] h-[68px]'
                         label='Back'
                         variant='danger'
-                        onClick={() => {}}
+                        onClick={() => {
+                            router.push(
+                                `${
+                                    process.env.NEXT_PUBLIC_URL +
+                                    '/search-your-city'
+                                }`
+                            );
+                        }}
                     />
                 </div>
                 <CardLayout className='p-[24px] rounded-lg bg-white mb-6 space-y-5 border-none'>
@@ -32,7 +41,14 @@ const Page = () => {
                             className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px]'
                             label='View Details'
                             variant='default'
-                            onClick={() => {}}
+                            onClick={() => {
+                                router.push(
+                                    `${
+                                        process.env.NEXT_PUBLIC_URL +
+                                        '/search-your-city/project-details'
+                                    }`
+                                );
+                            }}
                         />
                     </div>
                     <SecondaryTable

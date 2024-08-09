@@ -8,147 +8,26 @@ import Map from '@/components/Map';
 import StatusCard from '@/components/Card/StatusCard';
 import RunningManIcon from '@/images/RunningManIcon';
 import TimerIcon from '@/images/TimerIcon';
+import { useRouter } from 'next/navigation';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
-
-const doughNutDataPlanned = {
-    datasets: [
-        {
-            data: [50.02, 49.98],
-            backgroundColor: ['#3B8FFD', '#BDBDBD'],
-            hoverBackgroundColor: ['#2e59d9', '#b7b9cc'],
-            hoverBorderColor: 'rgba(234, 236, 244, 1)',
-            borderWidth: 1,
-        },
-    ],
-};
-
-const doughNutOptionsPlanned = {
-    cutout: '60%',
-    plugins: {
-        legend: {
-            display: false,
-        },
-    },
-    elements: {
-        center: {
-            number: '',
-            text: '50.02%',
-            color: '#36A2EB',
-            fontStyle: 'Arial',
-            sidePadding: 20,
-            minFontSize: 20,
-            lineHeight: 25,
-        },
-    },
-};
-
-const doughNutDataActual = {
-    datasets: [
-        {
-            data: [50.02, 49.98],
-            backgroundColor: ['#39AD48', '#BDBDBD'],
-            hoverBackgroundColor: ['#2e59d9', '#b7b9cc'],
-            hoverBorderColor: 'rgba(234, 236, 244, 1)',
-            borderWidth: 1,
-        },
-    ],
-};
-
-const doughNutOptionsActual = {
-    cutout: '60%',
-    plugins: {
-        legend: {
-            display: false,
-        },
-    },
-    elements: {
-        center: {
-            number: '',
-            text: '50.02%',
-            color: '#36A2EB',
-            fontStyle: 'Arial',
-            sidePadding: 20,
-            minFontSize: 20,
-            lineHeight: 25,
-        },
-    },
-};
-
-const doughNutDataSlippage = {
-    datasets: [
-        {
-            data: [50.02, 49.98],
-            backgroundColor: ['#E8AB66', '#BDBDBD'],
-            hoverBackgroundColor: ['#2e59d9', '#b7b9cc'],
-            hoverBorderColor: 'rgba(234, 236, 244, 1)',
-            borderWidth: 1,
-        },
-    ],
-};
-
-const doughNutOptionsSlippage = {
-    cutout: '60%',
-    plugins: {
-        legend: {
-            display: false,
-        },
-    },
-    elements: {
-        center: {
-            number: '',
-            text: '50.02%',
-            color: '#36A2EB',
-            fontStyle: 'Arial',
-            sidePadding: 20,
-            minFontSize: 20,
-            lineHeight: 25,
-        },
-    },
-};
-
-const doughNutDataBilling = {
-    datasets: [
-        {
-            data: [50.02, 49.98],
-            backgroundColor: ['#5C80FA', '#969BF4'],
-            hoverBackgroundColor: ['#2e59d9', '#b7b9cc'],
-            hoverBorderColor: 'rgba(234, 236, 244, 1)',
-            borderWidth: 1,
-        },
-    ],
-};
-
-const doughNutOptionsBilling = {
-    cutout: '60%',
-    plugins: {
-        legend: {
-            display: false,
-        },
-    },
-    elements: {
-        center: {
-            number: '',
-            text: '50.02%',
-            color: '#36A2EB',
-            fontStyle: 'Arial',
-            sidePadding: 20,
-            minFontSize: 20,
-            lineHeight: 25,
-        },
-    },
-};
-
-const data = {
-    projectName: 'Upgrading of Water System',
-    amount: '₱ 2,669,223.12',
-    contractor: 'DDDD Construction and Supply',
-    physicalAccomplishment: '52.55%',
-    financialAccomplishment: '50.00%',
-    slippage: '12.5%',
-};
+import Carousel from '@/components/Carousel';
+import Image from 'next/image';
+import {
+    buildingImages,
+    doughNutDataActual,
+    doughNutDataBilling,
+    doughNutDataPlanned,
+    doughNutDataSlippage,
+    doughNutOptionsActual,
+    doughNutOptionsBilling,
+    doughNutOptionsPlanned,
+    doughNutOptionsSlippage,
+    projectDetail,
+} from '@/constants/search-your-city';
 
 const Page = () => {
+    const router = useRouter();
     return (
         <Section>
             <div className='flex justify-between my-[30px]'>
@@ -160,7 +39,14 @@ const Page = () => {
                     className='font-medium border border-red-600 text-red-600 rounded-full w-[154px] h-[68px]'
                     label='Back'
                     variant='danger'
-                    onClick={() => {}}
+                    onClick={() => {
+                        router.push(
+                            `${
+                                process.env.NEXT_PUBLIC_URL +
+                                '/search-your-city/project-list'
+                            }`
+                        );
+                    }}
                 />
             </div>
             <div className='py-5 px-8 rounded-lg bg-white grid grid-cols-7'>
@@ -169,7 +55,9 @@ const Page = () => {
                     <div className='grid grid-cols-3 gap-5'>
                         <div className='h-[120px] flex space-x-3'>
                             <div>
-                                <p className='text-blue-500'>Planned</p>
+                                <p className='text-blue-500 font-semibold'>
+                                    Planned
+                                </p>
                                 <p className='text-blue-700 font-bold'>
                                     52.55%
                                 </p>
@@ -179,9 +67,11 @@ const Page = () => {
                                 options={doughNutOptionsPlanned as any}
                             />
                         </div>
-                        <div className='h-[120px] flex space-x-3'>
+                        <div className='h-[120px] flex space-x-3 rounded-xl'>
                             <div>
-                                <p className='text-green-600'>Actual</p>
+                                <p className='text-green-600 font-semibold'>
+                                    Actual
+                                </p>
                                 <p className='text-green-700 font-bold'>
                                     52.55%
                                 </p>
@@ -193,7 +83,9 @@ const Page = () => {
                         </div>
                         <div className='h-[120px] flex space-x-3'>
                             <div>
-                                <p className='text-orange-300'>Slippage</p>
+                                <p className='text-orange-300 font-semibold'>
+                                    Slippage
+                                </p>
                                 <p className='text-orange-500 font-bold'>
                                     52.55%
                                 </p>
@@ -207,7 +99,7 @@ const Page = () => {
                 </div>
                 <div className='col-span-2 h-[168px] flex space-x-3'>
                     <div>
-                        <p className='text-indigo-500'>
+                        <p className='text-indigo-500 font-semibold'>
                             Billing Accomplishment
                         </p>
                         <p className='text-indigo-700 font-bold'>52.55%</p>
@@ -298,28 +190,17 @@ const Page = () => {
                                         />
                                     </div>
                                 </div>
-                                {/* <SecondaryTable
-                                    rows={4}
-                                    cols={1}
-                                    header={['Upgrading of Water System']}
-                                    data={[
-                                        'Amount',
-                                        'Contractor',
-                                        'Physical Accomplishment',
-                                        'Financial Accomplishment',
-                                        'Slippage',
-                                    ]}
-                                /> */}
+
                                 <div>
                                     <p className='p-3 bg-blue-700/5 text-blue-700 text-[14px] leading-[21px] font-semibold'>
-                                        {data.projectName}
+                                        {projectDetail.projectName}
                                     </p>
                                     <div className='p-2'>
                                         <p className='font-semibold leading-[21px] px-3'>
                                             Amount
                                         </p>
                                         <p className='leading-[21px] px-3 text-sm'>
-                                            {data.amount}
+                                            {projectDetail.amount}
                                         </p>
                                     </div>
                                     <div className='p-2'>
@@ -327,7 +208,7 @@ const Page = () => {
                                             Contractor
                                         </p>
                                         <p className='leading-[21px] px-3 text-sm'>
-                                            {data.contractor}
+                                            {projectDetail.contractor}
                                         </p>
                                     </div>
                                     <div className='p-2'>
@@ -335,7 +216,9 @@ const Page = () => {
                                             Physical Accomplishment
                                         </p>
                                         <p className='leading-[21px] px-3 text-sm'>
-                                            {data.physicalAccomplishment}
+                                            {
+                                                projectDetail.physicalAccomplishment
+                                            }
                                         </p>
                                     </div>
                                     <div className='p-2'>
@@ -343,7 +226,9 @@ const Page = () => {
                                             Financial Accomplishment
                                         </p>
                                         <p className='leading-[21px] px-3 text-sm'>
-                                            {data.financialAccomplishment}
+                                            {
+                                                projectDetail.financialAccomplishment
+                                            }
                                         </p>
                                     </div>
                                     <div className='p-2'>
@@ -351,7 +236,7 @@ const Page = () => {
                                             Slippage
                                         </p>
                                         <p className='leading-[21px] px-3 text-sm'>
-                                            {data.slippage}
+                                            {projectDetail.slippage}
                                         </p>
                                     </div>
                                 </div>
@@ -377,6 +262,23 @@ const Page = () => {
                     </Panel>
                 </Tab>
             </div>
+            <Carousel title='Project Highlights' subscript='Project location'>
+                {buildingImages.map((item) => (
+                    <div
+                        key={'index'}
+                        className={`flex-none w-full h-full px-24 py-14 flex flex-col space-y-4 justify-between items-center min-h-[550px] bg-white`}
+                    >
+                        <div className='relative w-[80%] h-[500px]'>
+                            <Image
+                                src={item}
+                                fill
+                                className='object-cover'
+                                alt={` icon`}
+                            />
+                        </div>
+                    </div>
+                ))}
+            </Carousel>
         </Section>
     );
 };

@@ -1,38 +1,40 @@
 'use client';
 
-import QuoteIcon from '@/images/QuoteIcon';
 import { useState, useEffect, ReactNode } from 'react';
-import Image from 'next/image';
 import RightArrowIcon from '@/images/RightArrowIcon';
 import LeftArrowIcon from '@/images/LeftArrowIcon';
+import React from 'react';
 
 interface Carousel {
-    data: {
-        testimony: string;
-        author: {
-            name: string;
-            role: string;
-            image: string;
-        };
-    }[];
+    children: ReactNode;
     autoSlide?: boolean;
     autoSlideInterval?: number;
-    contentClassName?: string;
+    className?: string;
+    title?: string;
+    subscript?: string;
+    titleClassName?: string;
 }
 
 const Carousel = ({
-    data,
+    children,
     autoSlide = true,
     autoSlideInterval = 4000,
-    contentClassName,
+    className,
+    title,
+    subscript,
+    titleClassName,
 }: Carousel) => {
     const [curr, setCurr] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
     const prev = () =>
-        setCurr((curr) => (curr === 0 ? data.length - 1 : curr - 1));
+        setCurr((curr) =>
+            curr === 0 ? React.Children.count(children) - 1 : curr - 1
+        );
     const next = () =>
-        setCurr((curr) => (curr === data.length - 1 ? 0 : curr + 1));
+        setCurr((curr) =>
+            curr === React.Children.count(children) - 1 ? 0 : curr + 1
+        );
 
     useEffect(() => {
         if (!autoSlide) return;
@@ -48,41 +50,25 @@ const Carousel = ({
 
     return (
         <div
-            className='relative overflow-hidden w-full h-full border border-zinc-300 rounded-2xl shadow-xl'
+            className={`relative overflow-hidden w-full h-full rounded-2xl shadow-xl ${className}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
+            {(title || subscript) && (
+                <div
+                    className={`px-[34px] pt-5 bg-white text-center ${titleClassName}`}
+                >
+                    {title && (
+                        <p className='font-bold text-lg'>Project Highlights</p>
+                    )}
+                    {subscript && <p className='text-stone-500'>Makati</p>}
+                </div>
+            )}
             <div
                 className='h-full flex transition-transform ease-out duration-500'
                 style={{ transform: `translateX(-${curr * 100}%)` }}
             >
-                {data.map((value, index) => (
-                    <div
-                        key={index}
-                        className={`flex-none w-full h-full px-24 py-14 flex flex-col space-y-4 justify-between items-center ${contentClassName}`}
-                    >
-                        <QuoteIcon height='90' width='90' />
-                        <p className='text-center text-xl italic tracking-wide'>
-                            {value.testimony}
-                        </p>
-                        <div className='flex flex-col justify-center items-center'>
-                            <div className='relative w-[100px] h-[100px] mb-2 rounded-full border-[5px] border-solid border-blue-700/[25%] shadow-image'>
-                                <Image
-                                    src={value.author.image}
-                                    fill
-                                    className='rounded-full object-cover'
-                                    alt={` icon`}
-                                />
-                            </div>
-                            <p className='text-blue-700 font-semibold text-center'>
-                                {value.author.name}
-                            </p>
-                            <p className='text-zinc-400 text-center'>
-                                {value.author.role}
-                            </p>
-                        </div>
-                    </div>
-                ))}
+                {children}
             </div>
 
             <div className='absolute inset-0 flex items-center justify-between p-4'>
@@ -101,7 +87,7 @@ const Carousel = ({
             </div>
 
             <div className='absolute bottom-4 right-0 left-0 flex items-center justify-center gap-2'>
-                {data.map((_, i) => (
+                {React.Children.map(children, (_, i) => (
                     <div
                         key={i}
                         className={`
