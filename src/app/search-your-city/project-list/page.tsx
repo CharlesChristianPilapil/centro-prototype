@@ -13,6 +13,13 @@ import { useState } from 'react';
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
+
+    const url =
+        process.env.NODE_ENV === 'development'
+            ? process.env.NEXT_PUBLIC_URL_DEV
+            : process.env.NODE_ENV === 'production'
+            ? process.env.NEXT_PUBLIC_URL_PROD
+            : '';
     return (
         <Section>
             <div className='relative space-y-14 pt-14'>
@@ -25,12 +32,7 @@ const Page = () => {
                         label='Back'
                         variant='danger'
                         onClick={() => {
-                            router.push(
-                                `${
-                                    process.env.NEXT_PUBLIC_URL +
-                                    '/search-your-city'
-                                }`
-                            );
+                            router.push(`${url + '/search-your-city'}`);
                         }}
                     />
                 </div>
@@ -44,7 +46,7 @@ const Page = () => {
                             onClick={() => {
                                 router.push(
                                     `${
-                                        process.env.NEXT_PUBLIC_URL +
+                                        url +
                                         '/search-your-city/project-details'
                                     }`
                                 );

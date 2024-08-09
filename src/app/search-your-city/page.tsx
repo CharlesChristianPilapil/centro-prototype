@@ -18,6 +18,12 @@ const Page = () => {
         setSearchValue(event.target.value);
     };
 
+    const url =
+        process.env.NODE_ENV === 'development'
+            ? process.env.NEXT_PUBLIC_URL_DEV
+            : process.env.NODE_ENV === 'production'
+            ? process.env.NEXT_PUBLIC_URL_PROD
+            : '';
     return (
         <>
             <div
@@ -43,10 +49,7 @@ const Page = () => {
                         <button
                             onClick={() =>
                                 router.push(
-                                    `${
-                                        process.env.NEXT_PUBLIC_URL +
-                                        '/search-your-city/project-list'
-                                    }`
+                                    `${url + '/search-your-city/project-list'}`
                                 )
                             }
                             className='h-full px-3 text-gray-400 bg-white border-2 border-solid border-blue-500 rounded-r-lg focus:outline-none'

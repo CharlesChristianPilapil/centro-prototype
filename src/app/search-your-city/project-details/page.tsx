@@ -28,6 +28,12 @@ import {
 
 const Page = () => {
     const router = useRouter();
+    const url =
+        process.env.NODE_ENV === 'development'
+            ? process.env.NEXT_PUBLIC_URL_DEV
+            : process.env.NODE_ENV === 'production'
+            ? process.env.NEXT_PUBLIC_URL_PROD
+            : '';
     return (
         <Section>
             <div className='flex justify-between my-[30px]'>
@@ -41,10 +47,7 @@ const Page = () => {
                     variant='danger'
                     onClick={() => {
                         router.push(
-                            `${
-                                process.env.NEXT_PUBLIC_URL +
-                                '/search-your-city/project-list'
-                            }`
+                            `${url + '/search-your-city/project-list'}`
                         );
                     }}
                 />
