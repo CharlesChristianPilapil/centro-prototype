@@ -2,7 +2,6 @@
 
 import { CardFlip } from '@/components/services/CardFlip';
 import { Header } from '@/components/services/Header';
-import { usePathname } from 'next/navigation';
 import { DatabaseIcon } from '@/images/DatabaseIcon';
 import { RealTimeIcon } from '@/images/RealTimeIcon';
 import { GroupPeopleIcon } from '@/images/GroupPeopleIcon';
@@ -18,6 +17,7 @@ import { PeopleIcon } from '@/images/PeopleIcon';
 import { HandCoinsIcon } from '@/images/HandCoinsIcon';
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 const data = [
     {
@@ -114,7 +114,6 @@ const data = [
 
 const Page = () => {
     const serviceId = useSearchParams().get('id');
-    console.log('id >> ' + serviceId);
     const [featureData, setFeatureData] = useState<any>();
     useEffect(() => {
         const selectedService = data.find((item) => item.id === serviceId);
@@ -147,4 +146,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default dynamic(() => Promise.resolve(Page), { ssr: false });

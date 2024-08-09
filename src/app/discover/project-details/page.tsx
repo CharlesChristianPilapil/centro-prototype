@@ -6,6 +6,7 @@ import { PieChartDonutComponent } from '@/components/charts/pie-chart-donut';
 import Link from 'next/link';
 import { projectData as data } from '@/mock-data/data';
 import { useSearchParams } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 const Page = () => {
     const contractId = useSearchParams().get('id');
@@ -97,4 +98,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
