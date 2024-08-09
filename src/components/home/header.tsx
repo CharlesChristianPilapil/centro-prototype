@@ -12,7 +12,7 @@ const Header = () => {
       <Overlay />
       <motion.div
         className="container flex flex-col gap-6 text-base relative overflow-hidden"
-        variants={staggerChild({ staggerChildren: 0.1 })}
+        variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.3 })}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

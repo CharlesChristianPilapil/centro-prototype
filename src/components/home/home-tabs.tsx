@@ -26,7 +26,7 @@ const HomeTab = ({ image, title, description }: Tab) => {
       </motion.article>
 
       <motion.article
-        variants={singleElement({ x: 10, y: 0 })}
+        variants={singleElement({ x: 10, y: 0, duration: 0.5, delay: .5 })}
         initial='hidden'
         whileInView='visible'
         className='lg:hidden'

@@ -82,7 +82,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        mohave: ['Mohave', 'sans-serif']
+        mohave: ['Mohave', 'sans-serif'],
+        lato: ['Lato'],
       }
     },
   },

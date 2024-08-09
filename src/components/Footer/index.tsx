@@ -9,7 +9,7 @@ import { singleElement } from '@/constants/motion';
 
 const Footer = () => {
   return (
-    <footer className='bg-baseblue py-24 relative font-mohave'>
+    <footer className='bg-darkblue py-24 relative font-mohave'>
       <motion.div 
         className='grid place-items-center space-y-4 container text-base text-center'
         variants={singleElement({ x: 0, y: 50, delay: 0.3, type: 'tween' })}

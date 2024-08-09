@@ -28,9 +28,9 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
       >
         <Image
           src={image}
-          height={0}
-          width={0}
           alt={title}
+          height={200}
+          width={200}
           className='w-full lg:h-full object-cover bg-pink-50'
         />
         <Overlay className='bg-black/20'/>
@@ -38,7 +38,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
       <article className='px-4 py-8 grid place-items-center xl:col-span-4 2xl:col-span-5'>
         <motion.div
           className='grid gap-8'
-          variants={singleElement({ x: 0, y: 15, delay: 0.3, type: 'tween' })}
+          variants={singleElement({ x: 0, y: 100, delay: 0.3, type: 'tween' })}
           initial='hidden'
           whileInView='visible'
         >
