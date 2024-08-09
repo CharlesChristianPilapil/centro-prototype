@@ -1,4 +1,5 @@
 import AboutHeader from "@/components/about/header";
+import MeetOurTeam from "@/components/about/team";
 import TextToImageAboutSection from "@/components/about/textToImage";
 import ValuesSection from "@/components/about/valuesSection";
 
@@ -11,6 +12,7 @@ const page = () => {
         <main>
             <TextToImageAboutSection />
             <ValuesSection />
+            <MeetOurTeam />
         </main>
     </>
   );

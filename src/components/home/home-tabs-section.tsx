@@ -8,7 +8,7 @@ import { staggerChild } from '@/constants/motion';
 
 const HomeTabsSection = () => {
   return (
-    <motion.div
+    <motion.section
       className='grid gap-[20px] container -mt-16 mb-20 sm:grid-cols-2 lg:grid-cols-4 relative'
       variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.3 })}
       initial='hidden'
@@ -22,7 +22,7 @@ const HomeTabsSection = () => {
           description={tab.description}
         />
       ))}
-    </motion.div>
+    </motion.section>
   );
 };
 
