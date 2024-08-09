@@ -1,7 +1,7 @@
-import AboutHeader from "@/components/about/header";
-import MeetOurTeam from "@/components/about/team";
-import TextToImageAboutSection from "@/components/about/textToImage";
-import ValuesSection from "@/components/about/valuesSection";
+import AboutHeader from "@/components/page-about/header";
+import MeetOurTeam from "@/components/page-about/team";
+import TextToImageAboutSection from "@/components/page-about/textToImage";
+import ValuesSection from "@/components/page-about/valuesSection";
 
 const page = () => {
 

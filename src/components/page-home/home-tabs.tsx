@@ -12,17 +12,26 @@ type Tab = {
 };
 
 const HomeTab = ({ image, title, description }: Tab) => {
+
+    const Content = () => {
+        return (
+            <>
+                <div className='grid gap-4 p-4 bg-base rounded-2xl shadow-lg'>
+                    <Image src={image} alt={title} height={60} width={60} />
+                    <h1 className='text-2xl text-darkgray font-semibold'>{title}</h1>
+                    <p className='text-gray'>{description}</p>
+                </div>            
+            </>
+        )
+    }
+
+
   return (
     <>
       <motion.article
-        variants={staggerItem({ x: 10, y: 0 })}
+        variants={staggerItem({ x: -100, y: 0 })}
         className='hidden lg:block'
-      >
-        <div className='grid gap-4 p-4 bg-base rounded-2xl shadow-lg'>
-          <Image src={image} alt={title} height={60} width={60} />
-          <h1 className='text-2xl text-darkgray font-semibold'>{title}</h1>
-          <p className='text-gray'>{description}</p>
-        </div>
+      > <Content />
       </motion.article>
 
       <motion.article
@@ -30,12 +39,7 @@ const HomeTab = ({ image, title, description }: Tab) => {
         initial='hidden'
         whileInView='visible'
         className='lg:hidden'
-      >
-        <div className='grid gap-4 p-4 bg-base rounded-2xl shadow-lg'>
-          <Image src={image} alt={title} height={60} width={60} />
-          <h1 className='text-2xl text-darkgray font-semibold'>{title}</h1>
-          <p className='text-gray'>{description}</p>
-        </div>
+      > <Content />
       </motion.article>
     </>
   );

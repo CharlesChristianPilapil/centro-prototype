@@ -2,7 +2,7 @@
 
 import Button from '@/components/Button';
 import SecondaryTable from '@/components/discover/SecondaryTable';
-import Section from '@/components/home/section';
+import Section from '@/components/page-home/section';
 import { Panel, Tab } from '@/components/Tab';
 import Map from '@/components/Map';
 import StatusCard from '@/components/Card/StatusCard';

@@ -70,41 +70,70 @@ export const TeamMembers = [
     {
         name: 'Cody Rhodes',
         image: '/images/about/executive-8.svg',
-        position: 'Chief Executive Officer'
+        position: 'Chief Executive Officer',
+        quote: `“Honor Is In The Heart, Not In The Name.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'John Doe',
         image: '/images/about/executive-1.svg',
-        position: 'Chief Operating Officer'
+        position: 'Chief Operating Officer',
+        quote: `“Live today like you’re going to die tomorrow.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'Jamie Doe',
         image: '/images/about/executive-2.svg',
-        position: 'Chief Financial Officer'
+        position: 'Chief Financial Officer',
+        quote: `“A True Master Is An Eternal Student.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'Joi De Armas',
         image: '/images/about/executive-3.svg',
-        position: 'Chief Information Officer'
+        position: 'Chief Information Officer',
+        quote: `“We Are What We Overcome.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'K Sean Carson',
         image: '/images/about/executive-4.svg',
-        position: 'Chief Accounting Officer'
+        position: 'Chief Accounting Officer',
+        quote: `“Anything Worth Doing Is Worth Doing Right.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'Hal Jordan',
         image: '/images/about/executive-5.svg',
-        position: 'Chief data officer'
+        position: 'Chief data officer',
+        quote: `“To conquer our fears, we must move forward.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'Harleen Quinzel',
         image: '/images/about/executive-6.svg',
-        position: 'Chief Marketing Officer'
+        position: 'Chief Marketing Officer',
+        quote: `“Nothing’s lost. It’s just waiting to be found.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
     {
         name: 'Johnny Silverhand',
         image: '/images/about/executive-7.svg',
-        position: 'Chief Commercial Officer'
+        position: 'Chief Commercial Officer',
+        quote: `“Every problem is an opportunity.”`,
+        link: ['https://www.facebook.com/Philcentro', 'https://ph.linkedin.com/company/philcentro-technologies-inc', 'https://www.youtube.com/@Philcentro'],
     },
+]
+
+
+export const MemberTabIcons = [
+    {
+        name: 'facebook-icon',
+    },
+    {
+        name: 'linkedin-icon',
+    },
+    {
+        name: 'youtube-icon',
+    }
 ]

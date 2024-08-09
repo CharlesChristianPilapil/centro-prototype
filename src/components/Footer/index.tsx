@@ -2,7 +2,7 @@
 
 import { footer } from '@/constants/home';
 import Link from 'next/link';
-import FooterNav from '@/components/home/footer-nav';
+import FooterNav from '@/components/page-home/footer-nav';
 import Icon from '@/components/Icon';
 import { motion } from 'framer-motion';
 import { singleElement } from '@/constants/motion';

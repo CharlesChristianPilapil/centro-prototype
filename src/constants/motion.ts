@@ -46,9 +46,13 @@ export const staggerChild = ({ delayChildren, staggerChildren }: Props) => {
     };
 };
 
-export const staggerItem = ({ x, y }: Props) => {
+export const staggerItem = ({ x, y, type = 'spring', }: Props) => {
     return {
         hidden: { opacity: 0, x, y },
-        visible: { opacity: 1, x: 0, y: 0 },
+        visible: { opacity: 1, x: 0, y: 0,
+            transition: {
+                type,
+            },
+         },
     };
 };

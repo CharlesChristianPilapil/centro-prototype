@@ -15,7 +15,7 @@ const Header = () => {
         variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.3 })}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <motion.h1
           className="font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight"
