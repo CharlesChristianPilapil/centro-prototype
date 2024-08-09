@@ -125,7 +125,10 @@ const Page = () => {
     return (
         <>
             <Header title={featureData?.title} />
-            <div className='flex flex-col items-center'>
+            <div
+                className='flex flex-col items-center'
+                style={{ minHeight: 'calc(100vh - 82px)' }}
+            >
                 <p className='my-[50px] font-bold text-3xl'>Introduction</p>
                 <p className='max-w-[700px] mb-10 text-center'>
                     {featureData?.decsription}
