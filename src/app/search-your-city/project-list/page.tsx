@@ -22,7 +22,10 @@ const Page = () => {
             : '';
     return (
         <Section>
-            <div className='relative space-y-14 pt-14'>
+            <div
+                className='relative space-y-14 pt-14'
+                style={{ minHeight: 'calc(100vh - 150px)' }}
+            >
                 <div className='flex justify-between items-center'>
                     <p className='font-bold text-3xl'>
                         Region, Municipality, Barangay (Year)

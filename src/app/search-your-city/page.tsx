@@ -28,7 +28,7 @@ const Page = () => {
         <>
             <div
                 className="relative sm:h-[650px] flex justify-center bg-[url('/images/search-your-city/building-bg.svg')] bg-cover bg-center"
-                style={{ minHeight: 'calc(100vh - 100px)' }}
+                style={{ minHeight: 'calc(100vh - 82px)' }}
             >
                 {/* <Overlay /> */}
                 <div className='w-[659px] h-[210px] flex flex-col items-center justify-center mt-[160px] inset-0 bg-[rgba(255,255,255,0.3)] backdrop-blur-lg rounded-lg p-8 text-center space-y-4'>
