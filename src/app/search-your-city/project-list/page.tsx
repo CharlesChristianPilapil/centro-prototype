@@ -4,7 +4,7 @@ import Button from '@/components/Button';
 import DropDown from '@/components/Button/DropDown';
 import { CardLayout } from '@/components/discover/CardLayout';
 import SecondaryTable from '@/components/discover/SecondaryTable';
-import Section from '@/components/home/section';
+import Section from '@/components/page-home/section';
 import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
 import { useRouter } from 'next/navigation';

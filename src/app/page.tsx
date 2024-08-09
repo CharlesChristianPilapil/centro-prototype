@@ -1,10 +1,10 @@
 'use client';
 
 import Carousel from '@/components/Carousel';
-import FeaturesWrapper from '@/components/home/features-wrapper';
-import Header from '@/components/home/header';
-import HomeTabsSection from '@/components/home/home-tabs-section';
-import Section from '@/components/home/section';
+import FeaturesWrapper from '@/components/page-home/features-wrapper';
+import Header from '@/components/page-home/header';
+import HomeTabsSection from '@/components/page-home/home-tabs-section';
+import Section from '@/components/page-home/section';
 import { HomeCarouselData } from '@/constants/home';
 import Image from 'next/image';
 import QuoteIcon from '@/images/QuoteIcon';

@@ -1,9 +1,18 @@
+'use client';
+
 import { AboutTabs } from "@/constants/about";
 import TabItem from "@/components/TabItem";
+import { motion } from "framer-motion";
+import { staggerChild } from "@/constants/motion";
 
 const ValuesSection = () => {
     return (
-        <section className="container mb-24 grid md:grid-cols-2 xl:grid-cols-5">
+        <motion.section 
+            className="container mb-24 grid md:grid-cols-2 xl:grid-cols-5"
+            variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.5 })}
+            initial='hidden'
+            whileInView='visible'
+        >
             {AboutTabs.map((e, index) => (
                 <TabItem
                     key={index}
@@ -16,7 +25,7 @@ const ValuesSection = () => {
                     className={`${e.style} gap-2`}
                 />
             ))}
-        </section>
+        </motion.section>
     );
 };
 

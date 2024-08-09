@@ -1,5 +1,4 @@
 import { footer } from '@/constants/home';
-import Link from 'next/link';
 import NavLink from '../NavLink';
 
 const FooterNav = () => {

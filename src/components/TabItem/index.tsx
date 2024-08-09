@@ -3,6 +3,8 @@
 import clsx from "clsx";
 import Icon from "../Icon";
 import Button from "../Button";
+import { motion } from "framer-motion";
+import { singleElement, staggerItem } from "@/constants/motion";
 
 interface TabItem {
     icon?: string;
@@ -23,16 +25,14 @@ const TabItem = ({
     shade,
     hover
 }: TabItem) => {
-    return (
-        <>
-            <article className={clsx('transition-all duration-300 p-4 flex flex-col', {
-                'bg-darkblue/5': shade,
-                'hover:bg-darkblue/15': hover,
-            }, className)}>
+
+    const wrapperStyle = 'p-4 flex h-full flex-col gap-2 transition-all duration-300'
+
+    const Content = () => {
+        return (
+            <>
                 {icon && <Icon name={icon} />}
-                <strong className={clsx('text-darkblue', {
-                    'text-3xl': !icon,
-                })}> {title} </strong>
+                <strong className={clsx('text-darkblue', {'text-3xl': !icon})}> {title} </strong>
                 <p className="text-lightblue"> {description} </p>
                 {button && (
                     <Button 
@@ -43,8 +43,30 @@ const TabItem = ({
                         <p> Let&apos;s Talk </p>
                         <Icon name="arrow-right-blue" />
                     </Button>
-                )}
-            </article>
+                )}            
+            </>
+        )
+    }
+
+
+    return (
+        <>
+            <motion.article className={`${className} hidden xl:block`} variants={staggerItem({ x: -100, y: 0 })}>
+                <div className={clsx(wrapperStyle,{'bg-darkblue/5': shade, 'hover:bg-darkblue/15': hover})}                >
+                    <Content />
+                </div>
+            </motion.article>
+
+            <motion.article 
+                className={`${className} h-full block xl:hidden`}
+                variants={singleElement({ x: -100, y: 0, delay: 0.3, duration: 0.8 })}
+                initial='hidden'
+                whileInView='visible'
+            >
+                <div className={clsx(wrapperStyle, {'bg-darkblue/5': shade, 'hover:bg-darkblue/15': hover})}                >
+                    <Content />
+                </div>
+            </motion.article>
         </>
     )
 }

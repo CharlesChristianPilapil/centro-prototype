@@ -20,7 +20,7 @@ const ArrowLink = ({ href, children }: ArrowLinkProps) => {
       variants={staggerItem({ x: -20, y: 20 })}
     >
       <p> {children} </p>
-      <Icon name="right-arrow" />
+      <Icon name="right-arrow" className="group-hover:translate-x-2 transition-all duration-200" />
     </MotionLink>
   );
 };
