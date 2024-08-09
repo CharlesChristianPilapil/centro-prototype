@@ -98,4 +98,5 @@ const Page = () => {
     );
 };
 
+// Use <Suspense fallback={<p>Loading</p>}> alternative for dynamic
 export default dynamic(() => Promise.resolve(Page), { ssr: false });
