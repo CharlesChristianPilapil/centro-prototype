@@ -59,7 +59,7 @@ const TabItem = ({
 
             <motion.article 
                 className={`${className} h-full block xl:hidden`}
-                variants={singleElement({ x: -100, y: 0, delay: 0.3, duration: 0.8 })}
+                variants={singleElement({ x: -100, y: 0, delay: 0.3, duration: 0.5 })}
                 initial='hidden'
                 whileInView='visible'
             >

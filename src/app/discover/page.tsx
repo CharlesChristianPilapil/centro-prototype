@@ -10,6 +10,7 @@ import { projectData as data } from '@/mock-data/data';
 const Page = () => {
     return (
         <main className='container mt-[96px]'>
+            <title> Centro | Discover </title>
             <Filter />
             <DataSection />
             <Map />
