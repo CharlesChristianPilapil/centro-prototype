@@ -7,7 +7,8 @@ import Icon from '@/components/Icon';
 import Button from '@/components/Button';
 import NavLink from '@/components/NavLink';
 import AsideNav from '../AsideNav';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import { useRouter } from 'next-nprogress-bar';
 import useWindowWidth from '@/hooks/WindowWidth';
 import { url } from '@/constants/url';
 

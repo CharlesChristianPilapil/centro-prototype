@@ -8,7 +8,7 @@ import Section from '@/components/page-home/section';
 import { url } from '@/constants/url';
 import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next-nprogress-bar';
 import { useState } from 'react';
 
 const Page = () => {

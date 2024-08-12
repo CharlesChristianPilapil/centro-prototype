@@ -2,8 +2,8 @@
 
 import SearchIcon from '@/images/SearchIcon';
 import { useState, KeyboardEvent } from 'react';
-import { useRouter } from 'next/navigation';
 import { url } from '@/constants/url';
+import { useRouter } from 'next-nprogress-bar';
 
 const Page = () => {
     const [searchValue, setSearchValue] = useState(''); // State to store the input value

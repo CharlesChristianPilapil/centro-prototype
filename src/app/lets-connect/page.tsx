@@ -15,8 +15,8 @@ import { frequentlyAskedQuestions } from '@/constants/lets-conntect';
 import { useState } from 'react';
 import PhoneIcon from '@/images/PhoneIcon';
 import EmailIcon from '@/images/EmailIcon';
-import FacebookIcon from '@/images/FacebookIcon';
 import Link from 'next/link';
+import LandMarkIcon from '@/images/LandMarkIcon';
 
 const Page = () => {
     const [openItems, setOpenItems] = useState<string[]>([]);
@@ -77,7 +77,7 @@ const Page = () => {
                     </div>
                 </Section>
 
-                <div className='min-h-[130px] w-full bg-[#f1f8fe] flex items-center mb-20'>
+                <div className='min-h-[130px] w-full bg-[#f1f8fe] flex items-center mb-20 text-blue-500'>
                     <div className='grid grid-cols-3 gap-y-3 container'>
                         <div className='flex items-center'>
                             <div className='flex items-center gap-3'>
@@ -93,7 +93,7 @@ const Page = () => {
                                 }
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='flex items-center gap-3 text-blue-500 font-bold hover:text-blue-700'
+                                className='flex items-center gap-3 hover:text-blue-700'
                             >
                                 <EmailIcon className='shrink-0' />
                                 <p>Connect@Philcentro.ph</p>
@@ -101,7 +101,7 @@ const Page = () => {
                         </div>
                         <div className='flex items-center'>
                             <div className='flex items-center gap-3'>
-                                <FacebookIcon className='shrink-0' />
+                                <LandMarkIcon className='shrink-0' />
                                 <p>
                                     1932 A. Mabini cor San Andres Street,Brgy.
                                     701, Malate, Manila, Metro Manila 1004 PH
