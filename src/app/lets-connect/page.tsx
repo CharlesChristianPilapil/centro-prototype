@@ -141,7 +141,7 @@ const Page = () => {
                             </div>
                         </Accordion>
                         <p className='text-center text-neutral-400 mt-16'>
-                            Can't find what you need? Email us at{' '}
+                            Can&apos;t find what you need? Email us at{' '}
                             <Link
                                 href={
                                     'https://mail.google.com/mail/u/0/?to=Connect@Philcentro.ph&fs=1&tf=cm'

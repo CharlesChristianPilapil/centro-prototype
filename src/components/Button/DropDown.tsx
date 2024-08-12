@@ -1,4 +1,4 @@
-import React, { useState, SyntheticEvent, useEffect } from 'react';
+import React, { useState, SyntheticEvent, useEffect, useCallback } from 'react';
 import _ from 'lodash';
 
 interface DropDownInterface {
@@ -35,30 +35,33 @@ const DropDown = ({
         setIsOpen(!isOpen);
     };
 
-    const handleItemOnClick = (option: {
-        label: string;
-        value: string | number;
-        id?: number | string;
-    }) => {
-        const event = {
-            currentTarget: {
-                name: name ?? '',
-                value: option.value ?? '',
-                id: option.id ?? '',
-            },
-        } as SyntheticEvent<HTMLSelectElement>;
+    const handleItemOnClick = useCallback(
+        (option: {
+            label: string;
+            value: string | number;
+            id?: number | string;
+        }) => {
+            const event = {
+                currentTarget: {
+                    name: name ?? '',
+                    value: option.value ?? '',
+                    id: option.id ?? '',
+                },
+            } as SyntheticEvent<HTMLSelectElement>;
 
-        onChange(event);
-        setSelectedItem(option.label);
-        setIsOpen(false);
-    };
+            onChange(event);
+            setSelectedItem(option.label);
+            setIsOpen(false);
+        },
+        [onChange, name]
+    );
 
     useEffect(() => {
         const selectedOption = _.find(options, { value: value });
         if (selectedOption) {
             handleItemOnClick(selectedOption);
         }
-    }, [value]);
+    }, [value, handleItemOnClick, options]);
 
     return (
         <>
