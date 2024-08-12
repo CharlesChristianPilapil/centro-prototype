@@ -44,12 +44,12 @@ const AsideNav = ({ show }: AsideInterface) => {
                     </ul>
                     <div className='h-[0.5px] w-full bg-white/30 mt-5 md:hidden'></div>
                     <div className='flex md:hidden flex-col sm:flex-row gap-5 mt-5'>
-                        <Button
+                        {/* <Button
                             className='border w-fit text-base border-base hover:bg-base/20 py-[10px] px-[36px]'
                             label='Login'
                             isRounded
                             onClick={() => console.log('Login clicked...')}
-                        />
+                        /> */}
                         <Button
                             className='py-[10px] px-[20px] w-fit border bg-white text-darkblue hover:bg-white/80'
                             label='Join Now'

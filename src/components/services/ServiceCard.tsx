@@ -7,7 +7,7 @@ const ServiceCard: React.FC<ICard> = ({ icon, title, description }) => {
     return (
         <>
             <Card height='350px' width='350px' radius='20px' style={'bg-white'}>
-                <div className='h-[70px] w-[70px] rounded-full bg-[#0E4370] flex items-center justify-center'>
+                <div className='h-[70px] w-[70px] py-[10px] rounded-full bg-[#0E4370] flex items-center justify-center'>
                     {icon}
                 </div>
                 <p className='min-h-[48px] mt-[10px] font-bold'>{title}</p>
