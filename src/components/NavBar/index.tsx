@@ -72,7 +72,7 @@ const Navbar = () => {
                             ))}
                     </ul>
                     <div className='flex items-center gap-5'>
-                        <div className='hidden md:grid grid-cols-2 gap-5'>
+                        <div className='hidden md:grid gap-5'>
                             {/* <Button
                                 className='border border-base hover:bg-base/20 py-[10px] px-[36px]'
                                 label='Login'
