@@ -61,9 +61,9 @@ const MemberTab = ({
     return (
         <>
             <motion.article 
-                variants={singleElement({ x: -100, y: 0, delay: 0.3, type: 'tween', duration: 0.8, })}
+                variants={singleElement({ x: -100, y: 0, delay: 0.3, type: 'tween', duration: 0.5, })}
                 initial='hidden'
-                whileInView='visible'            
+                whileInView='visible'     
                 className="relative flex flex-col lg:hidden group"
             >
                 <Content />

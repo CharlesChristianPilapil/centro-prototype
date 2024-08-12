@@ -30,7 +30,11 @@ const Header = () => {
             <Overlay />
             <div className="flex flex-col gap-5 container relative z-20 text-base">
                 <h1 className="font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight"> 
-                    {pathName === '/discover/faqs' ? `FAQs About Centro` : pathName === '/discover/articles' ? `Centro's Articles` : 'Discover'}
+                    {/* {pathName === '/discover/faqs' ? `FAQs About Centro` : pathName === '/discover/articles' ? `Centro's Articles` : 'Discover'} */}
+                    {pathName === '/discover/articles' && `Centro's Article`}
+                    {pathName === '/discover/articles/article' && `Centro's Article`}
+                    {pathName === '/discover' && `Discover`}
+                    {pathName === '/discover/faqs' && `FAQs About Centro`}
                 </h1>
                 <div className="max-w-[600px]">
                     <sub className="text-[16px]">
@@ -54,7 +58,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-        {pathName !== '/discover' && 
+        {/* {pathName !== '/discover' && 
         (<div className="container">
             <Button
                 isRounded
@@ -63,7 +67,7 @@ const Header = () => {
             >
                 Back to Discover
             </Button>
-        </div>)}
+        </div>)} */}
     </>
   )
 }

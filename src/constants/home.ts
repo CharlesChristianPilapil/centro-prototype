@@ -57,22 +57,22 @@ export const features = [
     {
         image: '/images/home/executives.svg',
         title: `Empower Your Decisions with Data Mastery and AI`,
-        description: `Centro empowers LGUs to harness data for informed decision-making, offering advanced analytics and reporting capabilities that optimize resource allocation and project outcomes. Through Centro, LGUs can achieve a 15% improvement in project cost management and a 10% increase in project quality, joining a league of forward-thinking organizations mastering strategic decisions through data.`,
+        description: `Centro enables LGUs to improve project cost management by 15% and project quality by 10% through advanced analytics and reporting, empowering them to make data-driven, strategic decisions.`,
     },
     {
         image: '/images/home/skyrocket.svg',
         title: `Skyrocket Your Efficiency`,
-        description: `Centro's advanced project monitoring platform is transforming LGU efficiency, achieving a significant 30% reduction in delays and a remarkable 20% increase in project completion rates. By leveraging real-time monitoring and smart resource allocation, Centro empowers LGUs to streamline processes and maximize project efficiency like never before. Embrace Centro to revolutionize your approach to project management and drive unparalleled success in your initiatives.`,
+        description: `Centro’s advanced project monitoring platform boosts LGU efficiency by reducing delays by 30% and increasing project completion rates by 20%, empowering streamlined processes and maximizing project success through real-time monitoring and smart resource allocation.`,
     },
     {
         image: '/images/home/transparency.svg',
         title: `Unleash Transparency Like Never Before`,
-        description: `Centro empowers Organizations and LGUs with real-time project transparency, enhancing accountability and trust. Experience a significant 25% increase in transparency ratings, fostering integrity and reducing corruption risks. Embrace Centro to strengthen community relationships and promote openness in governance.`,
+        description: `Centro enhances real-time project transparency for Organizations and LGUs, resulting in a 25% increase in transparency ratings, fostering accountability and reducing corruption risks to strengthen community relationships and promote openness in governance.`,
     },
     {
         image: '/images/home/digital.svg',
         title: `Securing Digital Governance`,
-        description: `Centro's Cyber Security service enhances digital governance for Local Government Units (LGUs) with robust protection against emerging cyber threats. Tailored to LGU needs, our comprehensive approach integrates advanced threat detection, risk assessment, and proactive response strategies. This ensures efficient management of sensitive data and promotes secure, resilient digital governance across all levels.`,
+        description: `Centro’s Cyber Security service enhances digital governance for LGUs by providing tailored protection against emerging cyber threats through advanced threat detection, risk assessment, and proactive response strategies, ensuring secure management of sensitive data and resilient digital governance.`,
     },
 ];
 

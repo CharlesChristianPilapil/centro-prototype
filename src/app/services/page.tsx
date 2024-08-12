@@ -1,3 +1,5 @@
+'use client';
+
 import ServiceCard from '../../components/services/ServiceCard';
 import { MonitorIcon } from '@/images/MonitorIcon';
 import { FileTextIcon } from '@/images/FileTextIcon';
@@ -13,6 +15,8 @@ import { CloudComputingIcon } from '@/images/CloudComputingIcon';
 import { FinancialIcon } from '@/images/FinancialIcon';
 import { ApplicationProcessIcon } from '@/images/ApplicationProcessIcon';
 import { GroupPeopleIcon } from '@/images/GroupPeopleIcon';
+import { motion } from 'framer-motion';
+import { singleElement } from '@/constants/motion';
 
 const data = [
     {
@@ -108,6 +112,7 @@ const data = [
 ];
 
 const page = () => {
+
     return (
         <>
             <Header
@@ -118,9 +123,14 @@ const page = () => {
                 className='flex flex-col items-center'
                 style={{ minHeight: 'calc(100vh - 82px)' }}
             >
-                <p className='my-[50px] font-bold text-3xl'>
+                <motion.p
+                    variants={singleElement({ x: 0, y: 50, delay: 0.3, type: 'tween' })}
+                    initial='hidden'
+                    whileInView='visible' 
+                    className='my-[50px] font-bold text-3xl'
+                >
                     OUR INITIAL SERVICES
-                </p>
+                </motion.p>
                 <div className='grid md:grid-cols-2 gap-10 mb-[50px]'>
                     {data.map((data) => (
                         <ServiceCard
