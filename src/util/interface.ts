@@ -2,6 +2,8 @@ export interface IIcon {
     height?: string;
     width?: string;
     fill?: string;
+    isOpen?: boolean;
+    className?: string;
 }
 
 export interface ICard {

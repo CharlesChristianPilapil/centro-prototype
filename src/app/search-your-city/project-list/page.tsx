@@ -5,6 +5,7 @@ import DropDown from '@/components/Button/DropDown';
 import { CardLayout } from '@/components/discover/CardLayout';
 import SecondaryTable from '@/components/discover/SecondaryTable';
 import Section from '@/components/page-home/section';
+import { url } from '@/constants/url';
 import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
 import { useRouter } from 'next/navigation';
@@ -14,12 +15,6 @@ const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
 
-    const url =
-        process.env.NODE_ENV === 'development'
-            ? process.env.NEXT_PUBLIC_URL_DEV
-            : process.env.NODE_ENV === 'production'
-            ? process.env.NEXT_PUBLIC_URL_PROD
-            : '';
     return (
         <Section>
             <div
@@ -43,7 +38,7 @@ const Page = () => {
                     <div className='flex justify-between items-center'>
                         <p className='font-bold text-xl'>Project Title</p>
                         <Button
-                            className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px]'
+                            className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px] bg-white'
                             label='View Details'
                             variant='default'
                             onClick={() => {
