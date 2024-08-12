@@ -12,6 +12,10 @@ export const navlink = [
         href: '/services',
     },
     {
+        name: 'REGISTER',
+        href: '/register',
+    },
+    {
         name: 'DISCOVER',
         href: '/discover',
     },
