@@ -7,11 +7,13 @@ import Icon from '@/components/Icon';
 import Button from '@/components/Button';
 import NavLink from '@/components/NavLink';
 import AsideNav from '../AsideNav';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import useWindowWidth from '@/hooks/WindowWidth';
+import { url } from '@/constants/url';
 
 const Navbar = () => {
     const pathName = usePathname();
+    const router = useRouter();
 
     const [aside, setAside] = useState<boolean>(false);
     const windowWidth = useWindowWidth();
@@ -26,8 +28,8 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="bg-darkblue py-4 text-base sticky top-0 z-50 drop-shadow-md shadow-md">
-            {/* <div className="container flex items-center justify-between">
+            <nav className='bg-darkblue py-4 text-base sticky top-0 z-50 drop-shadow-md shadow-md'>
+                {/* <div className="container flex items-center justify-between">
                 <Link href="/">
                 <Image
                 src="/images/centro.svg"
@@ -68,19 +70,21 @@ const Navbar = () => {
                                 </li>
                             ))}
                     </ul>
-                    <div className="flex items-center gap-5">
-                        <div className="hidden md:grid grid-cols-2 gap-5">
-                            <Button 
-                                className="border border-base hover:bg-base/20 py-[10px] px-[36px]"
-                                label="Login" 
-                                isRounded
-                                onClick={() => console.log('Login clicked...')} 
-                                />
-                            <Button 
-                                className="py-[10px] px-[20px] w-fit border bg-white text-darkblue hover:bg-white/80"
-                                label="Join Now" 
+                    <div className='flex items-center gap-5'>
+                        <div className='hidden md:grid grid-cols-2 gap-5'>
+                            <Button
+                                className='border border-base hover:bg-base/20 py-[10px] px-[36px]'
+                                label='Login'
                                 isRounded
                                 onClick={() => console.log('Login clicked...')}
+                            />
+                            <Button
+                                className='py-[10px] px-[20px] w-fit border bg-white text-darkblue hover:bg-white/80'
+                                label='Join Now'
+                                isRounded
+                                onClick={() =>
+                                    router.push(`${url + '/lets-connect'}`)
+                                }
                             />
                         </div>
                         <button

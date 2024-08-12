@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect, ReactNode, useCallback } from 'react';
 import RightArrowIcon from '@/images/RightArrowIcon';
 import LeftArrowIcon from '@/images/LeftArrowIcon';
 import React from 'react';
@@ -27,14 +27,21 @@ const Carousel = ({
     const [curr, setCurr] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
-    const prev = () =>
-        setCurr((curr) =>
-            curr === 0 ? React.Children.count(children) - 1 : curr - 1
-        );
-    const next = () =>
-        setCurr((curr) =>
-            curr === React.Children.count(children) - 1 ? 0 : curr + 1
-        );
+    const prev = useCallback(
+        () =>
+            setCurr((curr) =>
+                curr === 0 ? React.Children.count(children) - 1 : curr - 1
+            ),
+        [children]
+    );
+
+    const next = useCallback(
+        () =>
+            setCurr((curr) =>
+                curr === React.Children.count(children) - 1 ? 0 : curr + 1
+            ),
+        [children]
+    );
 
     useEffect(() => {
         if (!autoSlide) return;

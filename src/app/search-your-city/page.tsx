@@ -3,6 +3,7 @@
 import SearchIcon from '@/images/SearchIcon';
 import { useState, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
+import { url } from '@/constants/url';
 
 const Page = () => {
     const [searchValue, setSearchValue] = useState(''); // State to store the input value
@@ -18,12 +19,6 @@ const Page = () => {
         setSearchValue(event.target.value);
     };
 
-    const url =
-        process.env.NODE_ENV === 'development'
-            ? process.env.NEXT_PUBLIC_URL_DEV
-            : process.env.NODE_ENV === 'production'
-            ? process.env.NEXT_PUBLIC_URL_PROD
-            : '';
     return (
         <>
             <div
