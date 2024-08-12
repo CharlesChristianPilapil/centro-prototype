@@ -6,7 +6,7 @@ import { Card } from './Card';
 const ServiceCard: React.FC<ICard> = ({ icon, title, description }) => {
     return (
         <>
-            <Card height='350px' width='350px' radius='20px' style={'bg-white'}>
+            <Card radius='20px' style={'bg-white h-full'}>
                 <div className='h-[70px] w-[70px] py-[10px] rounded-full bg-[#0E4370] flex items-center justify-center'>
                     {icon}
                 </div>

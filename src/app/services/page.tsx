@@ -131,7 +131,7 @@ const page = () => {
                 >
                     OUR INITIAL SERVICES
                 </motion.p>
-                <div className='grid md:grid-cols-2 gap-10 mb-[50px]'>
+                <div className='grid md:grid-cols-2 gap-10 mb-[50px] max-w-[900px]'>
                     {data.map((data) => (
                         <ServiceCard
                             key={data.id}
