@@ -11,18 +11,18 @@ export const navlink = [
         name: 'OUR SERVICES',
         href: '/services',
     },
-    {
-        name: 'REGISTER',
-        href: '/register',
-    },
+    // {
+    //     name: 'REGISTER',
+    //     href: '/register',
+    // },
     {
         name: 'DISCOVER',
         href: '/discover',
     },
-    {
-        name: 'SEARCH YOUR CITY',
-        href: '/search-your-city',
-    },
+    // {
+    //     name: 'SEARCH YOUR CITY',
+    //     href: '/search-your-city',
+    // },
 ];
 
 export const header = {

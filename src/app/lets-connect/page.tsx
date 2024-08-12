@@ -77,7 +77,7 @@ const Page = () => {
                     </div>
                 </Section>
 
-                <div className='min-h-[130px] w-full bg-[#f1f8fe] flex items-center mb-20 text-blue-500'>
+                <div className='min-h-[130px] w-full bg-[#f1f8fe] flex items-center text-blue-500'>
                     <div className='grid grid-cols-3 gap-y-3 container'>
                         <div className='flex items-center'>
                             <div className='flex items-center gap-3'>
@@ -111,7 +111,7 @@ const Page = () => {
                     </div>
                 </div>
 
-                <Section>
+                {/* <Section>
                     <div className='bg-white rounded-xl p-20'>
                         <p className='text-4xl text-center mb-[65px]'>
                             Frequently Asked
@@ -154,7 +154,7 @@ const Page = () => {
                             </Link>
                         </p>
                     </div>
-                </Section>
+                </Section> */}
             </div>
         </>
     );

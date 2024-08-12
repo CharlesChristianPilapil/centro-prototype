@@ -28,7 +28,7 @@ const Page = () => {
                         Region, Municipality, Barangay (Year)
                     </p>
                     <Button
-                        className='font-medium border border-red-600 text-red-600 rounded-full w-[154px] h-[68px]'
+                        className='font-medium border border-red-600 text-red-600 rounded-full w-[154px] h-[68px] hover:bg-red-600 hover:text-white'
                         label='Back'
                         variant='danger'
                         onClick={() => {
@@ -40,7 +40,7 @@ const Page = () => {
                     <div className='flex justify-between items-center'>
                         <p className='font-bold text-xl'>Project Title</p>
                         <Button
-                            className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px] bg-white'
+                            className='font-medium border border-blue-700 text-blue-700 rounded-full w-[172px] h-[68px] bg-white hover:text-white'
                             label='View Details'
                             variant='default'
                             onClick={() => {

@@ -16,7 +16,7 @@ export default function Home() {
             <main>
                 <HomeTabsSection />
                 <FeaturesWrapper />
-                <Section>
+                {/* <Section>
                     <p className='text-4xl text-sky-900 font-bold text-center mb-[50px]'>
                         See What Users Said About Us
                     </p>
@@ -49,7 +49,7 @@ export default function Home() {
                             </div>
                         ))}
                     </Carousel>
-                </Section>
+                </Section> */}
             </main>
         </>
     );

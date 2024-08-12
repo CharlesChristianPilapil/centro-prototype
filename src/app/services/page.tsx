@@ -23,14 +23,13 @@ const data = [
         id: 'taylor-fit-project-and-program-monitoring-system',
         icon: <MonitorIcon height='50' width='50' />,
         title: 'Taylor-Fit Project and Program Monitoring System',
-        decsription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam ...`,
+        decsription: `The Taylor-Fit Project and Program Monitoring System is a specialized tool for managing infrastructure projects. It provides essential features to track timelines, budget, and performance, tailored to the unique needs of infrastructure development.`,
         features: [
             {
                 id: 'real-time-progress-tracking',
                 icon: <RealTimeIcon />,
                 title: 'Real-Time Progress Tracking',
-                description: `Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time. This means you can see exactly where your project stands at any given moment, from the first brick laid to the final touches.`,
+                description: `The Taylor-Fit Project and Program Monitoring System is a specialized tool designed to support the effective management of infrastructure projects and programs. Focused on the unique demands of infrastructure development, this system offers a comprehensive suite of features to track project timelines, budget expenditures, and overall performance. With real-time updates and detailed analytics, Taylor-Fit helps stakeholders ensure projects stay on schedule and within budget, while also facilitating seamless coordination among teams. Whether you’re working on transportation networks, utilities, or public facilities, Taylor-Fit provides the insights and oversight needed to drive successful infrastructure outcomes.`,
             },
             {
                 id: 'resource-allocation',
@@ -50,8 +49,7 @@ const data = [
         id: 'advance-data-analytics',
         icon: <FileTextIcon height='50' width='50' />,
         title: 'Advance Data Analytics',
-        decsription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam ...`,
+        decsription: `Advanced Data Analytics is transforming the infrastructure sector with deeper insights and better decision-making. By using sophisticated algorithms and large datasets, it helps professionals analyze trends, predict outcomes, and optimize operations. This approach improves construction efficiency, enhances maintenance, and drives innovation, leading to cost reductions and improved sustainability in infrastructure systems.`,
         features: [
             {
                 id: 'turning-data-into-action',
@@ -71,8 +69,7 @@ const data = [
         id: 'collaboration-and-long-term-partnerships',
         icon: <PeopleIcon height='50' width='50' />,
         title: 'Collaboration and Long-Term Partnerships',
-        decsription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam ...`,
+        decsription: `Collaboration and long-term partnerships are crucial for successful infrastructure projects. By connecting government, private companies, and community organizations, these relationships ensure coordinated efforts, efficient resource use, and aligned goals. Effective partnerships foster shared expertise and innovation, leading to more resilient and impactful infrastructure. Emphasizing long-term cooperation builds trust and stability, supporting ongoing project success and adaptability.`,
         features: [
             {
                 id: 'seamless-communication',
@@ -92,8 +89,7 @@ const data = [
         id: 'project-funding-and-financial-support',
         icon: <HandCoinsIcon height='50' width='50' />,
         title: 'Project Funding and Financial Support',
-        decsription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diamqweqweqweqwe ...`,
+        decsription: `Project funding is vital for developing and maintaining infrastructure. Securing financial support from sources like government grants, private investments, and public-private partnerships ensures successful planning and execution. Effective fund management helps stay on budget, meet milestones, and achieve long-term goals, ultimately enhancing community development and economic growth.`,
         features: [
             {
                 id: 'access-to-Ffinancial-resources',
@@ -112,7 +108,6 @@ const data = [
 ];
 
 const page = () => {
-
     return (
         <>
             <Header
@@ -124,9 +119,14 @@ const page = () => {
                 style={{ minHeight: 'calc(100vh - 82px)' }}
             >
                 <motion.p
-                    variants={singleElement({ x: 0, y: 50, delay: 0.3, type: 'tween' })}
+                    variants={singleElement({
+                        x: 0,
+                        y: 50,
+                        delay: 0.3,
+                        type: 'tween',
+                    })}
                     initial='hidden'
-                    whileInView='visible' 
+                    whileInView='visible'
                     className='my-[50px] font-bold text-3xl'
                 >
                     OUR INITIAL SERVICES
