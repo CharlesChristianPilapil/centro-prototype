@@ -41,13 +41,13 @@ export const service_tabs = [
         icon: '/images/home/tab-2.svg',
         title: 'Centralized Platform',
         description:
-            "All project-related information is centralized for easy access to the latest data, plans, and documents, eliminating the need to sift through emails or search for lost files.",
+            'All project-related information is centralized for easy access to the latest data, plans, and documents, eliminating the need to sift through emails or search for lost files.',
     },
     {
         icon: '/images/home/tab-3.svg',
         title: 'Seamless Communication',
         description:
-            "Centro fosters seamless collaboration among LGUs, stakeholders, experts, and contractors, enabling discussions, updates, and decisions within the platform.",
+            'Centro fosters seamless collaboration among LGUs, stakeholders, experts, and contractors, enabling discussions, updates, and decisions within the platform.',
     },
     {
         icon: '/images/home/tab-4.svg',
@@ -93,25 +93,25 @@ export const footer = {
             name: 'facebook icon',
             href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
         },
-        {
-            icon: 'twitter',
-            name: 'twitter icon',
-            href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
-        },
+        // {
+        //     icon: 'twitter',
+        //     name: 'twitter icon',
+        //     href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+        // },
         {
             icon: 'linkedin',
             name: 'linkedin icon',
             href: `https://ph.linkedin.com/company/philcentro-technologies-inc`,
         },
-        {
-            icon: 'instagram',
-            name: 'instagram icon',
-            href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
-        },
+        // {
+        //     icon: 'instagram',
+        //     name: 'instagram icon',
+        //     href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+        // },
         {
             icon: 'youtube',
             name: 'youtube icon',
-            href: `https://www.facebook.com/Philcentro/about/?ref=page_internal&mt_nav=0&_rdr`,
+            href: `https://www.youtube.com/@Philcentro`,
         },
     ],
     description: `CENTRO, a visionary Filipino-owned venture, emerged from academic roots to become a prominent, well-funded startup. Led by a seasoned leadership team with over a century of collective experience from the Asian Institute of Management, where they earned their 'Masters of Innovation and Business', CENTRO offers bespoke solutions that redefine business excellence.`,
@@ -137,10 +137,10 @@ export const footer = {
             name: 'DISCOVER',
             href: '/discover',
         },
-        {
-            name: 'SEARCH YOUR CITY',
-            href: '/search-your-city',
-        },
+        // {
+        //     name: 'SEARCH YOUR CITY',
+        //     href: '/search-your-city',
+        // },
     ],
     powered: `Powered by`,
     centro: `CENTRO`,

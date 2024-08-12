@@ -30,9 +30,10 @@ const Page = () => {
     };
     return (
         <>
-            <div style={{ minHeight: 'calc(100vh - 82px)' }}>
+            {/* <div style={{ minHeight: 'calc(100vh - 82px)' }}> */}
+            <div>
                 <Section>
-                    <div className='grid grid-cols-2 gap-x-14 mb-[147px] mt-[90px]'>
+                    <div className='grid lg:grid-cols-2 gap-x-14 mb-[147px] mt-[90px] gap-y-14'>
                         <div>
                             <div className='max-w-[475px] mb-10'>
                                 <p className='font-bold text-5xl mb-3'>
@@ -77,8 +78,8 @@ const Page = () => {
                     </div>
                 </Section>
 
-                <div className='min-h-[130px] w-full bg-[#f1f8fe] flex items-center text-blue-500'>
-                    <div className='grid grid-cols-3 gap-y-3 container'>
+                <div className='min-h-[130px] w-full py-5 bg-[#f1f8fe] flex items-center text-blue-500'>
+                    <div className='grid lg:grid-cols-3 l gap-y-3 container'>
                         <div className='flex items-center'>
                             <div className='flex items-center gap-3'>
                                 <PhoneIcon />
