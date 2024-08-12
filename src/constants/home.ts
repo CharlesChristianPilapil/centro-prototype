@@ -32,28 +32,28 @@ export const header = {
 
 export const service_tabs = [
     {
-        icon: '/service-tab-icon.svg',
+        icon: '/images/home/tab-1.svg',
         title: 'Project Development',
         description:
             "Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time.",
     },
     {
-        icon: '/service-tab-icon.svg',
-        title: 'Project Development',
+        icon: '/images/home/tab-2.svg',
+        title: 'Centralized Platform',
         description:
-            "Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time.",
+            "All project-related information is centralized for easy access to the latest data, plans, and documents, eliminating the need to sift through emails or search for lost files.",
     },
     {
-        icon: '/service-tab-icon.svg',
-        title: 'Project Development',
+        icon: '/images/home/tab-3.svg',
+        title: 'Seamless Communication',
         description:
-            "Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time.",
+            "Centro fosters seamless collaboration among LGUs, stakeholders, experts, and contractors, enabling discussions, updates, and decisions within the platform.",
     },
     {
-        icon: '/service-tab-icon.svg',
-        title: 'Project Development',
+        icon: '/images/home/tab-4.svg',
+        title: 'Customized Reporting',
         description:
-            "Centro's platform provides LGUs and stakeholders with the ability to monitor construction projects in real time.",
+            "Centro's data analytics tools generate customized reports, from daily progress to budget analysis, saving you time and effort.",
     },
 ];
 

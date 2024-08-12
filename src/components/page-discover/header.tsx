@@ -42,7 +42,7 @@ const Header = () => {
                     <div className='max-w-[600px]'>
                         <sub className='text-[16px]'>{description}</sub>
                     </div>
-                    <div className='flex gap-2'>
+                    {/* <div className='flex gap-2'>
                         <Button
                             variant='transparent'
                             className='border w-fit border-white py-1 hover:bg-white/10 px-3'
@@ -56,7 +56,7 @@ const Header = () => {
                         >
                             Article
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </header>
             {/* {pathName !== '/discover' && 
