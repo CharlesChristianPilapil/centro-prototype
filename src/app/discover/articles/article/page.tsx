@@ -14,6 +14,8 @@ const SingleArticlePage = () => {
     const article = articles.find(e => e.id === id);
     const otherArticles = articles.filter(e => e.id !== id);
 
+    const Article = article?.fullArticle;
+
     return (
         <>
 
@@ -26,18 +28,23 @@ const SingleArticlePage = () => {
             </Button>
             <section className="flex flex-col gap-5 mb-24 lg:flex-row">
                 <article className="flex flex-col gap-5 border-b border-darkgray/30 pb-5 lg:border-b-0 lg:border-r lg:pr-5 lg:pb-0">
-                    <h1 className="text-3xl font-bold text-darkblue max-w-[600px]"> {article?.title} </h1>
-                    <p className="text-lightblue"> {article?.date} | {article?.author} </p>
-                    <div>
-                        <Image 
-                            src={article?.image || `${article?.image}`}
-                            alt={article?.title || `${article?.title}`}
-                            width={500}
-                            height={500}
-                            className="w-full"
-                        />
-                    </div>
-                    <p className="text-lightblue whitespace-pre-line"> {article?.article} </p>
+                {Article && <Article />}
+                {!Article && (
+                    <>                
+                        <h1 className="text-3xl font-bold text-darkblue max-w-[600px]"> {article?.title} </h1>
+                        <p className="text-lightblue"> {article?.date} | {article?.author} </p>
+                        <div>
+                            <Image 
+                                src={article?.image || `${article?.image}`}
+                                alt={article?.title || `${article?.title}`}
+                                width={500}
+                                height={500}
+                                className="w-full"
+                            />
+                        </div>
+                        <p className="text-lightblue whitespace-pre-line"> {article?.article} </p>
+                    </>
+                )}
                 </article>
                 <div className="lg:w-[400px] flex-shrink-0  ">
                     <h1 className="text-3xl text-darkblue mb-5"> Recent Posts </h1>
