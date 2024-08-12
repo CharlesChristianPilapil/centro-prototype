@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import NavLink from '@/components/NavLink';
 import Button from '../Button';
 import useWindowWidth from '@/hooks/WindowWidth';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next-nprogress-bar';
 import { url } from '@/constants/url';
 
 interface AsideInterface {

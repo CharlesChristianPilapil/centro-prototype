@@ -8,7 +8,7 @@ import Map from '@/components/Map';
 import StatusCard from '@/components/Card/StatusCard';
 import RunningManIcon from '@/images/RunningManIcon';
 import TimerIcon from '@/images/TimerIcon';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next-nprogress-bar';
 import { Doughnut } from 'react-chartjs-2';
 import 'chart.js/auto';
 import Carousel from '@/components/Carousel';
