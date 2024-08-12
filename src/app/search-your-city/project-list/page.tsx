@@ -8,8 +8,10 @@ import Section from '@/components/page-home/section';
 import { url } from '@/constants/url';
 import CancelIcon from '@/images/CancelIcon';
 import SearchIconWhite from '@/images/SearchIconWhite';
+import { AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next-nprogress-bar';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Page = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -133,134 +135,143 @@ const Page = () => {
                     </button>
                 )}
 
-                {isOpen && (
-                    <div className='min-w-[360px] max-h-[80vh] p-[30px] bg-blue-700 text-white rounded-lg overflow-auto'>
-                        <div className='flex justify-between mb-[18px]'>
-                            <p className='text-2xl'>Filter</p>
-                            <Button onClick={() => setIsOpen(false)}>
-                                <CancelIcon />
-                            </Button>
-                        </div>
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='Program'
-                            error=''
-                            name='program'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='Region'
-                            error=''
-                            name='region'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='Province'
-                            error=''
-                            name='province'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='City/Municipality'
-                            error=''
-                            name='city-or-municipality'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='Barangay'
-                            error=''
-                            name='barangay'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <DropDown
-                            options={[
-                                {
-                                    label: 'Implementing Office 1',
-                                    value: 'implementing_office_1',
-                                },
-                                {
-                                    label: 'Implementing Office 2',
-                                    value: 'implementing_office_2',
-                                },
-                            ]}
-                            required
-                            label='Year'
-                            error=''
-                            name='year'
-                            onChange={(e) => {}}
-                            placeholder='select from dropdown'
-                        />
-                        <div className='flex justify-between mt-[18px]'>
-                            <Button
-                                label='Reset'
-                                className='border border-[#ECEDF2] !text-stone-500 bg-[#ECEDF2] rounded-xl !w-[116px] !h-[50px]'
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div 
+                            className='min-w-[360px] absolute top-0 max-h-[80vh] p-[30px] bg-blue-700 text-white rounded-lg overflow-auto'
+                            initial={{x: '-100%'}}
+                            animate={{x: '0'}}
+                            exit={{x: '-100%'}}
+                            transition={{duration: 0.3}}
+                        >
+                            <div className='flex justify-between mb-[18px]'>
+                                <p className='text-2xl'>Filter</p>
+                                <Button onClick={() => setIsOpen(false)}>
+                                    <CancelIcon />
+                                </Button>
+                            </div>
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='Program'
+                                error=''
+                                name='program'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
                             />
-                            <Button
-                                label='Apply'
-                                className='border border-white text-blue-700 bg-white rounded-xl !w-[116px] !h-[50px]'
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='Region'
+                                error=''
+                                name='region'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
                             />
-                        </div>
-                    </div>
-                )}
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='Province'
+                                error=''
+                                name='province'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
+                            />
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='City/Municipality'
+                                error=''
+                                name='city-or-municipality'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
+                            />
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='Barangay'
+                                error=''
+                                name='barangay'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
+                            />
+                            <DropDown
+                                options={[
+                                    {
+                                        label: 'Implementing Office 1',
+                                        value: 'implementing_office_1',
+                                    },
+                                    {
+                                        label: 'Implementing Office 2',
+                                        value: 'implementing_office_2',
+                                    },
+                                ]}
+                                required
+                                label='Year'
+                                error=''
+                                name='year'
+                                onChange={(e) => {}}
+                                placeholder='select from dropdown'
+                            />
+                            <div className='flex justify-between mt-[18px]'>
+                                <Button
+                                    label='Reset'
+                                    className='border border-[#ECEDF2] !text-stone-500 bg-[#ECEDF2] rounded-xl !w-[116px] !h-[50px]'
+                                />
+                                <Button
+                                    label='Apply'
+                                    className='border border-white text-blue-700 bg-white rounded-xl !w-[116px] !h-[50px]'
+                                />
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
             </div>
         </Section>
     );
