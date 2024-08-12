@@ -22,9 +22,9 @@ const SingleArticlePage = () => {
             <Button
                 isRounded
                 className="my-5 py-2 px-3 border border-lightblue text-lightblue hover:bg-lightblue/10"
-                onClick={() => router.push('/discover/articles')}
+                onClick={() => router.push('/discover')}
             >
-                Back to Articles
+                Back to Discover
             </Button>
             <section className="flex flex-col gap-5 mb-24 lg:flex-row">
                 <article className="flex flex-col gap-5 border-b border-darkgray/30 pb-5 lg:border-b-0 lg:border-r lg:pr-5 lg:pb-0">

@@ -10,7 +10,7 @@ export const Header: React.FC<IHeader> = ({ title, description }) => {
     <div className="relative h-[400px] flex justify-center items-center bg-[url('/service-background-image.svg')] bg-cover bg-bottom">
         <Overlay />
         <motion.div 
-            variants={singleElement({ x: 0, y: 50, delay: 0.3, type: 'tween' })}
+            variants={singleElement({ x: 0, y: 60, delay: 0.3, type: 'tween' })}
             initial='hidden'
             whileInView='visible' 
             className='absolute text-center'

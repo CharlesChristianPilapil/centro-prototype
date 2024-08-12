@@ -28,7 +28,7 @@ export const ImgToTxt = [
 
 export const AboutTabs = [
     {   
-        style: 'md:col-span-2',
+        style: 'xl:col-span-2',
         title: 'Our Standards',
         description: `At Philcentro, we emphasize quality, dedicating ourselves to each project to deliver extraordinary, expectation-surpassing results.`
     },
@@ -58,7 +58,7 @@ export const AboutTabs = [
         description: `Collaboration is at the heart of our team, with members always ready to support and assist one another.`
     },
     {
-        style: 'xl:col-span-3',
+        style: 'md:col-span-2 xl:col-span-3',
         title: 'Our Objective',
         description: `At Philcentro, we are propelled by action, progress, and growth. As a dynamic startup, we have already achieved significant milestones, yet our ambition remains limitless. Ready to partner with us for your growth? Reach out to us.`,
         button: true
