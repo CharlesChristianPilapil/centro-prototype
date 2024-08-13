@@ -1,15 +1,17 @@
 'use client';
 
-import { useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { articles } from "@/constants/discover";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import ShareUrl from "@/components/ShareUrl";
 
 const SingleArticlePage = () => {
 
     const router = useRouter()
+    const pathName = usePathname()
     const searchParams = useSearchParams();
     const id = searchParams.get('title');
     const article = articles.find(e => e.id === id);
@@ -17,38 +19,43 @@ const SingleArticlePage = () => {
 
     const Article = article?.fullArticle;
 
+    const shareURL = `${article?.title} ${window.location.origin}${pathName}?${searchParams}`
+
     return (
         <>
-
             <Button
                 isRounded
                 className="my-5 py-2 px-3 border border-lightblue text-lightblue hover:bg-lightblue/10"
                 onClick={() => router.push('/discover')}
             >
-                Back to Discover
+            Back to Discover 
             </Button>
+            <title> Centro | Article </title>
             <section className="flex flex-col gap-5 relative mb-24 lg:flex-row">
                 {article ? (
-                <article className="flex flex-col gap-5 border-b border-darkgray/30 pb-5 lg:border-b-0 lg:border-r lg:pr-5 lg:pb-0">
-                    {Article ? (
-                        <Article />
-                    ) : (
-                        <>
-                            <h1 className="text-3xl font-bold text-darkblue max-w-[600px]">{article?.title}</h1>
-                            <p className="text-lightblue">{article?.date} | {article?.author}</p>
-                            <div>
-                                <Image
-                                    src={article?.image || `${article?.image}`}
-                                    alt={article?.title || `${article?.title}`}
-                                    width={500}
-                                    height={500}
-                                    className="w-full"
-                                />
-                            </div>
-                            <p className="text-lightblue whitespace-pre-line">{article?.article}</p>
-                        </>
-                    )}
-                </article>
+                    <>
+                        <article className="flex flex-col gap-5 border-b border-darkgray/30 pb-5 lg:border-b-0 lg:border-r lg:pr-5 lg:pb-0">
+                            {Article ? (
+                                <Article />
+                            ) : (
+                                <>
+                                    <h1 className="text-3xl font-bold text-darkblue max-w-[600px]">{article?.title}</h1>
+                                    <p className="text-lightblue">{article?.date} | {article?.author}</p>
+                                    <div>
+                                        <Image
+                                            src={article?.image || `${article?.image}`}
+                                            alt={article?.title || `${article?.title}`}
+                                            width={500}
+                                            height={500}
+                                            className="w-full"
+                                        />
+                                    </div>
+                                    <p className="text-lightblue whitespace-pre-line">{article?.article}</p>
+                                </>
+                            )}
+                            <ShareUrl shareURL={shareURL} />
+                        </article>
+                    </>
                 ): 
                     (
                         <section className="flex-1">

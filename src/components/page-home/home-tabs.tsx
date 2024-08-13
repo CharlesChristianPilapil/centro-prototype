@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { singleElement, staggerItem } from "@/constants/motion";
+import Icon from "../Icon";
 
 type Tab = {
   image: string;
@@ -15,10 +16,10 @@ const HomeTab = ({ image, title, description }: Tab) => {
   const Content = () => {
     return (
       <>
-        <div className="grid gap-4 p-4 bg-base rounded-2xl shadow-lg h-full">
-          <Image src={image} alt={title} height={60} width={60} />
+        <div className="flex flex-col gap-4 p-4 bg-base rounded-2xl shadow-lg h-full">
+          <Icon name={image} />
           <h1 className="text-2xl text-darkgray font-semibold">{title}</h1>
-          <p className="text-gray">{description}</p>
+          <p className="text-darkgray flex-1">{description}</p>
         </div>
       </>
     );

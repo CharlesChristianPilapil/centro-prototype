@@ -8,7 +8,7 @@ const ArticlesList = () => {
         {articles.map((e, index) => (
             <li key={index} className="text-darkblue h-full group">
                 <Link href={`/discover/articles/article?title=${e.id}`}>
-                    <article className="flex flex-col drop-shadow shadow-md duration-300 transition-all group-hover:bg-darkblue/5 group-hover:-translate-y-2 rounded h-full overflow-hidden">
+                    <article className="flex flex-col drop-shadow shadow-md duration-300 transition-all group-hover:bg-darkblue/5 lg:group-hover:-translate-y-2 rounded h-full overflow-hidden">
                         <div>
                             <Image 
                                 height={500}

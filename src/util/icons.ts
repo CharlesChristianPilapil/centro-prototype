@@ -356,4 +356,53 @@ export const Icons: SVGObject[] = [
         </svg>
         `
     },
+    {
+        name: 'house',
+        svg: `
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 11C2 9 3 8 5 8H10V19C10 21 11 22 13 22H5C3 22 2 21 2 19V15" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.11 4C10.03 4.3 10 4.63 10 5V8H5V6C5 4.9 5.9 4 7 4H10.11Z" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 8V13" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 8V13" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 17H15C14.45 17 14 17.45 14 18V22H18V18C18 17.45 17.55 17 17 17Z" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 13V17" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 19V5C10 3 11 2 13 2H19C21 2 22 3 22 5V19C22 21 21 22 19 22H13C11 22 10 21 10 19Z" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        `
+    },
+    {
+        name: 'devices',
+        svg: `
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 6.74C2 3.37 2.84 2.53 6.21 2.53H16.74C20.11 2.53 20.95 3.37 20.95 6.74" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 16.95H6.21C2.84 16.95 2 16.11 2 12.74V10.85" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 21.47V16.95" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12.95H10" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.73999 21.47H9.99999" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 12.8C22 10.43 21.41 9.84 19.04 9.84H15.49C13.12 9.84 12.53 10.43 12.53 12.8V18.51C12.53 20.88 13.12 21.47 15.49 21.47H19.04C21.41 21.47 22 20.88 22 18.51V16.94" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.2445 18.25H17.2535" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        `
+    },
+    {
+        name: 'chat-bubble',
+        svg: `
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 17.5C9 18.25 8.79001 18.96 8.42001 19.56C8.21001 19.92 7.94 20.24 7.63 20.5C6.93 21.13 6.01 21.5 5 21.5C3.54 21.5 2.26999 20.72 1.57999 19.56C1.20999 18.96 1 18.25 1 17.5C1 16.24 1.58 15.11 2.5 14.38C3.19 13.83 4.06 13.5 5 13.5C7.21 13.5 9 15.29 9 17.5Z" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.43994 17.5L4.42993 18.49L6.55994 16.52" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 10.5H15.5" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 11.54V13.43C22 14.93 21.5 16.18 20.62 17.06C19.75 17.93 18.5 18.43 17 18.43V20.56C17 21.36 16.11 21.84 15.45 21.4L11 18.43H8.88C8.96 18.13 9 17.82 9 17.5C9 16.48 8.61 15.54 7.97 14.83C7.25 14.01 6.18 13.5 5 13.5C3.88 13.5 2.86 13.96 2.13 14.71C2.04 14.31 2 13.88 2 13.43V7.42999C2 4.42999 4 2.42999 7 2.42999H17C20 2.42999 22 4.42999 22 7.42999" stroke="#676767" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        `
+    },
+    {
+        name: 'report',
+        svg: `
+        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.9856 2C3.9856 2 1.9856 4 1.9856 9V15C1.9856 20 3.9856 22 8.9856 22H14.9856C19.9856 22 21.9856 20 21.9856 15V9C21.9856 4 19.9856 2 14.9856 2H12.9856" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.9856 12.7L7.9856 12.68C8.7356 12.68 9.5756 13.25 9.8556 13.95L10.9956 16.83C11.2556 17.48 11.6656 17.48 11.9256 16.83L14.2156 11.02C14.4356 10.46 14.8456 10.44 15.1256 10.97L16.1656 12.94C16.4756 13.53 17.2756 14.01 17.9356 14.01H21.9956" stroke="#676767" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        `
+    },
 ];

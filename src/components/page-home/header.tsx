@@ -18,13 +18,13 @@ const Header = () => {
         viewport={{ once: false }}
       >
         <motion.h1
-          className="font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight"
+          className="font-semibold text-gray text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight"
           variants={staggerItem({ x: -20, y: 20 })}
         >
           {header.h}
         </motion.h1>
         <motion.p
-          className="max-w-[600px]"
+          className="max-w-[600px] text-gray"
           variants={staggerItem({ x: -20, y: 20 })}
         >
           {header.p}
