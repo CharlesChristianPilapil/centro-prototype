@@ -44,7 +44,7 @@ const Page = () => {
         <>
             {/* <div style={{ minHeight: 'calc(100vh - 82px)' }}> */}
             <div>
-                <title>Centro | Let's Connect</title>
+                <title>Centro | Let&apos;s Connect</title>
                 <Section>
                     <div className='grid lg:grid-cols-2 gap-x-14 mb-[147px] mt-[90px] gap-y-14'>
                         <div>
