@@ -53,14 +53,14 @@ const ImageToText = ({
                     >
                         {typeof title === 'string' && (
                             <h1 className={clsx("font-semibold text-2xl", {
-                                'text-darkblue': variant === 'default',
+                                'text-lightblue': variant === 'default',
                             })}>
                                 {title}
                             </h1>
                         )}
                         {isValidElement(title) && title}
                         <p className={clsx("", {
-                            'text-lightblue': variant === 'default',
+                            'text-darkgray': variant === 'default',
                         })}> {description} </p>
                     </motion.div>
                 </div>

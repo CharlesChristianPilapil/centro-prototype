@@ -17,10 +17,10 @@ const DiscoverAccordion = () => {
     const Content = ({count, question, answer}: ContentProps) => {
         return (
             <AccordionItem key={question} value={question}>
-                <AccordionTrigger className="shadow shadow-darkblue text-darkblue px-2 text-start gap-[5px] rounded">
+                <AccordionTrigger className="shadow shadow-darkblue/20 text-lightblue hover:text-darkgray px-2 text-start gap-[5px] rounded">
                     {count}. {question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lightblue pt-2 px-2">
+                <AccordionContent className="text-darkgray pt-2 px-2">
                     {answer}
                 </AccordionContent>
             </AccordionItem>  

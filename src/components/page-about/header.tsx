@@ -26,7 +26,7 @@ const AboutHeader = () => {
                     />
                 </div>
                 <ImageToText
-                    title={<h1 className="font-bold text-4xl text-darkblue"> {title} </h1>}
+                    title={<h1 className="font-bold text-4xl text-lightblue"> {title} </h1>}
                     description={description}
                     src={image.src}
                     alt={image.alt}

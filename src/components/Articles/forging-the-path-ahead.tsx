@@ -2,6 +2,7 @@ import Image from "next/image"
 import { article1 } from "@/constants/discover"
 import Paragraph from "./Paragraph";
 import BoldedContent from "./BoldedContent";
+import Line from "./Line";
 
 const ForgingThePathArticle = () => { 
 
@@ -28,14 +29,14 @@ const ForgingThePathArticle = () => {
             />
         </div>
         <Paragraph text={article[0]} className="mb-5" />
-        <div className="h-[1px] w-full bg-darkgray/30" /> 
+        <Line />
         <Paragraph text={article[1]} />
         {bolded.map((e, index) => (
             <BoldedContent key={index} content={bolded[index]} variant="bullet" text={article[index+2]} />
         ))}
-        <h1 className="text-3xl font-bold text-darkblue mt-5"> Final Key Takeaways </h1>
+        <h1 className="text-3xl font-bold text-darkgray mt-5"> Final Key Takeaways </h1>
         <Paragraph text={article[7]} />
-        <h1 className="font-bold text-darkblue mt-10"> Sources: </h1>
+        <h1 className="font-bold text-darkgray mt-10"> Sources: </h1>
         <Paragraph text={article[8]} />
     </>
   )

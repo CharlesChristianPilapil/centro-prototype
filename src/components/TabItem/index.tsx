@@ -33,12 +33,12 @@ const TabItem = ({
             <>
                 {icon && <Icon name={icon} />}
                 <strong
-                    className={clsx('text-darkblue', { 'text-3xl': !icon })}
+                    className={clsx('text-lightblue', { 'text-3xl': !icon })}
                 >
                     {' '}
                     {title}{' '}
                 </strong>
-                <p className='text-lightblue'> {description} </p>
+                <p className='text-darkgray'> {description} </p>
                 {button && (
                     <Button
                         className='flex items-center gap-2 border w-fit hover:bg-darkblue/10 border-darkblue px-3 py-2 text-darkblue'
