@@ -1,71 +1,85 @@
-import ForgingThePathArticle from "@/components/Articles/forging-the-path-ahead";
-import LookingAheadArticle from "@/components/Articles/looking-ahead";
-import IsPhilippinesReadyArticle from "@/components/Articles/is-philippines-ready";
-import TrueInnovationArticle from "@/components/Articles/true-innovation";
+import ForgingThePathArticle from '@/components/Articles/forging-the-path-ahead';
+import LookingAheadArticle from '@/components/Articles/looking-ahead';
+import IsPhilippinesReadyArticle from '@/components/Articles/is-philippines-ready';
+import TrueInnovationArticle from '@/components/Articles/true-innovation';
 
 export const faqs = [
     {
+        id: '1',
         question: `What is CENTRO, and what does it offer?`,
-        answer: `CENTRO is a comprehensive project management and infrastructure monitoring platform designed for Local Government Units (LGUs) and construction stakeholders. It offers real-time project monitoring, data analytics, collaboration tools, and funding support.`
+        answer: `CENTRO is a comprehensive project management and infrastructure monitoring platform designed for Local Government Units (LGUs) and construction stakeholders. It offers real-time project monitoring, data analytics, collaboration tools, and funding support.`,
     },
     {
+        id: '2',
         question: `How does CENTRO enhance project monitoring?`,
-        answer: `CENTRO enables LGUs to monitor project and program progress in real time, allocate resources efficiently, and identify and mitigate risks promptly.`
+        answer: `CENTRO enables LGUs to monitor project and program progress in real time, allocate resources efficiently, and identify and mitigate risks promptly.`,
     },
     {
+        id: '3',
         question: `What are the key benefits of using CENTRO?`,
-        answer: `CENTRO provides efficient resource allocation, data-driven decision-making, enhanced accountability, cost savings, and access to funding opportunities.`
+        answer: `CENTRO provides efficient resource allocation, data-driven decision-making, enhanced accountability, cost savings, and access to funding opportunities.`,
     },
     {
+        id: '4',
         question: `Can CENTRO be customized for different types of projects?`,
-        answer: `Yes, CENTRO is adaptable to various infrastructure projects, including construction, public works, and development initiatives.`
+        answer: `Yes, CENTRO is adaptable to various infrastructure projects, including construction, public works, and development initiatives.`,
     },
     {
+        id: '5',
         question: `How does CENTRO's data analytics benefit users?`,
-        answer: `CENTRO's data analytics tools transform project data into actionable insights, facilitating better decision-making and optimized project outcomes.`
+        answer: `CENTRO's data analytics tools transform project data into actionable insights, facilitating better decision-making and optimized project outcomes.`,
     },
     {
+        id: '6',
         question: `Does CENTRO facilitate collaboration among stakeholders?`,
-        answer: `Absolutely. CENTRO fosters seamless communication and collaboration among LGUs, stakeholders, experts, and contractors. It offers a centralized platform for sharing updates and making decisions.`
+        answer: `Absolutely. CENTRO fosters seamless communication and collaboration among LGUs, stakeholders, experts, and contractors. It offers a centralized platform for sharing updates and making decisions.`,
     },
     {
+        id: '7',
         question: `What types of projects are eligible for funding support through CENTRO?`,
-        answer: `CENTRO's funding support is available for a wide range of infrastructure projects, including but not limited to construction, public works, and community development initiatives.`
+        answer: `CENTRO's funding support is available for a wide range of infrastructure projects, including but not limited to construction, public works, and community development initiatives.`,
     },
     {
+        id: '8',
         question: `How does CENTRO streamline the funding application process?`,
-        answer: `CENTRO simplifies the application process by providing a user-friendly interface and facilitating communication with financial partners.`
+        answer: `CENTRO simplifies the application process by providing a user-friendly interface and facilitating communication with financial partners.`,
     },
     {
+        id: '9',
         question: `Is CENTRO suitable for both large and small-scale projects?`,
-        answer: `Yes, CENTRO is designed to accommodate projects of all sizes, ensuring that LGUs with varying needs can benefit from its features.`
+        answer: `Yes, CENTRO is designed to accommodate projects of all sizes, ensuring that LGUs with varying needs can benefit from its features.`,
     },
     {
+        id: '10',
         question: `Is CENTRO compliant with data security and regulatory standards?`,
-        answer: `CENTRO prioritizes data security and compliance, ensuring that sensitive project information is protected and in line with regulatory standards.`
+        answer: `CENTRO prioritizes data security and compliance, ensuring that sensitive project information is protected and in line with regulatory standards.`,
     },
     {
+        id: '11',
         question: `How can LGUs get started with CENTRO?`,
-        answer: `To begin using CENTRO, LGUs can reach out to our team for a consultation and onboarding process tailored to their specific project needs.`
+        answer: `To begin using CENTRO, LGUs can reach out to our team for a consultation and onboarding process tailored to their specific project needs.`,
     },
     {
+        id: '12',
         question: `Does CENTRO provide training and support for users?`,
-        answer: `Yes, CENTRO offers training sessions and ongoing support to ensure that users can maximize the platform's capabilities effectively.`
+        answer: `Yes, CENTRO offers training sessions and ongoing support to ensure that users can maximize the platform's capabilities effectively.`,
     },
     {
+        id: '13',
         question: `Is CENTRO accessible via mobile devices?`,
-        answer: `Yes, CENTRO offers mobile accessibility, allowing users to monitor projects and access data while on the go.`
+        answer: `Yes, CENTRO offers mobile accessibility, allowing users to monitor projects and access data while on the go.`,
     },
     {
+        id: '14',
         question: `Can CENTRO integrate with existing project management systems?`,
-        answer: `CENTRO is designed to integrate with various project management systems, providing flexibility for users with existing workflows.`
+        answer: `CENTRO is designed to integrate with various project management systems, providing flexibility for users with existing workflows.`,
     },
     {
+        id: '15',
         question: `How does CENTRO contribute to improving infrastructure and governance in the Philippines?`,
-        answer: `CENTRO's comprehensive features empower LGUs to manage projects more efficiently, promote transparency, and foster economic development, ultimately contributing to better governance and infrastructure in the Philippines.`
+        answer: `CENTRO's comprehensive features empower LGUs to manage projects more efficiently, promote transparency, and foster economic development, ultimately contributing to better governance and infrastructure in the Philippines.`,
     },
-]
-
+];
 
 export const articles = [
     {
@@ -79,7 +93,7 @@ export const articles = [
         This shift towards digital governance isn't just about convenience; it's about fundamentally transforming the relationship between government and citizens. By leveraging technology to improve transparency and accountability, the city government is fostering a culture of collaboration and participation among its residents. From reporting issues in their neighborhoods to providing feedback on public policies, citizens now have a direct line of communication with their government, making governance more responsive to their needs and concerns.
 
         As Manila embraces the digital revolution, it's setting a powerful example for cities around the world. By embracing innovation and harnessing the power of technology, the city is not only improving efficiency and effectiveness but also building trust and strengthening democracy. In a time when trust in government is often in short supply, initiatives like this offer a glimmer of hope—a reminder that progress is possible when citizens and government work together towards a common goal.`,
-        fullArticle: ForgingThePathArticle
+        fullArticle: ForgingThePathArticle,
     },
     {
         title: `Looking Ahead: The Future of Innovation in the Philippines`,
@@ -88,7 +102,7 @@ export const articles = [
         date: `March 1, 2024`,
         image: `/images/discover/article-2.svg`,
         article: `As we gaze towards the horizon of progress and possibility, the Philippines stands poised at a pivotal juncture in its journey towards innovation. With each passing day, new technologies emerge, new opportunities beckon, and new challenges present themselves. In this ever-evolving landscape, it is imperative to cast our gaze forward, to envision the future of innovation in the Philippines, and to chart a course towards a brighter tomorrow.`,
-        fullArticle: LookingAheadArticle
+        fullArticle: LookingAheadArticle,
     },
     {
         title: `Is Philippines Ready for Innovation?`,
@@ -101,7 +115,7 @@ export const articles = [
         In every corner of this vibrant nation, from the vibrant streets of Metro Manila to the quiet shores of provincial towns, lies a story waiting to be told. It's a story of resilience, ambition, and the unyielding spirit of a people eager to carve out their place in the world.
 
         Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`,
-        fullArticle: IsPhilippinesReadyArticle
+        fullArticle: IsPhilippinesReadyArticle,
     },
     {
         title: `True Innovation in the Infrastructure Industry`,
@@ -110,22 +124,21 @@ export const articles = [
         date: `February 19, 2024`,
         image: `/images/discover/article-4.svg`,
         article: `In the ever-evolving landscape of infrastructure development, the pursuit of true innovation has become not just a desire but a necessity. The infrastructure industry, which forms the backbone of modern societies, is experiencing a seismic shift propelled by technological advancements, sustainability imperatives, and changing societal needs. In this article, we embark on a journey to explore the realms of true innovation within the infrastructure sector, uncovering groundbreaking trends, revolutionary technologies, and transformative approaches that are reshaping the way we build, connect, and sustain our world.`,
-        fullArticle: TrueInnovationArticle
+        fullArticle: TrueInnovationArticle,
     },
-]
-
-
+];
 
 export const article1 = {
     title: `Forging the Path Ahead: Governance Innovation in the Philippines`,
     author: `Morning Wonder by Vox C`,
     date: `March 1, 2024`,
     image: `/images/discover/article-1.svg`,
-    article: [`Manila's government has recently embarked on a groundbreaking initiative that's revolutionizing the way citizens interact with their local   administration. Through the implementation of an innovative e-governance platform, residents now have unprecedented access to a range of government services and information—all at their fingertips. What was once a cumbersome and time-consuming process has now become streamlined and efficient, empowering citizens to engage more actively in the governance of their city.
+    article: [
+        `Manila's government has recently embarked on a groundbreaking initiative that's revolutionizing the way citizens interact with their local   administration. Through the implementation of an innovative e-governance platform, residents now have unprecedented access to a range of government services and information—all at their fingertips. What was once a cumbersome and time-consuming process has now become streamlined and efficient, empowering citizens to engage more actively in the governance of their city.
 
         This shift towards digital governance isn't just about convenience; it's about fundamentally transforming the relationship between government and citizens. By leveraging technology to improve transparency and accountability, the city government is fostering a culture of collaboration and participation among its residents. From reporting issues in their neighborhoods to providing feedback on public policies, citizens now have a direct line of communication with their government, making governance more responsive to their needs and concerns.
 
-        As Manila embraces the digital revolution, it's setting a powerful example for cities around the world. By embracing innovation and harnessing the power of technology, the city is not only improving efficiency and effectiveness but also building trust and strengthening democracy. In a time when trust in government is often in short supply, initiatives like this offer a glimmer of hope—a reminder that progress is possible when citizens and government work together towards a common goal.`, 
+        As Manila embraces the digital revolution, it's setting a powerful example for cities around the world. By embracing innovation and harnessing the power of technology, the city is not only improving efficiency and effectiveness but also building trust and strengthening democracy. In a time when trust in government is often in short supply, initiatives like this offer a glimmer of hope—a reminder that progress is possible when citizens and government work together towards a common goal.`,
 
         `In the fields of governance, the Philippines stands at a crossroads, poised to embark on a journey of transformation and progress. As the nation grapples with the challenges of the 21st century, from climate change and urbanization to technological disruption and social inequality, the imperative for governance innovation has never been greater. In this era of rapid change, the Philippines must rise to the occasion, harnessing the power of innovation to build a more inclusive, responsive, and resilient governance framework for the future.`,
 
@@ -149,7 +162,7 @@ export const article1 = {
 
         Tan, R. (2023). "Building Resilience and Sustainability in Governance: The Role of Technology in Manila's E-Governance Platform." Sustainability Journal, 6(1), 112-128.
 
-        Garcia, A. (2024). "Fostering Collaboration and Partnerships in Governance Innovation: Insights from Manila's E-Governance Initiative." International Journal of Public-Private Partnerships, 12(2), 207-221.`
+        Garcia, A. (2024). "Fostering Collaboration and Partnerships in Governance Innovation: Insights from Manila's E-Governance Initiative." International Journal of Public-Private Partnerships, 12(2), 207-221.`,
     ],
     bolded: [
         `Harnessing Technology for Good Governance:`,
@@ -157,17 +170,16 @@ export const article1 = {
         `Strengthening Institutions and Systems:`,
         `Building Resilience and Sustainability:`,
         `Fostering Collaboration and Partnerships:`,
-
-    ]
+    ],
 };
-
 
 export const article2 = {
     title: `Looking Ahead: The Future of Innovation in the Philippines`,
     author: `Innovation by Champ`,
     date: `March 1, 2024`,
     image: `/images/discover/article-2.svg`,
-    article: [`As we gaze towards the horizon of progress and possibility, the Philippines stands poised at a pivotal juncture in its journey towards innovation. With each passing day, new technologies emerge, new opportunities beckon, and new challenges present themselves. In this ever-evolving landscape, it is imperative to cast our gaze forward, to envision the future of innovation in the Philippines, and to chart a course towards a brighter tomorrow.`, 
+    article: [
+        `As we gaze towards the horizon of progress and possibility, the Philippines stands poised at a pivotal juncture in its journey towards innovation. With each passing day, new technologies emerge, new opportunities beckon, and new challenges present themselves. In this ever-evolving landscape, it is imperative to cast our gaze forward, to envision the future of innovation in the Philippines, and to chart a course towards a brighter tomorrow.`,
 
         `From artificial intelligence and blockchain to renewable energy and biotechnology, the realm of emerging technologies holds immense promise for the Philippines. As the world becomes increasingly interconnected and digitized, these technologies offer new avenues for growth, efficiency, and sustainability. Whether it's harnessing the power of big data to inform decision-making or leveraging renewable energy sources to mitigate climate change, the possibilities are endless.`,
 
@@ -187,8 +199,8 @@ export const article2 = {
         `Government Initiatives and Policies:`,
         `Education and Workforce Development:`,
         `Collaboration and Partnerships:`,
-        `FINAL THOUGHTS`
-    ]
+        `FINAL THOUGHTS`,
+    ],
 };
 
 export const article3 = {
@@ -199,14 +211,14 @@ export const article3 = {
     images: [
         `/images/discover/article-3/image-1.svg`,
         `/images/discover/article-3/image-2.svg`,
-        `/images/discover/article-3/image-3.svg`
+        `/images/discover/article-3/image-3.svg`,
     ],
     article: [
         `It's a question that echoes through the corridors of bustling city centers and whispers among the tranquil landscapes of rural communities. But before we delve into the heart of this inquiry, let's pause for a moment to reflect on the essence of readiness.
 
         In every corner of this vibrant nation, from the vibrant streets of Metro Manila to the quiet shores of provincial towns, lies a story waiting to be told. It's a story of resilience, ambition, and the unyielding spirit of a people eager to carve out their place in the world.
 
-        Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`, 
+        Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`,
 
         `So, let's set aside preconceptions and embrace the human narrative that lies at the heart of this exploration. Together, let's embark on a journey of discovery and understanding as we seek to unravel the mysteries of the Philippines' readiness for innovation.
 
@@ -248,7 +260,7 @@ export const article3 = {
 
         `In the dialectic of YES and NO, we find not just opposing viewpoints, but complementary truths. The YES perspective reminds us of the boundless potential of Filipino ingenuity, while the NO perspective grounds us in the realities of our nation's challenges. Together, they form a rich tapestry of insights that can guide us toward a more inclusive and sustainable future.
 
-        As we navigate the complexities of innovation in the Philippines, let us heed the lessons learned from both perspectives. Let us embrace the optimism of YES while remaining mindful of the obstacles highlighted by NO. For it is in the tension between hope and doubt that we find the inspiration and motivation to build a better tomorrow for all Filipinos. `
+        As we navigate the complexities of innovation in the Philippines, let us heed the lessons learned from both perspectives. Let us embrace the optimism of YES while remaining mindful of the obstacles highlighted by NO. For it is in the tension between hope and doubt that we find the inspiration and motivation to build a better tomorrow for all Filipinos. `,
     ],
     bolded: [
         `So let's go with the first perspective with actual example.`,
@@ -325,17 +337,17 @@ export const article3 = {
     videos: [
         {
             src: `https://www.youtube.com/embed/TrWYGSUBNaQ?si=CtAr56WlqWj5kloR`,
-            title: `The Philippines Innovation Boom`
+            title: `The Philippines Innovation Boom`,
         },
         {
             src: `https://www.youtube.com/embed/abHkLcW-sbA?si=40mt4Rw6qhvGjVq2`,
-            title: `We are Aboitiz InfraCapital.`
+            title: `We are Aboitiz InfraCapital.`,
         },
         {
             src: `https://www.youtube.com/embed/Kw8CIEoLL28?si=ZuB9wmWiVZF3O01Q`,
-            title: `The Philippines Geography Problem`
-        }
-    ]
+            title: `The Philippines Geography Problem`,
+        },
+    ],
 };
 
 export const article4 = {
@@ -348,9 +360,7 @@ export const article4 = {
 
         `As we dig deeper in the dynamic landscape of the infrastructure industry, true innovation is not merely about technological breakthroughs or engineering feats; it's about reimagining the future of our built environment in a way that is sustainable, resilient, and inclusive. By harnessing the transformative power of smart technologies, sustainable practices, resilient design, and inclusive policies, we have the opportunity to shape a world where infrastructure serves as a catalyst for progress, prosperity, and collective well-being. As we stand on the cusp of a new era of infrastructure development, let us embark on this journey with vision, determination, and a steadfast commitment to building a better tomorrow for generations to come.`,
     ],
-    bolded: [
-        `FINAL THOUGHTS`,
-    ],
+    bolded: [`FINAL THOUGHTS`],
     numbered: [
         {
             bolded: `Smart Infrastructure:`,
@@ -372,19 +382,19 @@ export const article4 = {
     videos: [
         {
             src: `https://www.youtube.com/embed/HPUWpxBJn4A?si=E19s2gsfex1_k2kv`,
-            title: `🇵🇭 PHILIPPINES Top 10 UNDER-CONSTRUCTION Multi-Billion Smart and Modern Cities`
+            title: `🇵🇭 PHILIPPINES Top 10 UNDER-CONSTRUCTION Multi-Billion Smart and Modern Cities`,
         },
         {
             src: `https://www.youtube.com/embed/sMqtwbKc8EA?si=YBvxqbEh3MAeZ0Sp`,
-            title: `8 Sustainability ideas that will change the world | FT Rethink`
+            title: `8 Sustainability ideas that will change the world | FT Rethink`,
         },
         {
             src: `https://www.youtube.com/embed/wUEi5K6r2xs?si=nGI1CXJ39ltzliNR`,
-            title: `Building Resilient Cities: 7 Entry Points for Action`
+            title: `Building Resilient Cities: 7 Entry Points for Action`,
         },
         {
             src: `https://www.youtube.com/embed/IHI9Vl9mA9Q?si=0_BQQP5UpfJR63pR`,
-            title: `Safe, trusted, and inclusive digital public infrastructure`
-        }
-    ]
+            title: `Safe, trusted, and inclusive digital public infrastructure`,
+        },
+    ],
 };

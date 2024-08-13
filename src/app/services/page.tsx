@@ -114,9 +114,10 @@ const page = () => {
                 title='What do we offer?'
                 description='We provide a comprehensive suite of services to drive your success.'
             />
+            <title>Centro | Our Services</title>
             <div
-                className='flex flex-col items-center'
-                style={{ minHeight: 'calc(100vh - 82px)' }}
+                className='flex flex-col items-center py-16'
+                // style={{ minHeight: 'calc(100vh - 82px)' }}
             >
                 <motion.p
                     variants={singleElement({
@@ -127,7 +128,7 @@ const page = () => {
                     })}
                     initial='hidden'
                     whileInView='visible'
-                    className='my-[50px] font-bold text-3xl'
+                    className='mb-[50px] font-bold text-3xl'
                 >
                     OUR INITIAL SERVICES
                 </motion.p>

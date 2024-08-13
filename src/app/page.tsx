@@ -14,6 +14,7 @@ export default function Home() {
         <>
             <Header />
             <main>
+                <title>Centro | Home</title>
                 <HomeTabsSection />
                 <FeaturesWrapper />
                 {/* <Section>

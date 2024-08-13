@@ -122,14 +122,14 @@ const Page = () => {
         <>
             <Header title={featureData?.title} />
             <div
-                className='flex flex-col items-center'
-                style={{ minHeight: 'calc(100vh - 82px)' }}
+                className='flex flex-col items-center py-16'
+                // style={{ minHeight: 'calc(100vh - 82px)' }}
             >
-                <p className='my-[50px] font-bold text-3xl'>Introduction</p>
-                <p className='max-w-[700px] mb-10 text-center'>
+                <p className='mb-10 font-bold text-3xl'>Introduction</p>
+                <p className='max-w-[700px] mb-20 text-center'>
                     {featureData?.decsription}
                 </p>
-                <div className='grid grid-cols-2 gap-10 mb-[50px]'>
+                <div className='grid md:grid-cols-2 gap-10'>
                     {featureData?.features.map((data: any) => (
                         <CardFlip
                             key={data.id}
