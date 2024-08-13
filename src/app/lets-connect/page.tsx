@@ -28,10 +28,23 @@ const Page = () => {
                 : [...prevState, id]
         );
     };
+
+    const splitArrayHandler = (array: any) => {
+        const midpoint = Math.floor(array.length / 2);
+
+        const firstHalf = array.slice(midpoint);
+        const secondHalf = array.slice(0, midpoint);
+
+        return {
+            firstHalf,
+            secondHalf,
+        };
+    };
     return (
         <>
             {/* <div style={{ minHeight: 'calc(100vh - 82px)' }}> */}
             <div>
+                <title>Centro | Let&apos;s Connect</title>
                 <Section>
                     <div className='grid lg:grid-cols-2 gap-x-14 mb-[147px] mt-[90px] gap-y-14'>
                         <div>
@@ -82,7 +95,7 @@ const Page = () => {
                     <div className='grid lg:grid-cols-3 l gap-y-3 container'>
                         <div className='flex items-center'>
                             <div className='flex items-center gap-3'>
-                                <PhoneIcon />
+                                <PhoneIcon className='shrink-0' />
                                 <p>+63 (02) 8282 9891</p>
                             </div>
                         </div>
@@ -119,9 +132,36 @@ const Page = () => {
                             <br />
                             Questions
                         </p>
-                        <Accordion type='multiple'>
-                            <div className='grid grid-cols-2 gap-x-12'>
-                                {frequentlyAskedQuestions.map((item) => (
+                        <Accordion
+                            type='multiple'
+                            className='flex flex-row gap-10'
+                        >
+                            <div className='flex-1'>
+                                {splitArrayHandler(
+                                    frequentlyAskedQuestions
+                                ).firstHalf.map((item: any) => (
+                                    <AccordionItem
+                                        value={item.id}
+                                        key={item.id}
+                                    >
+                                        <AccordionTrigger
+                                            isOpen={openItems.includes(item.id)}
+                                            onClick={() =>
+                                                handleToggle(item.id)
+                                            }
+                                        >
+                                            {item.title}
+                                        </AccordionTrigger>
+                                        <AccordionContent>
+                                            {item.description}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))}
+                            </div>
+                            <div className='flex-1'>
+                                {splitArrayHandler(
+                                    frequentlyAskedQuestions
+                                ).secondHalf.map((item: any) => (
                                     <AccordionItem
                                         value={item.id}
                                         key={item.id}
@@ -162,3 +202,19 @@ const Page = () => {
 };
 
 export default Page;
+
+{
+    /* <div className='grid grid-cols-2 gap-x-12'>
+    {frequentlyAskedQuestions.map((item) => (
+        <AccordionItem value={item.id} key={item.id}>
+            <AccordionTrigger
+                isOpen={openItems.includes(item.id)}
+                onClick={() => handleToggle(item.id)}
+            >
+                {item.title}
+            </AccordionTrigger>
+            <AccordionContent>{item.description}</AccordionContent>
+        </AccordionItem>
+    ))}
+</div>; */
+}

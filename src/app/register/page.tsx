@@ -18,6 +18,7 @@ import Link from 'next/link';
 const Page = () => {
     return (
         <Section>
+            <title>Centro | Register</title>
             <div className='flex justify-center mt-12'>
                 <p className='text-[38px] text-center max-w-[720px]'>
                     Contractor and Subcontractor Accreditation

@@ -21,8 +21,8 @@ export default function RootLayout({
         <html lang='en'>
             <body className={`${poppins.className} bg-base`}>
                 <ProgressBar
-                    height='6px'
-                    color='#2563eb'
+                    height='4px'
+                    color='#f5f5f5'
                     options={{ showSpinner: false }}
                     shallowRouting
                 />

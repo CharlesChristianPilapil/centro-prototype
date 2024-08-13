@@ -25,6 +25,7 @@ const Page = () => {
                 className="relative sm:h-[650px] flex justify-center bg-[url('/images/search-your-city/building-bg.svg')] bg-cover bg-center"
                 style={{ minHeight: 'calc(100vh - 82px)' }}
             >
+                <title>Centro | Search Your City</title>
                 {/* <Overlay /> */}
                 <div className='w-[659px] h-[210px] flex flex-col items-center justify-center mt-[160px] inset-0 bg-[rgba(255,255,255,0.3)] backdrop-blur-lg rounded-lg p-8 text-center space-y-4'>
                     <p className='text-3xl'>How Modern Is Your City?</p>
@@ -39,7 +40,7 @@ const Page = () => {
                             value={searchValue}
                             onChange={handleChange}
                             onKeyDown={handleKeyPress}
-                            className='w-full h-full px-6 py-2 text-gray-700 placeholder-gray-400 border-2 border-r-0 border-blue-500 rounded-l-lg focus:outline-none'
+                            className='w-full h-full px-6 py-2 text-gray-700 placeholder-gray-400 border-2 border-r-0 border-blue-500 rounded-l-lg focus:outline-none transition-all duration-300 ease-in-out hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50'
                         />
                         <button
                             onClick={() =>
@@ -47,7 +48,7 @@ const Page = () => {
                                     `${url + '/search-your-city/project-list'}`
                                 )
                             }
-                            className='h-full px-3 text-gray-400 bg-white border-2 border-solid border-blue-500 rounded-r-lg focus:outline-none'
+                            className='h-full px-3 text-gray-400 bg-white border-2 border-solid border-blue-500 rounded-r-lg focus:outline-none transition-all duration-300 ease-in-out hover:ring-2 hover:ring-blue-400 hover:ring-opacity-50'
                         >
                             <SearchIcon />
                         </button>
