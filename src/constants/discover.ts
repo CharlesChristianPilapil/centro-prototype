@@ -1,5 +1,7 @@
 import ForgingThePathArticle from "@/components/Articles/forging-the-path-ahead";
 import LookingAheadArticle from "@/components/Articles/looking-ahead";
+import IsPhilippinesReadyArticle from "@/components/Articles/is-philippines-ready";
+import TrueInnovationArticle from "@/components/Articles/true-innovation";
 
 export const faqs = [
     {
@@ -98,7 +100,8 @@ export const articles = [
 
         In every corner of this vibrant nation, from the vibrant streets of Metro Manila to the quiet shores of provincial towns, lies a story waiting to be told. It's a story of resilience, ambition, and the unyielding spirit of a people eager to carve out their place in the world.
 
-        Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`
+        Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`,
+        fullArticle: IsPhilippinesReadyArticle
     },
     {
         title: `True Innovation in the Infrastructure Industry`,
@@ -106,7 +109,8 @@ export const articles = [
         id: 'true-innovation-in-the-infrastructure-industry',
         date: `February 19, 2024`,
         image: `/images/discover/article-4.svg`,
-        article: `In the ever-evolving landscape of infrastructure development, the pursuit of true innovation has become not just a desire but a necessity. The infrastructure industry, which forms the backbone of modern societies, is experiencing a seismic shift propelled by technological advancements, sustainability imperatives, and changing societal needs. In this article, we embark on a journey to explore the realms of true innovation within the infrastructure sector, uncovering groundbreaking trends, revolutionary technologies, and transformative approaches that are reshaping the way we build, connect, and sustain our world.`
+        article: `In the ever-evolving landscape of infrastructure development, the pursuit of true innovation has become not just a desire but a necessity. The infrastructure industry, which forms the backbone of modern societies, is experiencing a seismic shift propelled by technological advancements, sustainability imperatives, and changing societal needs. In this article, we embark on a journey to explore the realms of true innovation within the infrastructure sector, uncovering groundbreaking trends, revolutionary technologies, and transformative approaches that are reshaping the way we build, connect, and sustain our world.`,
+        fullArticle: TrueInnovationArticle
     },
 ]
 
@@ -184,5 +188,203 @@ export const article2 = {
         `Education and Workforce Development:`,
         `Collaboration and Partnerships:`,
         `FINAL THOUGHTS`
+    ]
+};
+
+export const article3 = {
+    title: `Is Philippines Ready for Innovation?`,
+    author: `Morning Wonder by Vox C`,
+    date: `February 20, 2024`,
+    image: `/images/discover/article-3.svg`,
+    images: [
+        `/images/discover/article-3/image-1.svg`,
+        `/images/discover/article-3/image-2.svg`,
+        `/images/discover/article-3/image-3.svg`
+    ],
+    article: [
+        `It's a question that echoes through the corridors of bustling city centers and whispers among the tranquil landscapes of rural communities. But before we delve into the heart of this inquiry, let's pause for a moment to reflect on the essence of readiness.
+
+        In every corner of this vibrant nation, from the vibrant streets of Metro Manila to the quiet shores of provincial towns, lies a story waiting to be told. It's a story of resilience, ambition, and the unyielding spirit of a people eager to carve out their place in the world.
+
+        Join us as we embark on a journey to uncover the truths and complexities that define the Philippines' stance on innovation. Through the lens of real-life experiences, hopes, and aspirations, we'll navigate the landscape of infrastructure, entrepreneurship, governance, and societal dynamics, painting a vivid picture of a nation on the cusp of transformation.`, 
+
+        `So, let's set aside preconceptions and embrace the human narrative that lies at the heart of this exploration. Together, let's embark on a journey of discovery and understanding as we seek to unravel the mysteries of the Philippines' readiness for innovation.
+
+        Embarking on a quest to gauge the Philippines' innovation readiness, we face a narrative woven from diverse viewpoints. Bustling urban hubs and serene rural scenes provide contrasting backdrops for debate: an emphatic "YES" against a wary "NO.
+
+        Champions of the affirmative point proudly at the nation's rising tech scene, dynamic entrepreneurial spirit, plus initiatives by officials aiming to spur creativity. Start-up triumphs that shake up old business ways, tech clusters spreading fast, and the ambitious "Build, Build, Build" program serve as proof; these show the nation stands poised to leap into global circles of innovation.
+
+        On another note (the dissenters'), systemic hurdles are laid bare: crumbling infrastructure not fit for purpose; red tape that wraps potential in knots; societal divides deep enough to thwart progress. They posit that without tackling these core barriers head-on—the Philippines might just miss out on catching up with world trends in innovation and tech.
+
+        Our journey through such differing views does not seek set answers but aims to stir a deeper grasp of complex forces at work. In analyzing carefully—probing each aspect—we'll shine light on what shapes Philippine prospects for change. This gives us clarity about chances ripe for taking—or risks likely—and paths one could take in this ongoing quest toward innovation.`,
+
+        `In the vibrant ecosystem of entrepreneurship and start-up culture, the Philippines is teeming with potential. From the bustling streets of Metro Manila to the scenic shores of Cebu, aspiring entrepreneurs are harnessing their creativity and innovation to build businesses that disrupt traditional industries and drive economic growth. With the support of incubators, accelerators, and government initiatives, the future of entrepreneurship in the Philippines looks brighter than ever.`,
+
+        `Over the past few years, the Philippines has undertaken a flurry of infrastructure projects designed to meet its burgeoning requirements and stimulate fiscal expansion. One company at the forefront of this movement is Aboitiz InfraCapital, a leading infrastructure company dedicated to delivering transformative projects across the nation.
+
+        Aboitiz InfraCapital's commitment to innovation and sustainability has earned it a reputation as a pioneer in the industry. Through diversifying its portfolio across sectors including transportation, energy, water and telecommunications, the organization has been instrumental in updating and broadening the nation's infrastructure framework in a pivotal capacity.
+        
+        Key factors contributing to Aboitiz InfraCapital's success include:`,
+
+        `As the Philippines continues to grapple with its infrastructure challenges, companies like Aboitiz InfraCapital are leading the charge for innovation and change. With visionary leadership, strategic investments, and a commitment to sustainability, Aboitiz InfraCapital is paving the way towards a brighter, more prosperous future for all Filipinos.`,
+
+        `In the rural landscapes of the Philippines, where communities are scattered across remote regions, the lack of adequate infrastructure poses a significant barrier to progress and development. With limited access to reliable roads, electricity, and water, residents in these areas face daily challenges that hinder economic growth and quality of life.
+
+        Key issues contributing to the infrastructure challenges in rural Philippines include:`,
+
+        `As rural communities continue to grapple with these challenges, the need for urgent action is clear. With visionary leadership, strategic investments, and a commitment to inclusivity and equity, there is hope that the infrastructure needs of rural Philippines can be addressed, paving the way towards a brighter future for all Filipinos.`,
+
+        `In the vibrant heart of Manila, where skyscrapers stretch toward the heavens and the pulse of progress beats strongest, the conviction that the Philippines is ready for innovation resonates deeply. Here, amidst the bustling streets and bustling tech hubs, the vision of a future powered by innovation feels tantalizingly within reach. The entrepreneurial spirit thrives, and the promise of progress hangs in the air like a tangible force, driving us toward a brighter tomorrow.
+
+        But as we bask in the glow of optimism, we must also acknowledge the sobering reality that innovation alone cannot address the deep-seated challenges facing our nation. While the YES perspective paints a hopeful picture of a nation on the brink of technological breakthroughs and economic prosperity, it also serves as a reminder of the importance of cautious optimism. Innovation must be tempered with a commitment to inclusivity, equity, and sustainability—to ensure that progress benefits all Filipinos, not just a privileged few.
+
+        Indeed, the YES perspective offers a glimpse into the transformative power of innovation, but it also underscores the need for thoughtful and responsible stewardship of these advancements. As we look to the future, let us heed the lessons learned from the YES perspective, embracing the boundless potential of Filipino ingenuity while remaining mindful of the challenges that lie ahead.`,
+
+        `In the serene countryside, where time flows leisurely and challenges loom large, skeptics cast doubt on the Philippines' capacity for innovation. However, amidst picturesque hills and verdant fields, the concept of innovation is not merely a distant dream reserved for a select few. Deep within, a reservoir of creativity and untapped potential awaits liberation. Innovation does not stem solely from privilege but ignites within every individual in this nation, irrespective of background. Even in rural enclaves where tradition intersects with modernity, dissenting voices serve as mere temporary obstacles on the path to progress.
+
+        As dusk descends, painting the sky with vibrant hues of tangerine and rose quartz, a new chapter unfolds, demanding resilience, adaptability, and unwavering determination. Amidst tranquility and simplicity, innovation takes root, nourished by the fertile ground of communal spirit and traditional Filipino ingenuity. In the Philippines, innovation is not an exclusive club but a guiding beacon towards a brighter future. As the nation braces for change, the indomitable spirit of its people will navigate toward a future blossoming with creativity, advancement, and triumph.
+
+        Yet, as we listen to the voices of those who bear the brunt of these challenges, we are reminded of the resilience and resourcefulness that define the Filipino spirit. Despite the obstacles, communities find ways to innovate, drawing strength from their shared experiences and collective determination. From makeshift solutions to age-old problems to grassroots initiatives that empower local entrepreneurs, the NO perspective reveals a different kind of innovation—one born out of necessity and fueled by the unyielding spirit of the Filipino people.`,
+
+        `In the dialectic of YES and NO, we find not just opposing viewpoints, but complementary truths. The YES perspective reminds us of the boundless potential of Filipino ingenuity, while the NO perspective grounds us in the realities of our nation's challenges. Together, they form a rich tapestry of insights that can guide us toward a more inclusive and sustainable future.
+
+        As we navigate the complexities of innovation in the Philippines, let us heed the lessons learned from both perspectives. Let us embrace the optimism of YES while remaining mindful of the obstacles highlighted by NO. For it is in the tension between hope and doubt that we find the inspiration and motivation to build a better tomorrow for all Filipinos. `
+    ],
+    bolded: [
+        `So let's go with the first perspective with actual example.`,
+        `Let's start with a perspective YES!`,
+        `Infrastructure Innovation Takes Center Stage: Aboitiz InfraCapital Leading the Charge`,
+        `Now we go with the perspective NO.`,
+        `Rural Infrastructure Challenges Highlight Need for Urgent Action`,
+        `The YES Perspective Realization`,
+        `NO Perspective Realization`,
+        `What We Can Learn?`,
+    ],
+    numbered: [
+        {
+            bolded: `Public-Private Partnerships (PPPs):`,
+            description: `Aboitiz InfraCapital embraces technological innovation, utilizing cutting-edge construction techniques and digital technologies to enhance project efficiency, reduce costs, and improve outcomes.`,
+        },
+        {
+            bolded: `Sustainability Focus:`,
+            description: `The company actively engages with local communities and stakeholders throughout the project lifecycle, ensuring that projects are socially inclusive, environmentally sustainable, and responsive to local needs and concerns.`,
+        },
+        {
+            bolded: `Technological Innovation:`,
+            description: `Aboitiz InfraCapital embraces technological innovation, utilizing cutting-edge construction techniques and digital technologies to enhance project efficiency, reduce costs, and improve outcomes.`,
+        },
+        {
+            bolded: `Community Engagement:`,
+            description: `The company actively engages with local communities and stakeholders throughout the project lifecycle, ensuring that projects are socially inclusive, environmentally sustainable, and responsive to local needs and concerns.`,
+        },
+        {
+            bolded: `Government Support:`,
+            description: `Aboitiz InfraCapital works closely with government agencies and regulators to navigate regulatory complexities and ensure compliance with relevant laws and regulations.`,
+        },
+        {
+            bolded: `Commitment to Quality:`,
+            description: `The company is committed to delivering infrastructure projects of the highest quality, adhering to rigorous standards of design, construction, and operation to ensure safety, reliability, and resilience.`,
+        },
+        {
+            bolded: `Job Creation:`,
+            description: `Infrastructure projects led by Aboitiz InfraCapital create job opportunities and stimulate economic growth, contributing to the overall development and prosperity of the Philippines.`,
+        },
+        {
+            bolded: `Funding Constraints:`,
+            description: `Rural infrastructure projects often suffer from limited funding, as government budgets are stretched thin and private investment is scarce in these areas.`,
+        },
+        {
+            bolded: `Bureaucratic Hurdles:`,
+            description: `Complex regulatory processes and bureaucratic red tape can delay infrastructure projects for years, preventing much-needed improvements from reaching rural communities.`,
+        },
+        {
+            bolded: `Geographical Isolation:`,
+            description: `The Philippines' archipelagic geography presents unique challenges for rural infrastructure development, with remote and isolated communities often overlooked or neglected in favor of more accessible urban areas.`,
+        },
+        {
+            bolded: `Environmental Concerns:`,
+            description: `Infrastructure projects in rural areas can have adverse effects on the environment, leading to deforestation, habitat destruction, and pollution if not properly planned and executed.`,
+        },
+        {
+            bolded: `Climate Vulnerability:`,
+            description: `Rural infrastructure assets are particularly vulnerable to natural disasters such as typhoons, earthquakes, and landslides, further complicating efforts to build and maintain resilient infrastructure in these areas.`,
+        },
+        {
+            bolded: `Skills Gap:`,
+            description: `A lack of skilled labor and technical expertise hampers rural infrastructure development efforts, limiting the capacity of government agencies and private sector firms to plan, design, and implement projects effectively.`,
+        },
+        {
+            bolded: `Corruption:`,
+            description: `Corruption and graft remain pervasive in the Philippines, undermining transparency, accountability, and public trust in rural infrastructure projects and hindering efforts to ensure that resources are used efficiently and effectively.`,
+        },
+        {
+            bolded: `Social Inequities:`,
+            description: `Rural infrastructure development often exacerbates social inequities, with marginalized communities bearing the brunt of environmental degradation, displacement, and loss of livelihoods associated with large-scale infrastructure projects.`,
+        },
+    ],
+    videos: [
+        {
+            src: `https://www.youtube.com/embed/TrWYGSUBNaQ?si=CtAr56WlqWj5kloR`,
+            title: `The Philippines Innovation Boom`
+        },
+        {
+            src: `https://www.youtube.com/embed/abHkLcW-sbA?si=40mt4Rw6qhvGjVq2`,
+            title: `We are Aboitiz InfraCapital.`
+        },
+        {
+            src: `https://www.youtube.com/embed/Kw8CIEoLL28?si=ZuB9wmWiVZF3O01Q`,
+            title: `The Philippines Geography Problem`
+        }
+    ]
+};
+
+export const article4 = {
+    title: `True Innovation in the Infrastructure Industry`,
+    author: `Innovation by Champ`,
+    date: `February 19, 2024`,
+    image: `/images/discover/article-4.svg`,
+    article: [
+        `In the ever-evolving landscape of infrastructure development, the pursuit of true innovation has become not just a desire but a necessity. The infrastructure industry, which forms the backbone of modern societies, is experiencing a seismic shift propelled by technological advancements, sustainability imperatives, and changing societal needs. In this article, we embark on a journey to explore the realms of true innovation within the infrastructure sector, uncovering groundbreaking trends, revolutionary technologies, and transformative approaches that are reshaping the way we build, connect, and sustain our world.`,
+
+        `As we dig deeper in the dynamic landscape of the infrastructure industry, true innovation is not merely about technological breakthroughs or engineering feats; it's about reimagining the future of our built environment in a way that is sustainable, resilient, and inclusive. By harnessing the transformative power of smart technologies, sustainable practices, resilient design, and inclusive policies, we have the opportunity to shape a world where infrastructure serves as a catalyst for progress, prosperity, and collective well-being. As we stand on the cusp of a new era of infrastructure development, let us embark on this journey with vision, determination, and a steadfast commitment to building a better tomorrow for generations to come.`,
+    ],
+    bolded: [
+        `FINAL THOUGHTS`,
+    ],
+    numbered: [
+        {
+            bolded: `Smart Infrastructure:`,
+            description: `Pioneering the Digital Revolution The advent of smart infrastructure marks a paradigm shift in the way we conceive, design, and manage our built environment. Leveraging the power of data analytics, IoT sensors, and advanced connectivity, smart infrastructure enables real-time monitoring, predictive maintenance, and optimized operations. From smart buildings equipped with energy-efficient systems to intelligent transportation networks that alleviate traffic congestion, the integration of digital technologies is revolutionizing every facet of the infrastructure lifecycle.`,
+        },
+        {
+            bolded: `Sustainable Solutions:`,
+            description: `Redefining the Environmental Footprint In an era defined by climate change and resource scarcity, sustainability has emerged as a cornerstone of infrastructure innovation. Engineers, architects, and urban planners are embracing eco-friendly materials, renewable energy sources, and low-carbon design principles to minimize environmental impact and enhance resilience. Whether it's the adoption of green building practices, the deployment of renewable energy infrastructure, or the promotion of circular economy models, the quest for sustainable solutions is driving a fundamental reimagining of how we build and operate our infrastructure assets.`,
+        },
+        {
+            bolded: `Resilient Infrastructure:`,
+            description: `Building for an Uncertain Future In the face of escalating natural disasters, cyber threats, and geopolitical instability, the imperative to build resilient infrastructure has never been more pressing. True innovation in this context entails not only fortifying physical structures against potential hazards but also fostering adaptive capacity and community resilience. From resilient building materials that withstand extreme weather events to decentralized energy systems that ensure continuity of service, the focus is shifting towards anticipatory planning, risk mitigation, and robust infrastructure systems that can withstand the test of time and adversity.`,
+        },
+        {
+            bolded: `Inclusive Infrastructure:`,
+            description: `Bridging the Socioeconomic Divide As infrastructure serves as the linchpin of economic development and social progress, ensuring equitable access and opportunity for all has become a paramount concern. True innovation in this realm entails addressing the disparities in infrastructure provision across different communities, particularly in underserved urban and rural areas. From affordable housing initiatives and public transportation projects to digital connectivity programs and healthcare infrastructure, the emphasis is on fostering inclusivity, accessibility, and social cohesion through infrastructure investments that empower marginalized populations and narrow the socioeconomic gap.`,
+        },
+    ],
+    videos: [
+        {
+            src: `https://www.youtube.com/embed/HPUWpxBJn4A?si=E19s2gsfex1_k2kv`,
+            title: `🇵🇭 PHILIPPINES Top 10 UNDER-CONSTRUCTION Multi-Billion Smart and Modern Cities`
+        },
+        {
+            src: `https://www.youtube.com/embed/sMqtwbKc8EA?si=YBvxqbEh3MAeZ0Sp`,
+            title: `8 Sustainability ideas that will change the world | FT Rethink`
+        },
+        {
+            src: `https://www.youtube.com/embed/wUEi5K6r2xs?si=nGI1CXJ39ltzliNR`,
+            title: `Building Resilient Cities: 7 Entry Points for Action`
+        },
+        {
+            src: `https://www.youtube.com/embed/IHI9Vl9mA9Q?si=0_BQQP5UpfJR63pR`,
+            title: `Safe, trusted, and inclusive digital public infrastructure`
+        }
     ]
 };

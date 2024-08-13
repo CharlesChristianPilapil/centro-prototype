@@ -17,7 +17,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
   const isEven = index % 2 === 0;
 
   return (
-    <div className={clsx('grid lg:grid-cols-2 xl:grid-cols-8 2xl:grid-cols-12 xl:h-[500px] border-pink-500',
+    <div className={clsx('grid lg:grid-cols-2 xl:grid-cols-8 2xl:grid-cols-12 xl:h-[500px]',
         {'bg-transparent': !isEven, 'bg-darkblue': isEven,})}
     >
       <motion.div
@@ -31,7 +31,7 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
           alt={title}
           height={200}
           width={200}
-          className='w-full lg:h-full object-cover bg-pink-50'
+          className='w-full lg:h-full object-cover'
         />
         <Overlay className='bg-black/20'/>
       </motion.div>
@@ -45,11 +45,11 @@ const FeaturesTab = ({ image, title, description, index }: Props) => {
           <h1
             className={clsx(
               'text-[1.5rem] leading-[2.25rem] text-base font-semibold',
-              {'text-darkblue': !isEven,})}
+              {'text-lightblue': !isEven,})}
           >
             {title}
           </h1>
-          <p className={clsx('text-base', {'text-lightblue': !isEven,})}>
+          <p className={clsx('text-base', {'text-darkgray/80': !isEven, 'text-white/80': isEven, })}>
             {description}
           </p>
         </motion.div>
