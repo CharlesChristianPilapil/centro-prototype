@@ -32,7 +32,7 @@ const DiscoverAccordion = () => {
                             <AccordionTrigger
                                 isOpen={openItems.includes(e.id)}
                                 onClick={() => handleToggle(e.id)}
-                                className='shadow shadow-darkblue/20 text-lightblue hover:text-darkgray px-2 text-start gap-[5px] rounded'
+                                className='shadow shadow-darkblue/20 text-lightblue hover:text-lightblue/70 px-2 text-start gap-[5px] rounded'
                             >
                                 {index + 1}. {e.question}
                             </AccordionTrigger>
@@ -48,7 +48,7 @@ const DiscoverAccordion = () => {
                             <AccordionTrigger
                                 isOpen={openItems.includes(e.id)}
                                 onClick={() => handleToggle(e.id)}
-                                className='shadow shadow-darkblue/20 text-lightblue hover:text-darkgray px-2 text-start gap-[5px] rounded'
+                                className='shadow shadow-darkblue/20 text-lightblue hover:text-lightblue/70 px-2 text-start gap-[5px] rounded'
                             >
                                 {index + 9}. {e.question}
                             </AccordionTrigger>

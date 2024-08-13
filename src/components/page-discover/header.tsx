@@ -29,7 +29,7 @@ const Header = () => {
         <>
             <header className="py-28 mb-5 relative sm:h-[650px] grid items-center bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center">
                 <Overlay />
-                <div className='flex flex-col gap-5 container relative z-20 text-base'>
+                <div className='flex flex-col gap-5 container relative z-20 text-base/90'>
                     <h1 className='font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight'>
                         {/* {pathName === '/discover/faqs' ? `FAQs About Centro` : pathName === '/discover/articles' ? `Centro's Articles` : 'Discover'} */}
                         {pathName === '/discover/articles' &&

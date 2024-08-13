@@ -14,13 +14,14 @@ import ArticlesList from '@/components/page-discover/articlesList';
 const Page = () => {
     return (
         <main className='container mt-[96px]'>
+        <title> Centro | Discover </title>
             <div className="mb-5 mt-10 flex flex-col gap-5 items-center justify-center">
-                <h1 className="text-3xl text-center font-bold text-darkblue"> {`Centro's Weekly Article`} </h1>
+                <h1 className="text-3xl text-center font-bold text-darkgray"> {`Centro's Weekly Article`} </h1>
                 <div className="h-[1px] w-[100px] bg-gray/80" />
             </div>
             <ArticlesList />
             <div className="mb-5 mt-10 flex flex-col gap-5 items-center justify-center">
-                <h1 className="text-3xl text-center font-bold text-darkblue"> Frequently Asked Questions </h1>
+                <h1 className="text-3xl text-center font-bold text-darkgray"> Frequently Asked Questions </h1>
                 <div className="h-[1px] w-[100px] bg-gray/80" />
             </div>
             <DiscoverAccordion />

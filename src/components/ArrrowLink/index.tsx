@@ -16,7 +16,7 @@ const ArrowLink = ({ href, children }: ArrowLinkProps) => {
   return (
     <MotionLink
       href={href}
-      className="font-semibold w-fit flex items-center gap-4 group"
+      className="font-semibold w-fit flex items-center gap-4 group text-gray"
       variants={staggerItem({ x: -20, y: 20 })}
     >
       <p> {children} </p>
