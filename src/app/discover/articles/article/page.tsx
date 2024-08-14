@@ -5,13 +5,13 @@ import { articles } from "@/constants/discover";
 import Image from "next/image";
 import Button from "@/components/Button";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import ShareUrl from "@/components/ShareUrl";
+import { useRouter } from "next-nprogress-bar";
 
 const SingleArticlePage = () => {
 
-    const router = useRouter()
-    const pathName = usePathname()
+    const router = useRouter();
+    const pathName = usePathname();
     const searchParams = useSearchParams();
     const id = searchParams.get('title');
     const article = articles.find(e => e.id === id);

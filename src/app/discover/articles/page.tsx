@@ -22,7 +22,7 @@ const ArticlesPage = () => {
             <ul className="grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 mt-5 mb-24">
                 {articles.map((e, index) => (
                     <li key={index} className="text-darkblue h-full group">
-                        <Link href={`/discover/articles/article?title=${e.id}`}>
+                        <Link href={`article?title=${e.id}`}>
                             <article className="flex flex-col drop-shadow shadow-md duration-300 transition-all group-hover:bg-darkblue/5 group-hover:-translate-y-2 rounded h-full overflow-hidden">
                                 <div>
                                     <Image 

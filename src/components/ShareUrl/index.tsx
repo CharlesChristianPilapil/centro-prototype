@@ -5,8 +5,6 @@ import {
     XIcon, 
     FacebookMessengerShareButton,
     FacebookMessengerIcon,
-    LinkedinIcon,
-    LinkedinShareButton
 } from "react-share";
 
 interface urlInterface {
@@ -27,9 +25,6 @@ const ShareUrl = ({shareURL}: urlInterface) => {
             <FacebookMessengerShareButton url={shareURL} appId={shareURL} className="overflow-hidden grid place-items-center rounded-full">
                 <FacebookMessengerIcon className="w-[50px] h-[50px] hover:opacity-80"/>
             </FacebookMessengerShareButton>
-            <LinkedinShareButton url={`https://www.linkedin.com/sharing/share-offsite/?url=${shareURL}`} className="overflow-hidden grid place-items-center rounded-full">
-                <LinkedinIcon className="w-[50px] h-[50px] hover:opacity-80" />
-            </LinkedinShareButton>
         </div>
     </div>
   )

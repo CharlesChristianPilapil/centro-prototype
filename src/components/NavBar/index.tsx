@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { navlink } from '@/constants/home';
 import Link from 'next/link';
 import Icon from '@/components/Icon';
@@ -11,6 +11,7 @@ import { usePathname } from 'next/navigation';
 import { useRouter } from 'next-nprogress-bar';
 import useWindowWidth from '@/hooks/WindowWidth';
 import { url } from '@/constants/url';
+import usePageScrolling from '@/hooks/PageScrolling';
 
 const Navbar = () => {
     const pathName = usePathname();
@@ -19,17 +20,20 @@ const Navbar = () => {
     const [aside, setAside] = useState<boolean>(false);
     const windowWidth = useWindowWidth();
 
+    const pageScroll = usePageScrolling()
+
     useEffect(() => {
         setAside(false);
     }, [pathName]);
 
     useEffect(() => {
-        if (windowWidth >= 1280) setAside(false);
+        if (windowWidth >= 1024) setAside(false);
     }, [windowWidth]);
 
     return (
         <>
-            <nav className='bg-darkblue py-4 text-base sticky top-0 z-50 drop-shadow-md shadow-md'>
+            <nav className={`${pageScroll ? 'backdrop-blur-md bg-darkblue/80' : 'bg-darkblue'} 
+            py-4 text-base sticky top-0 z-50 drop-shadow-md shadow-md transition-all duration-300`}>
                 {/* <div className="container flex items-center justify-between">
                 <Link href="/">
                 <Image
@@ -62,7 +66,7 @@ const Navbar = () => {
                             className='hidden sm:block'
                         />
                     </Link>
-                    <ul className='hidden xl:flex gap-6'>
+                    <ul className='hidden lg:flex gap-6'>
                         {navlink
                             .filter((e) => e.name !== 'HOME')
                             .map((e, index) => (
@@ -90,7 +94,7 @@ const Navbar = () => {
                         </div>
                         <button
                             onClick={() => setAside((prev) => !prev)}
-                            className='xl:hidden'
+                            className='lg:hidden'
                         >
                             <Icon name={aside ? 'x-mark' : 'hamburger'} />
                         </button>
