@@ -1,5 +1,6 @@
-import Header from "@/components/page-discover/header"
-import { ReactNode } from "react"
+import Header from "@/components/page-discover/header";
+import { ReactNode } from "react";
+
 
 const DiscoverLayout = ({children}: {children: ReactNode}) => {
   return (

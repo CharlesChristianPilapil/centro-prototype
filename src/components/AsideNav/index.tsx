@@ -7,6 +7,7 @@ import Button from '../Button';
 import useWindowWidth from '@/hooks/WindowWidth';
 import { useRouter } from 'next-nprogress-bar';
 import { url } from '@/constants/url';
+import usePageScrolling from '@/hooks/PageScrolling';
 
 interface AsideInterface {
     show?: boolean;
@@ -16,12 +17,14 @@ const AsideNav = ({ show }: AsideInterface) => {
     const router = useRouter();
 
     const windowWidth = useWindowWidth();
+    const pageScroll = usePageScrolling();
 
     return (
         <AnimatePresence>
             {show && (
                 <motion.aside
-                    className='xl:hidden px-5 fixed right-0 w-[80%] h-full md:h-fit md:w-full bg-darkblue z-40 drop-shadow-2xl'
+                    className={`${pageScroll ? 'backdrop-blur-md bg-darkblue/80' : 'bg-darkblue'} 
+                    xl:hidden px-5 fixed right-0 w-[80%] h-full md:h-fit md:w-full z-40 drop-shadow-2xl transition-colors duration-300`}
                     initial={{
                         x: windowWidth >= 768 ? '0' : '100%',
                         y: windowWidth >= 768 ? '-100%' : '0',

@@ -1,7 +1,4 @@
-interface SVGObject {
-    name: string;
-    svg: string;
-}
+import { SVGObject } from "./interface";
 
 export const Icons: SVGObject[] = [
     {

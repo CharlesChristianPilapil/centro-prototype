@@ -17,3 +17,8 @@ export interface IHeader {
     title: string;
     description?: string;
 }
+
+export interface SVGObject {
+    name: string;
+    svg: string;
+}
