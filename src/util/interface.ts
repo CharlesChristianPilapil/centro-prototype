@@ -16,6 +16,8 @@ export interface ICard {
 }
 
 export interface IHeader {
+    id?: string;
+    backgroundImg?: any;
     title: string;
     description?: string;
     ref?: React.RefObject<HTMLDivElement>;

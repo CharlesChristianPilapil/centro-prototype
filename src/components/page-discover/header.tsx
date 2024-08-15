@@ -30,25 +30,28 @@ const Header = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
-        offset: ["start", "end start"]
+        offset: ['start', 'end start'],
     });
     const scale = useTransform(scrollYProgress, [0, 1], ['1', '1.75']);
 
     return (
         <>
             <header className="py-28 mb-5 relative sm:h-[650px] grid items-center bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center overflow-hidden">
-                <motion.div 
-                    className="h-full w-[100%] top-0 right-0 bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center absolute ease-in-out" 
-                    ref={targetRef} 
+                <motion.div
+                    className="h-full w-[100%] top-0 right-0 bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center absolute ease-in-out"
+                    ref={targetRef}
                     style={{ scale }}
                 />
                 <Overlay />
                 <div className='flex flex-col gap-5 container relative z-20 text-base/90'>
-                    <motion.h1 
-                        variants={singleElement({ x: -50, y: -50, delay: .3, duration: .3})}
+                    <motion.h1
+                        variants={singleElement({
+                            y: -50,
+                            delay: 0.3,
+                            duration: 0.3,
+                        })}
                         initial='hidden'
                         whileInView='visible'
-                        viewport={{amount: 'all'}}
                         className='font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] 
                         tracking-wide sm:tracking-tight'
                     >
@@ -61,10 +64,13 @@ const Header = () => {
                         {pathName === '/discover/faqs' && `FAQs About Centro`}
                     </motion.h1>
                     <motion.div
-                        variants={singleElement({ x: -50, y: -50, delay: .3, duration: .3})}
+                        variants={singleElement({
+                            y: -50,
+                            delay: 0.3,
+                            duration: 0.3,
+                        })}
                         initial='hidden'
                         whileInView='visible'
-                        viewport={{amount: 'all'}}                    
                         className='max-w-[600px]'
                     >
                         <sub className='text-[16px]'>{description}</sub>
