@@ -5,12 +5,13 @@ import Overlay from '../Overlay';
 import { motion } from 'framer-motion';
 import { singleElement } from '@/constants/motion';
 import { forwardRef } from 'react';
+import Image from 'next/image';
 
 export const Header = forwardRef<HTMLImageElement, IHeader>(
     ({ title, description, parallaxStyle }, ref) => {
         return (
             <div className='relative h-[400px] w-full flex justify-center items-center overflow-hidden'>
-                <img
+                <Image
                     src='/service-background-image.svg'
                     alt='Background'
                     ref={ref}
@@ -38,3 +39,5 @@ export const Header = forwardRef<HTMLImageElement, IHeader>(
         );
     }
 );
+
+Header.displayName = 'Header';

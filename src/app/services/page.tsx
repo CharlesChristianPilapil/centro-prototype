@@ -7,7 +7,7 @@ import { singleElement } from '@/constants/motion';
 import { data } from '@/constants/our-services';
 import useMouseParallax from '../../hooks/useMouseParallax';
 
-const page = () => {
+const Page = () => {
     const { parallaxStyle, imageRef, containerRef } = useMouseParallax();
 
     return (
@@ -52,4 +52,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
