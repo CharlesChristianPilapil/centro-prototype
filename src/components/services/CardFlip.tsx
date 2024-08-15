@@ -13,7 +13,9 @@ export const CardFlip = ({ id, icon, title, description }: ICard) => {
                 </div>
                 <div className={`${cardFlip.back} ${cardFlip.side}`}>
                     <div className={cardFlip.content}>
-                        <p className='text-xl leading-8'>{description}</p>
+                        <p className='text-xl leading-8 text-justify'>
+                            {description}
+                        </p>
                     </div>
                 </div>
             </div>

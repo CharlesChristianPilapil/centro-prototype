@@ -81,7 +81,7 @@ const Page = () => {
                                     className='resize-none h-[141px]'
                                 />
                                 <Button
-                                    className='font-medium border border-blue-600 text-blue-600 bg-white rounded-full w-[160px] h-[60px]'
+                                    className='font-medium border border-blue-600 text-blue-600 bg-white rounded-full w-[160px] h-[60px] hover:text-white'
                                     label='Send'
                                     variant='default'
                                 />
