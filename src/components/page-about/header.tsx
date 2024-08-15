@@ -31,6 +31,7 @@ const AboutHeader = () => {
                     src={image.src}
                     alt={image.alt}
                     reverse
+                    overlay
                     reverseInitial
                 />
             </header>

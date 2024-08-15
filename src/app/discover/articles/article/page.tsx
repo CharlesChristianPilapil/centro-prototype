@@ -7,6 +7,7 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import ShareUrl from "@/components/ShareUrl";
 import { useRouter } from "next-nprogress-bar";
+import Overlay from "@/components/Overlay";
 
 const SingleArticlePage = () => {
 
@@ -68,7 +69,7 @@ const SingleArticlePage = () => {
                         <h1 className="text-3xl text-darkblue mb-5"> Recent Posts </h1>
                         <ul className="flex flex-col gap-5">
                             {otherArticles.map((e, index) => (
-                                <li key={index} className="hover:bg-lightblue/10"> 
+                                <li key={index} className="hover:bg-lightblue/10 group"> 
                                     <Link href={`article?title=${e.id}`}>  
                                         <article className="flex gap-5">
                                             <div className="h-[110px] w-[110px] bg-black flex-shrink-0 relative">
@@ -78,6 +79,7 @@ const SingleArticlePage = () => {
                                                     fill
                                                     className="object-cover"
                                                 />
+                                                <Overlay className="bg-darkblue/50 group-hover:opacity-0 group-hover:invisible transition-all duration-300" />
                                             </div>
                                             <div className="py-1">
                                                 <h1 className="font-bold text-darkblue"> {e.title} </h1>

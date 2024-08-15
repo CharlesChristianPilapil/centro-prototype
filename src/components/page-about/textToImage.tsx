@@ -12,6 +12,7 @@ const TextToImageAboutSection = () => {
                         description={e.description}
                         src={e.image.src}
                         alt={e.image.alt}
+                        overlay
                         reverse={index % 2 !== 0}
                     />
                 ))}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { isValidElement, ReactNode } from "react";
 import { motion } from "framer-motion";
 import { singleElement } from "@/constants/motion";
+import Overlay from "../Overlay";
 
 interface ImageToTextInterface {
     title: string | ReactNode;
@@ -14,6 +15,7 @@ interface ImageToTextInterface {
     variant?: 'default' | 'dark-mode',
     reverse?: boolean;
     reverseInitial?: boolean;
+    overlay?: boolean;
 }
 
 const ImageToText = ({
@@ -23,16 +25,17 @@ const ImageToText = ({
     alt,
     variant = 'default',
     reverse,
-    reverseInitial
+    reverseInitial,
+    overlay
 }: ImageToTextInterface) => {
     return (
         <>
             <div className="container overflow-hidden grid md:grid-cols-2 py-5 gap-5">
                 <motion.div 
-                    variants={singleElement({ x: 0, y: 0, delay: 0.3, type: 'tween', duration: .8 })}
+                    variants={singleElement({ x: 0, y: 0, delay: 0.3, type: 'tween', duration: .5 })}
                     initial='hidden'
                     whileInView='visible'
-                    className={clsx('grid place-items-center', {
+                    className={clsx('grid place-items-center relative group', {
                         'order-2': reverseInitial,
                         'md:order-2': reverse
                 })}>
@@ -43,10 +46,11 @@ const ImageToText = ({
                         height={200} 
                         className="w-full"
                     />
+                    {overlay && <Overlay className="bg-black/30 group-hover:invisible group-hover:opacity-0 transition-all duration-300" />}
                 </motion.div>
                 <div className="overflow-hidden grid place-items-center">
                     <motion.div
-                        variants={singleElement({ x: 0, y: 100, delay: 0.5, type: 'tween', duration: .5 })}
+                        variants={singleElement({ x: 0, y: 100, delay: 0.3, type: 'tween', duration: .5 })}
                         initial='hidden'
                         whileInView='visible'
                         className="flex flex-col gap-5 justify-center"

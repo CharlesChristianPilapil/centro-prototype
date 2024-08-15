@@ -14,6 +14,8 @@ export const Header = forwardRef<HTMLImageElement, IHeader>(
                 <Image
                     src='/service-background-image.svg'
                     alt='Background'
+                    width={1200}
+                    height={400}
                     ref={ref}
                     className='absolute w-[120%] h-[120%] object-cover object-bottom'
                     style={{

@@ -9,7 +9,7 @@ const ValuesSection = () => {
     return (
         <motion.section 
             className="container mb-24 grid md:grid-cols-2 xl:grid-cols-5"
-            variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.5 })}
+            variants={staggerChild({ staggerChildren: 0.2, delayChildren: 0.2 })}
             initial='hidden'
             whileInView='visible'
         >
