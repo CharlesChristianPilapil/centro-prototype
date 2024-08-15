@@ -8,16 +8,20 @@ import { forwardRef } from 'react';
 import Image from 'next/image';
 
 export const Header = forwardRef<HTMLImageElement, IHeader>(
-    ({ title, description, parallaxStyle }, ref) => {
+    ({ id, backgroundImg, title, description, parallaxStyle }, ref) => {
         return (
             <div className='relative h-[400px] w-full flex justify-center items-center overflow-hidden'>
                 <Image
-                    src='/service-background-image.svg'
+                    src={backgroundImg}
                     alt='Background'
                     width={1200}
                     height={400}
                     ref={ref}
-                    className='absolute w-[120%] h-[120%] object-cover object-bottom'
+                    className={`absolute w-[120%] h-[120%] object-cover ${
+                        id === 'service-background'
+                            ? 'object-bottom'
+                            : 'object-center'
+                    }`}
                     style={{
                         ...parallaxStyle(-30), // Applies parallax effect
                     }}

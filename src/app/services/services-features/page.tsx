@@ -13,7 +13,9 @@ const Page = () => {
     const serviceId = useSearchParams().get('id');
     const [featureData, setFeatureData] = useState<any>();
     useEffect(() => {
-        const selectedService = data.find((item) => item.id === serviceId);
+        const selectedService = data.serviceFeatures.find(
+            (item) => item.id === serviceId
+        );
         if (selectedService) {
             setFeatureData(selectedService);
         }
@@ -22,6 +24,8 @@ const Page = () => {
     return (
         <div id='container' className='w-full' ref={containerRef}>
             <Header
+                id={featureData?.id}
+                backgroundImg={featureData?.backgroundImg}
                 title={featureData?.title}
                 ref={imageRef}
                 parallaxStyle={parallaxStyle}

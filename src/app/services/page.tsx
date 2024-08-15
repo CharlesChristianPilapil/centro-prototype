@@ -12,13 +12,17 @@ const Page = () => {
 
     return (
         <div id='container' className='w-full' ref={containerRef}>
+            <title>Centro | Our Services</title>
             <Header
+                id='service-background'
+                backgroundImg={
+                    '/images/our-services/service-background-image.svg'
+                }
                 title='What do we offer?'
                 description='We provide a comprehensive suite of services to drive your success.'
                 ref={imageRef}
                 parallaxStyle={parallaxStyle}
             />
-            <title>Centro | Our Services</title>
             <div
                 className='flex flex-col items-center py-16'
                 // style={{ minHeight: 'calc(100vh - 82px)' }}
@@ -37,7 +41,7 @@ const Page = () => {
                     OUR INITIAL SERVICES
                 </motion.p>
                 <div className='grid md:grid-cols-2 gap-10 mb-[50px] max-w-[900px]'>
-                    {data.map((data) => (
+                    {data.serviceFeatures.map((data) => (
                         <ServiceCard
                             key={data.id}
                             id={data.id}
