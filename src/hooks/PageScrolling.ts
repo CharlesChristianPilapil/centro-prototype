@@ -14,7 +14,7 @@ function usePageScrolling() {
 
       timeoutIdRef.current = setTimeout(() => {
         setIsScrolling(false);
-      }, 50);
+      }, 500);
     };
 
     window.addEventListener('scroll', handleScroll);

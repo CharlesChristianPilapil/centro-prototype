@@ -5,6 +5,8 @@ import Button from '../Button';
 import Overlay from '../Overlay';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next-nprogress-bar';
+import { motion } from 'framer-motion';
+import { singleElement } from '@/constants/motion';
 
 const Header = () => {
     const router = useRouter();
@@ -30,7 +32,14 @@ const Header = () => {
             <header className="py-28 mb-5 relative sm:h-[650px] grid items-center bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center">
                 <Overlay />
                 <div className='flex flex-col gap-5 container relative z-20 text-base/90'>
-                    <h1 className='font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] tracking-wide sm:tracking-tight'>
+                    <motion.h1 
+                        variants={singleElement({ x: -50, y: -50, delay: .3, duration: .3})}
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{amount: 'all'}}
+                        className='font-semibold text-[2rem] sm:text-[2.5rem] leading-[3rem] sm:leading-[3.75rem] max-w-[600px] 
+                        tracking-wide sm:tracking-tight'
+                    >
                         {/* {pathName === '/discover/faqs' ? `FAQs About Centro` : pathName === '/discover/articles' ? `Centro's Articles` : 'Discover'} */}
                         {pathName === '/discover/articles' &&
                             `Centro's Article`}
@@ -38,10 +47,16 @@ const Header = () => {
                             `Centro's Article`}
                         {pathName === '/discover' && `Discover`}
                         {pathName === '/discover/faqs' && `FAQs About Centro`}
-                    </h1>
-                    <div className='max-w-[600px]'>
+                    </motion.h1>
+                    <motion.div
+                        variants={singleElement({ x: -50, y: -50, delay: .3, duration: .3})}
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{amount: 'all'}}                    
+                        className='max-w-[600px]'
+                    >
                         <sub className='text-[16px]'>{description}</sub>
-                    </div>
+                    </motion.div>
                     {/* <div className='flex gap-2'>
                         <Button
                             variant='transparent'

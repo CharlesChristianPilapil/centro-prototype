@@ -1,3 +1,5 @@
+type Data = Record<string, string | any>;
+
 export interface IIcon {
     height?: string;
     width?: string;
@@ -23,4 +25,8 @@ export interface IHeader {
 export interface SVGObject {
     name: string;
     svg: string;
+}
+
+export interface dynamicStringObjectInterface {
+    e: Data;
 }
