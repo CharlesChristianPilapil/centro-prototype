@@ -16,6 +16,8 @@ export interface ICard {
 export interface IHeader {
     title: string;
     description?: string;
+    ref?: React.RefObject<HTMLDivElement>;
+    parallaxStyle?: any;
 }
 
 export interface SVGObject {

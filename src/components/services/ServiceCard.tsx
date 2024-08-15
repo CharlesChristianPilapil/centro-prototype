@@ -19,7 +19,7 @@ const ServiceCard: React.FC<ICard> = ({ icon, title, description }) => {
                     )}`}
                     className='self-center'
                 >
-                    <button className='h-[40px] w-[120px] mt-[20px] rounded-lg bg-[#0093FF] text-white text-sm'>
+                    <button className='h-[40px] w-[120px] mt-[20px] rounded-lg bg-sky-500 text-white text-sm hover:bg-sky-600'>
                         Learn More
                     </button>
                 </Link>
