@@ -31,9 +31,13 @@ const DiscoverAccordion = () => {
                 <div>
                     {faqs.slice(0, 8).map((e, index) => (
                         <motion.div
-                            variants={singleElement({y: 20, duration: .3, delay: .2})}
+                            variants={singleElement({
+                                y: 20,
+                                duration: 0.3,
+                                delay: 0.2,
+                            })}
                             initial='hidden'
-                            whileInView='visible' 
+                            whileInView='visible'
                             key={e.question}
                         >
                             <AccordionItem value={e.question}>
@@ -54,16 +58,20 @@ const DiscoverAccordion = () => {
                 <div>
                     {faqs.slice(8).map((e, index) => (
                         <motion.div
-                            variants={singleElement({y: 20, duration: .3, delay: .2})}
+                            variants={singleElement({
+                                y: 20,
+                                duration: 0.3,
+                                delay: 0.2,
+                            })}
                             initial='hidden'
-                            whileInView='visible' 
+                            whileInView='visible'
                             key={e.question}
                         >
                             <AccordionItem value={e.question}>
                                 <AccordionTrigger
                                     isOpen={openItems.includes(e.id)}
                                     onClick={() => handleToggle(e.id)}
-                                    className='shadow shadow-darkblue/20 text-lightblue hover:text-lightblue/70 px-2 text-start gap-[5px] rounded'
+                                    className='text-lightblue hover:text-lightblue/70 px-2 text-start gap-[5px] rounded'
                                 >
                                     {index + 9}. {e.question}
                                 </AccordionTrigger>
