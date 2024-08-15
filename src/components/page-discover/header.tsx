@@ -1,11 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Button from '../Button';
 import Overlay from '../Overlay';
 import { usePathname } from 'next/navigation';
 import { useRouter } from 'next-nprogress-bar';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { singleElement } from '@/constants/motion';
 
 const Header = () => {
@@ -27,9 +27,21 @@ const Header = () => {
         window.scrollTo(0, 0);
     }, [pathName]);
 
+    const targetRef = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: targetRef,
+        offset: ["start", "end start"]
+    });
+    const scale = useTransform(scrollYProgress, [0, 1], ['1', '1.75']);
+
     return (
         <>
-            <header className="py-28 mb-5 relative sm:h-[650px] grid items-center bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center">
+            <header className="py-28 mb-5 relative sm:h-[650px] grid items-center bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center overflow-hidden">
+                <motion.div 
+                    className="h-full w-[100%] top-0 right-0 bg-[url('/images/discover/discover-bg.svg')] bg-cover bg-center absolute ease-in-out" 
+                    ref={targetRef} 
+                    style={{ scale }}
+                />
                 <Overlay />
                 <div className='flex flex-col gap-5 container relative z-20 text-base/90'>
                     <motion.h1 
